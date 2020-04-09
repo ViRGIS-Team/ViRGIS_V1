@@ -43,7 +43,7 @@ public static class OVRPlugin
 #if OVRPLUGIN_UNSUPPORTED_PLATFORM
 	public static readonly System.Version wrapperVersion = _versionZero;
 #else
-	public static readonly System.Version wrapperVersion = OVRP_1_46_0.version;
+	public static readonly System.Version wrapperVersion = OVRP_1_47_0.version;
 #endif
 
 #if !OVRPLUGIN_UNSUPPORTED_PLATFORM
@@ -5444,6 +5444,11 @@ public static class OVRPlugin
 
 		[DllImport(pluginName, CallingConvention = CallingConvention.Cdecl)]
 		public static extern Result ovrp_SetTiledMultiResDynamic(Bool isDynamic);
+	}
+
+	private static class OVRP_1_47_0
+	{
+		public static readonly System.Version version = new System.Version(1, 47, 0);
 	}
 
 #endif // !OVRPLUGIN_UNSUPPORTED_PLATFORM
