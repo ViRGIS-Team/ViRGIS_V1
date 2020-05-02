@@ -12,12 +12,13 @@ public class MapInitialize : MonoBehaviour
 {
 
     public float startAltitude = 50f;
+    public GameObject Map;
+    public GameObject MainCamera;
     public GameObject PointLayer;
     public GameObject LineLayer;
     public GameObject PolygonLayer;
     public GameObject PointCloud;
     public GameObject MeshLayer;
-    public GameObject TabLayer;
 
     public string inputfile;
     // Start is called before the first frame update
@@ -42,16 +43,15 @@ public class MapInitialize : MonoBehaviour
         Vector2d origin = Global.project.Origin.Coordinates.Vector2d();
 
         //initialize space
-        AbstractMap _map = GetComponent<AbstractMap>();
+        AbstractMap _map = Map.GetComponent<AbstractMap>();
         _map.Initialize(origin, Global.project.MapScale);
 
         //set globals
         Global._map = _map;
         Global.EditSession = false;
-        GameObject Map = gameObject;
         Global.Map = Map;
-        GameObject camera = GameObject.Find("Main Camera");
-        camera.transform.position = Global.project.Camera.Coordinates.Vector3();
+        Global.mainCamera = MainCamera;
+        MainCamera.transform.position = Global.project.Camera.Coordinates.Vector3();
         GameObject temp = null;
 
         //load the layers
@@ -69,25 +69,16 @@ public class MapInitialize : MonoBehaviour
                     temp = await Instantiate(PolygonLayer, Vector3.zero, Quaternion.identity).GetComponent<PolygonLayer>().Init(layer as GeographyCollection);
                     break;
                 case RecordSetDataType.PointCloud:
-                    temp = await Instantiate(PointCloud, layer.Position.Coordinates.Vector3(), Quaternion.identity).GetComponent<PointCloudLayer>().Init(layer as GeographyCollection);
+                    temp = await Instantiate(PointCloud, Vector3.zero, Quaternion.identity).GetComponent<PointCloudLayer>().Init(layer as GeographyCollection);
                     break;
                 case RecordSetDataType.Mesh:
-                    temp = await Instantiate(MeshLayer, layer.Position.Coordinates.Vector3(), Quaternion.identity).GetComponent<MeshLayer>().Init(layer as GeographyCollection);
-                    break;
-                case RecordSetDataType.Tab:
-                    //GameObject temp = Instantiate(TabLayer, Vector3.zero, Quaternion.identity).GetComponent<LoadTab>().Init(layer.Source);
+                    temp = await Instantiate(MeshLayer, Vector3.zero, Quaternion.identity).GetComponent<MeshLayer>().Init(layer as GeographyCollection);
                     break;
             }
             temp.transform.parent = Map.transform;
             Global.layers.Add(temp);
         }
-        eventManager.OnEditsessionEnd.AddListener(ExitEditsession);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
+        eventManager.EditSessionEndEvent.AddListener(ExitEditsession);
     }
 
     public void ExitEditsession()
@@ -95,20 +86,16 @@ public class MapInitialize : MonoBehaviour
         Save();
     }
 
-    async void Save()
+    public void Save()
     {
         foreach (GameObject go in Global.layers)
         {
             ILayer com = go.GetComponent<ILayer>();
-            if (com.changed)
-            {
-                com.Save();
-                RecordSet layer = com.layer;
-                int index = Global.project.RecordSets.FindIndex( x => x.Id == layer.Id);
-                Global.project.RecordSets[index] = layer;
-            }
+            RecordSet layer = com.Save();
+            int index = Global.project.RecordSets.FindIndex( x => x.Id == layer.Id);
+            Global.project.RecordSets[index] = layer;
         }
         geoJsonReader.SetProject(Global.project);
-        await geoJsonReader.Save();
+        geoJsonReader.Save();
     }
 }

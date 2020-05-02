@@ -3,41 +3,44 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using UnityEngine;
-using System;
-using Mapbox.Unity.Utilities;
-using Mapbox.Unity.Map;
-using Mapbox.Utils;
 using GeoJSON.Net.Geometry;
 using GeoJSON.Net.Feature;
 using System.Threading.Tasks;
 using Project;
 
+
+/// <summary>
+/// The parent entity for a instance of a Line Layer - that holds one MultiLineString FeatureCollection
+/// </summary>
 public class LineLayer : MonoBehaviour, ILayer
 {
     // Name of the input file, no extension
-    public string inputfile;
+    private string inputfile;
 
     // The prefab for the data points to be instantiated
     public GameObject LinePrefab;
     public GameObject HandlePrefab;
+    public GameObject LabelPrefab;
 
     private GeoJsonReader geoJsonReader;
 
-    public bool changed { get; set; }
-    public RecordSet layer { get; set; }
+    public bool changed { get; set; } = false; // shows if the data is dirty and should be saved
+    public RecordSet layer { get; set; } // the layer RecordSet data
 
     private void Start()
     {
         StartCoroutine(GetEvents());
     }
 
-
-    // Start is called before the first frame update
+    /// <summary>
+    /// Loads the Layer data from the source file in the GeographyCollection data and draws the data
+    /// </summary>
+    /// <param name="layer"> A GeographyCollection</param>
+    /// <returns></returns>
     public async Task<GameObject> Init(GeographyCollection layer)
     {
         this.layer = layer;
         // get geojson data
-        AbstractMap _map = Global._map;
         inputfile = layer.Source;
         Dictionary<string, Unit> symbology = layer.Properties.Units;
 
@@ -64,7 +67,7 @@ public class LineLayer : MonoBehaviour, ILayer
             com.gisProperties = properties;
 
             //Draw the line
-            com.Draw(lines[0], symbology["default"], LinePrefab, HandlePrefab, _map);
+            com.Draw(lines[0], symbology, LinePrefab, HandlePrefab, LabelPrefab);
             //dataLine.GetComponentInChildren<TextMesh>().text = name + "," + type;
 
         };
@@ -72,32 +75,65 @@ public class LineLayer : MonoBehaviour, ILayer
         return gameObject;
     }
 
+    /// <summary>
+    /// called when an Edit Session is ended
+    /// </summary>
     public void ExitEditsession()
     {
-        Save();
+        BroadcastMessage("EditEnd", SendMessageOptions.DontRequireReceiver);
     }
 
-    public async void Save()
+    /// <summary>
+    /// called to save the data. Only saves data that is dirty
+    /// </summary>
+    public RecordSet Save()
     {
-        DatalineCylinder[] dataFeatures = gameObject.GetComponentsInChildren<DatalineCylinder>();
-        List<Feature> features = new List<Feature>();
-        foreach (DatalineCylinder dataFeature in dataFeatures)
+        if (changed)
         {
-            Vector3[] vertices = dataFeature.GetVertices();
-            List<Position> positions = new List<Position>();
-            foreach (Vector3 vertex in vertices)
+            DatalineCylinder[] dataFeatures = gameObject.GetComponentsInChildren<DatalineCylinder>();
+            List<Feature> features = new List<Feature>();
+            foreach (DatalineCylinder dataFeature in dataFeatures)
             {
-                positions.Add(Tools.Vect2Ipos(vertex) as Position);
-            }
-            List<LineString> lines = new List<LineString>();
-            lines.Add(new LineString(positions));
-            features.Add(new Feature(new MultiLineString(lines), dataFeature.gisProperties, dataFeature.gisId));
-        };
-        FeatureCollection FC = new FeatureCollection(features);
-        geoJsonReader.SetFeatureCollection(FC);
-        await geoJsonReader.Save();
+                Vector3[] vertices = dataFeature.GetVerteces();
+                List<Position> positions = new List<Position>();
+                foreach (Vector3 vertex in vertices)
+                {
+                    positions.Add(Tools.Vect2Ipos(vertex) as Position);
+                }
+                List<LineString> lines = new List<LineString>();
+                lines.Add(new LineString(positions));
+                features.Add(new Feature(new MultiLineString(lines), dataFeature.gisProperties, dataFeature.gisId));
+            };
+            FeatureCollection FC = new FeatureCollection(features);
+            geoJsonReader.SetFeatureCollection(FC);
+            geoJsonReader.Save();
+        }
+        return layer;
     }
 
+    /// <summary>
+    /// Called when a child component is translated by User action
+    /// </summary>
+    /// <param name="args">MoveArgs</param>
+    public void Translate(MoveArgs args)
+    {
+        changed = true;
+    }
+
+    /// <summary>
+    /// received when a Move Axis request is made by the user
+    /// </summary>
+    /// <param name="args">MoveArgs</param>
+    public void MoveAxis(MoveArgs args)
+    {
+        changed = true;
+    }
+
+    /// <summary>
+    /// Gets the EventManager, waiting for it to instantiate if it does not exist. Adss the listerners required :
+    /// ExitEditSession,
+    /// </summary>
+    /// <returns>EventManager</returns>
     IEnumerator GetEvents()
     {
         GameObject Map = Global.Map;
@@ -107,7 +143,7 @@ public class LineLayer : MonoBehaviour, ILayer
             eventManager = Map.GetComponent<EventManager>();
             if (eventManager == null) { new WaitForSeconds(.5f); };
         } while (eventManager == null);
-        eventManager.OnEditsessionEnd.AddListener(ExitEditsession);
+        eventManager.EditSessionEndEvent.AddListener(ExitEditsession);
         yield return eventManager;
     }
 

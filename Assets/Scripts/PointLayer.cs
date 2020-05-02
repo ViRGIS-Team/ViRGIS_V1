@@ -2,23 +2,24 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System;
-using Mapbox.Unity.Utilities;
 using Mapbox.Unity.Map;
-using Mapbox.Utils;
 using GeoJSON.Net.Geometry;
 using GeoJSON.Net.Feature;
 using System.Threading.Tasks;
 using Project;
+using UnityEngine.UI;
 
 public class PointLayer : MonoBehaviour, ILayer
 {
     // The prefab for the data points to be instantiated
-    public GameObject PointPrefab;
+    public GameObject SpherePrefab;
+    public GameObject CubePrefab;
+    public GameObject CylinderPrefab;
+    public GameObject LabelPrefab;
 
     private GeoJsonReader geoJsonReader;
 
-    public bool changed { get; set; }
+    public bool changed { get; set; } = false;
     public RecordSet layer { get; set; }
 
     private void Start()
@@ -32,10 +33,33 @@ public class PointLayer : MonoBehaviour, ILayer
         this.layer = layer;
         AbstractMap _map = Global._map;
         Dictionary<string, Unit> symbology = layer.Properties.Units;
+        GameObject PointPrefab = new GameObject();
+        float displacement = 1.0f;
+        if (symbology.ContainsKey("point") && symbology["point"].ContainsKey("Shape"))
+        {
+            Shapes shape = symbology["point"].Shape;
+            switch (shape)
+            {
+                case Shapes.Spheroid:
+                    PointPrefab = SpherePrefab;
+                    break;
+                case Shapes.Cuboid:
+                    PointPrefab = CubePrefab;
+                    break;
+                case Shapes.Cylinder:
+                    PointPrefab = CylinderPrefab;
+                    displacement = 1.5f;
+                    break;
+            }
+        } else
+        {
+            PointPrefab = SpherePrefab;
+        }
 
         geoJsonReader = new GeoJsonReader();
         await geoJsonReader.Load(layer.Source);
         FeatureCollection myFC = geoJsonReader.getFeatureCollection();
+        int id = 0;
 
         foreach (Feature feature in myFC.Features)
         {
@@ -69,25 +93,31 @@ public class PointLayer : MonoBehaviour, ILayer
                 DatapointSphere com = dataPoint.GetComponent<DatapointSphere>();
                 com.gisId = gisId;
                 com.gisProperties = properties;
-
-                //Set the label
-                GameObject labelObject = new GameObject();
-                labelObject.transform.parent = dataPoint.transform;
-                labelObject.transform.localRotation = Quaternion.Euler(0, 180, 0);
-                TextMesh labelMesh = labelObject.AddComponent(typeof(TextMesh)) as TextMesh;
-
-                if (symbology.ContainsKey("default") && symbology["default"].ContainsKey("Label") && symbology["default"].Label != null && properties.ContainsKey(symbology["default"].Label))
-                {
-                    labelMesh.text = (string)properties[symbology["default"].Label];
-                }
-
+                com.SetId(id);
 
                 //Set the symbology
-                dataPoint.SendMessage("SetColor", (Color)symbology["default"].Color);
-                dataPoint.transform.localScale = symbology["default"].Transform.Scale;
-                dataPoint.transform.localRotation = symbology["default"].Transform.Rotate;
-                dataPoint.transform.localPosition = symbology["default"].Transform.Position;
-                dataPoint.transform.position = position;
+                if (symbology.ContainsKey("point"))
+                {
+                    dataPoint.SendMessage("SetColor", (Color)symbology["point"].Color);
+                    dataPoint.transform.localScale = symbology["point"].Transform.Scale;
+                    dataPoint.transform.localRotation = symbology["point"].Transform.Rotate;
+                    dataPoint.transform.localPosition = symbology["point"].Transform.Position;
+                    dataPoint.transform.position = position;
+                }
+
+                //Set the label
+                GameObject labelObject = Instantiate(LabelPrefab, Vector3.zero, Quaternion.identity);
+                labelObject.transform.parent = dataPoint.transform;
+                labelObject.transform.localPosition = Vector3.up * displacement;
+                Text labelText = labelObject.GetComponentInChildren<Text>();
+
+                if (symbology.ContainsKey("point") && symbology["point"].ContainsKey("Label") && symbology["point"].Label != null && properties.ContainsKey(symbology["point"].Label))
+                {
+                    labelText.text = (string)properties[symbology["point"].Label];
+                }
+
+                id++;
+
             }
         };
         changed = false;
@@ -96,23 +126,40 @@ public class PointLayer : MonoBehaviour, ILayer
 
     public void ExitEditsession()
     {
-        Save();
+        BroadcastMessage("EditEnd", SendMessageOptions.DontRequireReceiver);
     }
 
-    public async void Save()
+    public RecordSet Save()
     {
-        DatapointSphere[] pointFuncs = gameObject.GetComponentsInChildren<DatapointSphere>();
-        List<Feature> features = new List<Feature>();
-        foreach (DatapointSphere pointFunc in pointFuncs)
+        if (changed)
         {
-            features.Add(new Feature(new Point(Tools.Vect2Ipos(pointFunc.gameObject.transform.position)), pointFunc.gisProperties, pointFunc.gisId));
+            DatapointSphere[] pointFuncs = gameObject.GetComponentsInChildren<DatapointSphere>();
+            List<Feature> features = new List<Feature>();
+            foreach (DatapointSphere pointFunc in pointFuncs)
+            {
+                features.Add(new Feature(new Point(Tools.Vect2Ipos(pointFunc.gameObject.transform.position)), pointFunc.gisProperties, pointFunc.gisId));
+            }
+            FeatureCollection FC = new FeatureCollection(features);
+            geoJsonReader.SetFeatureCollection(FC);
+            geoJsonReader.Save();
         }
-        FeatureCollection FC = new FeatureCollection(features);
-        geoJsonReader.SetFeatureCollection(FC);
-        await geoJsonReader.Save();
-
+        return layer;
     }
 
+    /// <summary>
+    /// Called when a child component is translated by User action
+    /// </summary>
+    /// <param name="args">MoveArgs</param>
+    public void Translate(MoveArgs args)
+    {
+        gameObject.BroadcastMessage("TranslateHandle", args, SendMessageOptions.DontRequireReceiver);
+        changed = true;
+    }
+
+    /// <summary>
+    /// Get the Eventmanager and set up the event listerners
+    /// </summary>
+    /// <returns></returns>
     IEnumerator GetEvents()
     {
         GameObject Map = Global.Map;
@@ -122,7 +169,7 @@ public class PointLayer : MonoBehaviour, ILayer
             eventManager = Map.GetComponent<EventManager>();
             if (eventManager == null) { new WaitForSeconds(.5f); };
         } while (eventManager == null);
-        eventManager.OnEditsessionEnd.AddListener(ExitEditsession);
+        eventManager.EditSessionEndEvent.AddListener(ExitEditsession);
         yield return eventManager;
     }
 
