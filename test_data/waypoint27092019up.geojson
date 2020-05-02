@@ -1,0 +1,155 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.3812453748739564,
+          51.298015594451144,
+          0.44174526964129018
+        ]
+      },
+      "properties": {
+        "name": "0001",
+        "type": "timber"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.3806819915418247,
+          51.30501937865904,
+          0.00023832321071533434
+        ]
+      },
+      "properties": {
+        "name": "0002",
+        "type": "metal post"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.3804680108563443,
+          51.305141448787374,
+          0.00023832321071533434
+        ]
+      },
+      "properties": {
+        "name": "0003",
+        "type": "metal post"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.377867817898182,
+          51.305564880916812,
+          0.00023832321071533434
+        ]
+      },
+      "properties": {
+        "name": "0004",
+        "type": "HO point 13834"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.3787219524668797,
+          51.308280945082849,
+          0.00023832321071533434
+        ]
+      },
+      "properties": {
+        "name": "0005",
+        "type": "metal post"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.379679322221401,
+          51.304405212802315,
+          0.00023832321071533434
+        ]
+      },
+      "properties": {
+        "name": "0007",
+        "type": "object in net"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.3786300246958467,
+          51.300493802017655,
+          17.067456247429089
+        ]
+      },
+      "properties": {
+        "name": "0008",
+        "type": "wood post"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.377171026587146,
+          51.299254811011764,
+          24.135587998232594
+        ]
+      },
+      "properties": {
+        "name": "0009",
+        "type": "sb0012"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.3777373154523229,
+          51.299193174589909,
+          1.4041623629462663
+        ]
+      },
+      "properties": {
+        "name": "0010",
+        "type": "sb0012"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.3809230329883206,
+          51.30487060521903,
+          0.00023832321071533434
+        ]
+      },
+      "properties": {
+        "name": "0011",
+        "type": "metal post"
+      }
+    }
+  ]
+}
