@@ -17,8 +17,8 @@ namespace OVRTouchSample
     [RequireComponent(typeof(OVRGrabber))]
     public class Hand : MonoBehaviour
     {
-        public const string ANIM_LAYER_NAME_POINT = "Point Layer";
-        public const string ANIM_LAYER_NAME_THUMB = "Thumb Layer";
+        public const string ANIM_LAYER_NAME_POINT = "Point ILayer";
+        public const string ANIM_LAYER_NAME_THUMB = "Thumb ILayer";
         public const string ANIM_PARAM_NAME_FLEX = "Flex";
         public const string ANIM_PARAM_NAME_POSE = "Pose";
         public const float THRESH_COLLISION_FLEX = 0.9f;

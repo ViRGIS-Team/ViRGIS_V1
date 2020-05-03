@@ -55,7 +55,7 @@ namespace Mapbox.Unity.MeshGeneration.Interfaces
 			if (item.spawnPrefabOptions.prefab == null)
 			{
 				item.spawnPrefabOptions.prefab = Resources.Load<GameObject>("MapboxPin");
-				Debug.LogWarning("No prefab assigned for POI Layer - " + layerName + " , using default prefab! You may want to assign a custom prefab.");
+				Debug.LogWarning("No prefab assigned for POI ILayer - " + layerName + " , using default prefab! You may want to assign a custom prefab.");
 			}
 
 			//These properties are dependent on user choices
