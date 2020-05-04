@@ -25,7 +25,7 @@
 			script = EditorGUILayout.ObjectField("Script", script, typeof(MonoScript), false) as MonoScript;
 			GUI.enabled = true;
 
-			layerId_Prop.intValue = EditorGUILayout.LayerField("Layer", layerId_Prop.intValue);
+			layerId_Prop.intValue = EditorGUILayout.LayerField("ILayer", layerId_Prop.intValue);
 
 			serializedObject.ApplyModifiedProperties();
 		}

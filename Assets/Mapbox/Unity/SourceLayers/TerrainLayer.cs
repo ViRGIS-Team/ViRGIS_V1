@@ -13,9 +13,9 @@ namespace Mapbox.Unity.Map
 	public class TerrainLayer : AbstractLayer, ITerrainLayer, IGlobeTerrainLayer
 	{
 		[SerializeField]
-		[NodeEditorElement("Terrain Layer")]
+		[NodeEditorElement("Terrain ILayer")]
 		ElevationLayerProperties _layerProperty = new ElevationLayerProperties();
-		[NodeEditorElement("Terrain Layer")]
+		[NodeEditorElement("Terrain ILayer")]
 		public ElevationLayerProperties LayerProperty
 		{
 			get
