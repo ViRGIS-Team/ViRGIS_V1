@@ -22,7 +22,7 @@ namespace Mapbox.Unity.Map
 		public EventHandler SubLayerRemoved;
 
 		//Properties
-		[NodeEditorElement(" Vector Layer ")]
+		[NodeEditorElement(" Vector ILayer ")]
 		public VectorLayerProperties LayerProperty
 		{
 			get

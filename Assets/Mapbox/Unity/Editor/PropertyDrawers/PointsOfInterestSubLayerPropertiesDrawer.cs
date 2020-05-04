@@ -113,7 +113,7 @@ namespace Mapbox.Unity.Map
 			GUILayout.Space(EditorGUIUtility.singleLineHeight);
 			EditorGUILayout.BeginHorizontal();
 
-			if (GUILayout.Button(new GUIContent("Add Layer"), (GUIStyle)"minibuttonleft"))
+			if (GUILayout.Button(new GUIContent("Add ILayer"), (GUIStyle)"minibuttonleft"))
 			{
 				prefabItemArray.arraySize++;
 
