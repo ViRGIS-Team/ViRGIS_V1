@@ -291,15 +291,15 @@
 	public enum MapFeatureType
 	{
 #if !ENABLE_WINMD_SUPPORT
-		[Description("Building Layer.")]
+		[Description("Building ILayer.")]
 #endif
 		Building,
 #if !ENABLE_WINMD_SUPPORT
-		[Description("Road Layer.")]
+		[Description("Road ILayer.")]
 #endif
 		Road,
 #if !ENABLE_WINMD_SUPPORT
-		[Description("Parkland Layer.")]
+		[Description("Parkland ILayer.")]
 #endif
 		Parkland,
 	};
