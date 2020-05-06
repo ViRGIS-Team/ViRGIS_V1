@@ -53,6 +53,7 @@
         }
       },
       "id": "001",
+      "display-name": "SB Points",
       "type": "GeographyCollection",
       "datatype": "Point",
       "source": "test_data/waypoint27092019up.geojson",
@@ -70,7 +71,7 @@
               0.0,
               1.0
             ],
-            "shape": "Spheroid",
+            "shape": "Cylinder",
             "transform": {
               "translate": [
                 0.0,
@@ -86,7 +87,7 @@
               "scale": [
                 3.0,
                 3.0,
-                3.0
+                1.0
               ]
             },
             "label": "name"
@@ -98,7 +99,7 @@
               0.0,
               1.0
             ],
-            "shape": "Cuboid",
+            "shape": "Spheroid",
             "transform": {
               "translate": [
                 0.0,
@@ -122,6 +123,7 @@
         }
       },
       "id": "002",
+      "display-name": null,
       "type": "GeographyCollection",
       "datatype": "Line",
       "source": "test_data/lines.geojson",
@@ -139,7 +141,7 @@
               128.0,
               1.0
             ],
-            "shape": "Spheroid",
+            "shape": "Cuboid",
             "transform": {
               "translate": [
                 0.0,
@@ -219,6 +221,7 @@
         }
       },
       "id": "003",
+      "display-name": null,
       "type": "GeographyCollection",
       "datatype": "Polygon",
       "source": "test_data/polys.geojson",
@@ -288,6 +291,7 @@
         }
       },
       "id": "004",
+      "display-name": null,
       "type": "GeographyCollection",
       "datatype": "PointCloud",
       "source": "test_data/test.ply",
@@ -381,6 +385,7 @@
         }
       },
       "id": "005",
+      "display-name": null,
       "type": "GeographyCollection",
       "datatype": "Mesh",
       "source": "test_data/test2.obj",
