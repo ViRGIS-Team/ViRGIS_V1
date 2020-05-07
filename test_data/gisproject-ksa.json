@@ -15,7 +15,7 @@
     {
       "properties": {
         "units": {
-          "default": {
+          "point": {
             "color": [
               0.0,
               0.0,
@@ -48,14 +48,14 @@
       "id": "001",
       "type": "GeographyCollection",
       "datatype": "Point",
-      "source": "GIS Test Data/survey_ch.geojson",
+      "source": "test_data/survey_ch.geojson",
       "features": null,
       "position": null,
       "transform": null
     },{
       "properties": {
         "units": {
-          "default": {
+          "point": {
             "color": [
               0.0,
               255.0,
@@ -88,7 +88,7 @@
       "id": "002",
       "type": "GeographyCollection",
       "datatype": "Point",
-      "source": "GIS Test Data/collars_aug_2015.geojson",
+      "source": "test_data/collars_aug_2015.geojson",
       "features": null,
       "position": null,
       "transform": null
@@ -96,7 +96,7 @@
     {
       "properties": {
         "units": {
-          "default": {
+          "point": {
             "color": [
               255.0,
               0.0,
@@ -120,16 +120,43 @@
                 5.0,
                 5.0
               ]
+              },"Label": null,
+              "shape": "Spheroid"
+            },
+            "line": {
+            "color": [
+              255.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "transform": {
+              "translate": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotate": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "scale": [
+                5.0,
+                5.0,
+                0.1
+              ]
             },
             "Label": null,
-            "shape": "Spheroid"
+            "shape": "Cuboid"
           }
         }
       },
       "id": "003",
       "type": "GeographyCollection",
       "datatype": "Line",
-      "source": "GIS Test Data/profiles_new_model_lines.geojson",
+      "source": "test_data/profiles_new_model_lines.geojson",
       "features": null,
       "position": null,
       "transform": null
@@ -137,7 +164,7 @@
     {
       "properties": {
         "units": {
-          "default": {
+          "point": {
             "color": [
               0.0,
               255.0,
@@ -170,7 +197,7 @@
       "id": "005",
       "type": "GeographyCollection",
       "datatype": "Point",
-      "source": "GIS Test Data/ct_srt_madinah2.geojson",
+      "source": "test_data/ct_srt_madinah2.geojson",
       "features": null,
       "position": null,
       "transform": null
@@ -178,6 +205,34 @@
     {
       "properties": {
         "units": {
+          "point": {
+            "color": [
+              0.0,
+              255.0,
+              255.0,
+              1.0
+            ],
+            "transform": {
+              "translate": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotate": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "scale": [
+                0.1,
+                0.1,
+                0.1
+              ]
+            },
+            "Label": null,
+            "shape": "Cuboid"
+          },
           "line": {
             "color": [
               0.0,
@@ -204,7 +259,7 @@
               ]
             },
             "Label": null,
-            "shape": "Spheroid"
+            "shape": "Cuboid"
           },
           "body": {
             "color": [
@@ -232,14 +287,14 @@
               ]
             },
             "Label": "name",
-            "shape": "Spheroid"
+            "shape": "Cuboid"
           }
         }
       },
       "id": "006",
       "type": "GeographyCollection",
       "datatype": "Polygon",
-      "source": "GIS Test Data/comples-1.entities.geojson",
+      "source": "test_data/comples-1.entities.geojson",
       "features": null,
       "position": null,
       "transform": null
@@ -247,6 +302,34 @@
     {
       "properties": {
         "units": {
+          "point": {
+            "color": [
+              0.0,
+              255.0,
+              255.0,
+              1.0
+            ],
+            "transform": {
+              "translate": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotate": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "Label": "ID",
+            "shape": "Spheroid"
+          },
           "line": {
             "color": [
               0.0,
@@ -308,7 +391,7 @@
       "id": "006",
       "type": "GeographyCollection",
       "datatype": "Polygon",
-      "source": "GIS Test Data/xsect_polys.geojson",
+      "source": "test_data/xsect_polys.geojson",
       "features": null,
       "position": null,
       "transform": null
