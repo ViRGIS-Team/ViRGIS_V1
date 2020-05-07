@@ -5,6 +5,7 @@
     "coordinates": [39.616389058180772, 24.469771590744383 ]
   },
   "mapscale": 15,
+  "grid-scale": 0.0,
   "cameras": [
     {
       "type": "Point",
