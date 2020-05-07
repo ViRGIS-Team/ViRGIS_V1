@@ -8,6 +8,7 @@
     ]
   },
   "mapscale": 15,
+  "grid-scale": 0.0,
   "cameras": [
     {
       "type": "Point",
