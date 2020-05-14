@@ -19,7 +19,7 @@
 			{
 				EditorGUI.indentLevel++;
 				var layerId = property.FindPropertyRelative("layerId");
-				layerId.intValue = EditorGUILayout.LayerField("Layer", layerId.intValue);
+				layerId.intValue = EditorGUILayout.LayerField("ILayer", layerId.intValue);
 				EditorGUI.indentLevel--;
 			}
 

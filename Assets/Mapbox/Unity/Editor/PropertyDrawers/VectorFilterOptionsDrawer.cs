@@ -227,7 +227,7 @@
 				_propertyNameContent[0] = new GUIContent
 				{
 					text = _propertyNamesList[0],
-					tooltip = "Unavialable in Selected Layer"
+					tooltip = "Unavialable in Selected ILayer"
 				};
 
 				for (int extIdx = 1; extIdx < _propertyNamesList.Count; extIdx++)
@@ -250,7 +250,7 @@
 
 				//set new string values based on the offset
 				parsedString = _propertyNamesList[_propertyIndex].Split(new string[] { tileJsonData.optionalPropertiesString }, System.StringSplitOptions.None)[0].Trim();
-				descriptionString = "Unavailable in Selected Layer.";
+				descriptionString = "Unavailable in Selected ILayer.";
 
 			}
 			EditorGUI.BeginChangeCheck();
