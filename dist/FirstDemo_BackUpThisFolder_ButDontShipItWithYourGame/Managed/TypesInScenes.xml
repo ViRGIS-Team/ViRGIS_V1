@@ -54,15 +54,6 @@
 		<type fullname="UnityEngine.LightProbes" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="Assembly-CSharp">
-		<type fullname="AppState" preserve="nothing"/>
-		<type fullname="CylinderLine" preserve="nothing"/>
-		<type fullname="DatalineCylinder" preserve="nothing"/>
-		<type fullname="DatapointSphere" preserve="nothing"/>
-		<type fullname="Datapolygon" preserve="nothing"/>
-		<type fullname="EditModeUI" preserve="nothing"/>
-		<type fullname="FlyingCam" preserve="nothing"/>
-		<type fullname="LineLayer" preserve="nothing"/>
-		<type fullname="MapInitialize" preserve="nothing"/>
 		<type fullname="Mapbox.Unity.Map.AbstractMap" preserve="nothing"/>
 		<type fullname="Mapbox.Unity.Map.MapVisualizer" preserve="nothing"/>
 		<type fullname="Mapbox.Unity.MeshGeneration.Data.AtlasInfo" preserve="nothing"/>
@@ -70,16 +61,27 @@
 		<type fullname="Mapbox.Unity.Utilities.DebugTools.SceneData" preserve="nothing"/>
 		<type fullname="Mapbox.Unity.Utilities.DebugTools.ScenesList" preserve="nothing"/>
 		<type fullname="Mapbox.Unity.Utilities.Runnable" preserve="nothing"/>
-		<type fullname="MenuFacade" preserve="nothing"/>
-		<type fullname="MeshLayer" preserve="nothing"/>
 		<type fullname="ONSPSettings" preserve="nothing"/>
 		<type fullname="Oculus.Platform.PlatformSettings" preserve="nothing"/>
-		<type fullname="PointCloudLayer" preserve="nothing"/>
-		<type fullname="PointLayer" preserve="nothing"/>
 		<type fullname="PointerInteractor" preserve="nothing"/>
-		<type fullname="PolygonLayer" preserve="nothing"/>
 		<type fullname="QuitButton" preserve="nothing"/>
 		<type fullname="ScriptablePalette" preserve="nothing"/>
+		<type fullname="Virgis.AppState" preserve="nothing"/>
+		<type fullname="Virgis.Dataline" preserve="nothing"/>
+		<type fullname="Virgis.Datapoint" preserve="nothing"/>
+		<type fullname="Virgis.Datapolygon" preserve="nothing"/>
+		<type fullname="Virgis.EditModeUI" preserve="nothing"/>
+		<type fullname="Virgis.FlyingCam" preserve="nothing"/>
+		<type fullname="Virgis.LayerUIPanel" preserve="nothing"/>
+		<type fullname="Virgis.LayersUI" preserve="nothing"/>
+		<type fullname="Virgis.LineLayer" preserve="nothing"/>
+		<type fullname="Virgis.LineSegment" preserve="nothing"/>
+		<type fullname="Virgis.MapInitialize" preserve="nothing"/>
+		<type fullname="Virgis.MenuFacade" preserve="nothing"/>
+		<type fullname="Virgis.MeshLayer" preserve="nothing"/>
+		<type fullname="Virgis.PointCloudLayer" preserve="nothing"/>
+		<type fullname="Virgis.PointLayer" preserve="nothing"/>
+		<type fullname="Virgis.PolygonLayer" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="Oculus.VR">
 		<type fullname="OVRCameraRig" preserve="nothing"/>
@@ -162,7 +164,6 @@
 		<type fullname="UnityEngine.UI.Slider" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.Text" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.Toggle" preserve="nothing"/>
-		<type fullname="UnityEngine.UI.ToggleGroup" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.VerticalLayoutGroup" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="VRTK.Prefabs.Runtime">

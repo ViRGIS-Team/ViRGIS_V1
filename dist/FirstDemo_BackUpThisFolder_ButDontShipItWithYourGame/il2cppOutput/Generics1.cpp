@@ -2226,6 +2226,24 @@ public:
 };
 
 
+// Project.Serializable
+struct  Serializable_tCA7104D27F77C084DE2457F19B856A9DFCF38E11  : public RuntimeObject
+{
+public:
+	// System.Single Project.Serializable::magnitude
+	float ___magnitude_0;
+
+public:
+	inline static int32_t get_offset_of_magnitude_0() { return static_cast<int32_t>(offsetof(Serializable_tCA7104D27F77C084DE2457F19B856A9DFCF38E11, ___magnitude_0)); }
+	inline float get_magnitude_0() const { return ___magnitude_0; }
+	inline float* get_address_of_magnitude_0() { return &___magnitude_0; }
+	inline void set_magnitude_0(float value)
+	{
+		___magnitude_0 = value;
+	}
+};
+
+
 // Project.VectorConverter`1_<>c<System.Object>
 struct  U3CU3Ec_t755180AA56C6FF75E62184362DA1F6AEB6DE9731  : public RuntimeObject
 {
@@ -2503,24 +2521,6 @@ public:
 	{
 		___U3CValueU3Ek__BackingField_1 = value;
 		Il2CppCodeGenWriteBarrier((void**)(&___U3CValueU3Ek__BackingField_1), (void*)value);
-	}
-};
-
-
-// Serializable
-struct  Serializable_t97CC9311D7963A637FE1C398E6B589E0EFF1D5F2  : public RuntimeObject
-{
-public:
-	// System.Single Serializable::magnitude
-	float ___magnitude_0;
-
-public:
-	inline static int32_t get_offset_of_magnitude_0() { return static_cast<int32_t>(offsetof(Serializable_t97CC9311D7963A637FE1C398E6B589E0EFF1D5F2, ___magnitude_0)); }
-	inline float get_magnitude_0() const { return ___magnitude_0; }
-	inline float* get_address_of_magnitude_0() { return &___magnitude_0; }
-	inline void set_magnitude_0(float value)
-	{
-		___magnitude_0 = value;
 	}
 };
 
@@ -18781,8 +18781,8 @@ IL_0037:
 		// result.Update(values);
 		RuntimeObject * L_14 = (RuntimeObject *)L_13;
 		RuntimeObject* L_15 = V_1;
-		NullCheck((Serializable_t97CC9311D7963A637FE1C398E6B589E0EFF1D5F2 *)L_14);
-		VirtActionInvoker1< RuntimeObject* >::Invoke(4 /* System.Void Serializable::Update(System.Collections.Generic.IList`1<System.Single>) */, (Serializable_t97CC9311D7963A637FE1C398E6B589E0EFF1D5F2 *)L_14, (RuntimeObject*)L_15);
+		NullCheck((Serializable_tCA7104D27F77C084DE2457F19B856A9DFCF38E11 *)L_14);
+		VirtActionInvoker1< RuntimeObject* >::Invoke(4 /* System.Void Project.Serializable::Update(System.Collections.Generic.IList`1<System.Single>) */, (Serializable_tCA7104D27F77C084DE2457F19B856A9DFCF38E11 *)L_14, (RuntimeObject*)L_15);
 		// return result;
 		return L_14;
 	}
@@ -18813,8 +18813,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VectorConverter_1_WriteJson_m9A651A8BFC9
 		JsonSerializer_t67B6F5FBF7B4F43E052AA91A230BA42D5B191F5B * L_1 = ___serializer2;
 		JsonWriter_t3309E202A89BBF519894E51C28432C2A17428707 * L_2 = ___writer0;
 		RuntimeObject * L_3 = V_0;
-		NullCheck((Serializable_t97CC9311D7963A637FE1C398E6B589E0EFF1D5F2 *)L_3);
-		SingleU5BU5D_tA7139B7CAA40EAEF9178E2C386C8A5993754FDD5* L_4 = VirtFuncInvoker0< SingleU5BU5D_tA7139B7CAA40EAEF9178E2C386C8A5993754FDD5* >::Invoke(5 /* System.Single[] Serializable::ToArray() */, (Serializable_t97CC9311D7963A637FE1C398E6B589E0EFF1D5F2 *)L_3);
+		NullCheck((Serializable_tCA7104D27F77C084DE2457F19B856A9DFCF38E11 *)L_3);
+		SingleU5BU5D_tA7139B7CAA40EAEF9178E2C386C8A5993754FDD5* L_4 = VirtFuncInvoker0< SingleU5BU5D_tA7139B7CAA40EAEF9178E2C386C8A5993754FDD5* >::Invoke(5 /* System.Single[] Project.Serializable::ToArray() */, (Serializable_tCA7104D27F77C084DE2457F19B856A9DFCF38E11 *)L_3);
 		NullCheck((JsonSerializer_t67B6F5FBF7B4F43E052AA91A230BA42D5B191F5B *)L_1);
 		JsonSerializer_Serialize_m4D67925906BBB7B57B032021F0E27854800C7660((JsonSerializer_t67B6F5FBF7B4F43E052AA91A230BA42D5B191F5B *)L_1, (JsonWriter_t3309E202A89BBF519894E51C28432C2A17428707 *)L_2, (RuntimeObject *)(RuntimeObject *)L_4, /*hidden argument*/NULL);
 		// }

@@ -659,7 +659,6 @@ IL2CPP_EXTERN_C const uint32_t Vector3_MoveTowards_mA288BB5AA73DDA9CA76EDC11F339
 IL2CPP_EXTERN_C const uint32_t Vector3_Normalize_m174460238EC6322B9095A378AA8624B1DD9000F3_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Vector3_Normalize_mDEA51D0C131125535DA2B49B7281E0086ED583DC_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Vector3_ProjectOnPlane_mAF89645654808BBD9754610879F94A2B3323D206_MetadataUsageId;
-IL2CPP_EXTERN_C const uint32_t Vector3_RotateTowards_mCFE3892359507367FBE13E7A2DBE54E7EC2F2BDC_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Vector3_SignedAngle_m1EE7C67FC8F7497353EBDE007D3ED35774C82E4C_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Vector3_Slerp_mA40C2A3E6504A1F9D9BB238F3E238ADE997D1107_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Vector3_SmoothDamp_m2E19F3BA40A4ECAA3AB9FDA17F79683C273B7121_MetadataUsageId;
@@ -7391,8 +7390,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Vector2Int_GetHashCode_m73E874F4E94DF
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Vector2Int_ToString_mB0D67C1885311767BA89D4C4A6E3A5A515194BF3 (Vector2Int_t339DA203C037FA6BCFC926C36DC2194D52D5F905 * __this, const RuntimeMethod* method);
 // System.Void UnityEngine.Vector3::Slerp_Injected(UnityEngine.Vector3&,UnityEngine.Vector3&,System.Single,UnityEngine.Vector3&)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Vector3_Slerp_Injected_m5C49C81E31F613DAC2184408581CDCE34521BB7F (Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 * ___a0, Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 * ___b1, float ___t2, Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 * ___ret3, const RuntimeMethod* method);
-// System.Void UnityEngine.Vector3::RotateTowards_Injected(UnityEngine.Vector3&,UnityEngine.Vector3&,System.Single,System.Single,UnityEngine.Vector3&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Vector3_RotateTowards_Injected_mDDC30443F55C10253B597669B21B6F2C28CBE514 (Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 * ___current0, Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 * ___target1, float ___maxRadiansDelta2, float ___maxMagnitudeDelta3, Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 * ___ret4, const RuntimeMethod* method);
 // System.Single UnityEngine.Mathf::Clamp01(System.Single)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Mathf_Clamp01_m1E5F736941A7E6DC4DBCA88A1E38FE9FBFE0C42B (float ___value0, const RuntimeMethod* method);
 // System.Single UnityEngine.Time::get_deltaTime()
@@ -13471,26 +13468,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E
 		return L_1;
 	}
 }
-// UnityEngine.Vector3 UnityEngine.Vector3::RotateTowards(UnityEngine.Vector3,UnityEngine.Vector3,System.Single,System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  Vector3_RotateTowards_mCFE3892359507367FBE13E7A2DBE54E7EC2F2BDC (Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___current0, Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___target1, float ___maxRadiansDelta2, float ___maxMagnitudeDelta3, const RuntimeMethod* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (Vector3_RotateTowards_mCFE3892359507367FBE13E7A2DBE54E7EC2F2BDC_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  V_0;
-	memset((&V_0), 0, sizeof(V_0));
-	{
-		float L_0 = ___maxRadiansDelta2;
-		float L_1 = ___maxMagnitudeDelta3;
-		IL2CPP_RUNTIME_CLASS_INIT(Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720_il2cpp_TypeInfo_var);
-		Vector3_RotateTowards_Injected_mDDC30443F55C10253B597669B21B6F2C28CBE514((Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 *)(&___current0), (Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 *)(&___target1), L_0, L_1, (Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 *)(&V_0), /*hidden argument*/NULL);
-		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_2 = V_0;
-		return L_2;
-	}
-}
 // UnityEngine.Vector3 UnityEngine.Vector3::Lerp(UnityEngine.Vector3,UnityEngine.Vector3,System.Single)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  Vector3_Lerp_m5BA75496B803820CC64079383956D73C6FD4A8A1 (Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___a0, Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___b1, float ___t2, const RuntimeMethod* method)
 {
@@ -15606,15 +15583,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Vector3_Slerp_Injected_m5C49C81E31F613DA
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (Vector3_Slerp_Injected_m5C49C81E31F613DAC2184408581CDCE34521BB7F_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Vector3::Slerp_Injected(UnityEngine.Vector3&,UnityEngine.Vector3&,System.Single,UnityEngine.Vector3&)");
 	_il2cpp_icall_func(___a0, ___b1, ___t2, ___ret3);
-}
-// System.Void UnityEngine.Vector3::RotateTowards_Injected(UnityEngine.Vector3&,UnityEngine.Vector3&,System.Single,System.Single,UnityEngine.Vector3&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Vector3_RotateTowards_Injected_mDDC30443F55C10253B597669B21B6F2C28CBE514 (Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 * ___current0, Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 * ___target1, float ___maxRadiansDelta2, float ___maxMagnitudeDelta3, Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 * ___ret4, const RuntimeMethod* method)
-{
-	typedef void (*Vector3_RotateTowards_Injected_mDDC30443F55C10253B597669B21B6F2C28CBE514_ftn) (Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 *, Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 *, float, float, Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 *);
-	static Vector3_RotateTowards_Injected_mDDC30443F55C10253B597669B21B6F2C28CBE514_ftn _il2cpp_icall_func;
-	if (!_il2cpp_icall_func)
-	_il2cpp_icall_func = (Vector3_RotateTowards_Injected_mDDC30443F55C10253B597669B21B6F2C28CBE514_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Vector3::RotateTowards_Injected(UnityEngine.Vector3&,UnityEngine.Vector3&,System.Single,System.Single,UnityEngine.Vector3&)");
-	_il2cpp_icall_func(___current0, ___target1, ___maxRadiansDelta2, ___maxMagnitudeDelta3, ___ret4);
 }
 #ifdef __clang__
 #pragma clang diagnostic pop

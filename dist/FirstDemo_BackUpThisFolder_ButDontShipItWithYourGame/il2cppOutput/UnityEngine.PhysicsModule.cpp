@@ -1697,6 +1697,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PhysicsScene_SphereCast_mCEDD4DF50C33
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Physics_CheckCapsule_Internal_Injected_m5ECBC4A33BD5E1AF817608CC12C95C9F54194C48 (PhysicsScene_tC24001806A99648F6EFD4D63957D47D8AB1668F5 * ___physicsScene0, Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 * ___start1, Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 * ___end2, float ___radius3, int32_t ___layerMask4, int32_t ___queryTriggerInteraction5, const RuntimeMethod* method);
 // System.Boolean UnityEngine.Physics::CheckCapsule_Internal(UnityEngine.PhysicsScene,UnityEngine.Vector3,UnityEngine.Vector3,System.Single,System.Int32,UnityEngine.QueryTriggerInteraction)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Physics_CheckCapsule_Internal_m1AFFD5C02FCB67563366F767389627F220AB01A0 (PhysicsScene_tC24001806A99648F6EFD4D63957D47D8AB1668F5  ___physicsScene0, Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___start1, Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___end2, float ___radius3, int32_t ___layerMask4, int32_t ___queryTriggerInteraction5, const RuntimeMethod* method);
+// UnityEngine.Collider[] UnityEngine.Physics::OverlapBox_Internal_Injected(UnityEngine.PhysicsScene&,UnityEngine.Vector3&,UnityEngine.Vector3&,UnityEngine.Quaternion&,System.Int32,UnityEngine.QueryTriggerInteraction)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ColliderU5BU5D_t70D1FDAE17E4359298B2BAA828048D1B7CFFE252* Physics_OverlapBox_Internal_Injected_mFA173D8DA3A0B52A01D873B8CBE1819A49E78581 (PhysicsScene_tC24001806A99648F6EFD4D63957D47D8AB1668F5 * ___physicsScene0, Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 * ___center1, Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 * ___halfExtents2, Quaternion_t319F3319A7D43FFA5D819AD6C0A98851F0095357 * ___orientation3, int32_t ___layerMask4, int32_t ___queryTriggerInteraction5, const RuntimeMethod* method);
+// UnityEngine.Collider[] UnityEngine.Physics::OverlapBox_Internal(UnityEngine.PhysicsScene,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Quaternion,System.Int32,UnityEngine.QueryTriggerInteraction)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ColliderU5BU5D_t70D1FDAE17E4359298B2BAA828048D1B7CFFE252* Physics_OverlapBox_Internal_m301406831105037039206DB21DD2B755D3B593EA (PhysicsScene_tC24001806A99648F6EFD4D63957D47D8AB1668F5  ___physicsScene0, Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___center1, Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___halfExtents2, Quaternion_t319F3319A7D43FFA5D819AD6C0A98851F0095357  ___orientation3, int32_t ___layerMask4, int32_t ___queryTriggerInteraction5, const RuntimeMethod* method);
+// UnityEngine.Collider[] UnityEngine.Physics::OverlapBox(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Quaternion,System.Int32,UnityEngine.QueryTriggerInteraction)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ColliderU5BU5D_t70D1FDAE17E4359298B2BAA828048D1B7CFFE252* Physics_OverlapBox_m82863956D695C1DFE38EFE501B257BFC38F3F16D (Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___center0, Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___halfExtents1, Quaternion_t319F3319A7D43FFA5D819AD6C0A98851F0095357  ___orientation2, int32_t ___layerMask3, int32_t ___queryTriggerInteraction4, const RuntimeMethod* method);
 // System.Int32 UnityEngine.PhysicsScene::OverlapBox(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Collider[],UnityEngine.Quaternion,System.Int32,UnityEngine.QueryTriggerInteraction)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PhysicsScene_OverlapBox_mB77A41C63A97A3AE291BE373202DB29294B76F17 (PhysicsScene_tC24001806A99648F6EFD4D63957D47D8AB1668F5 * __this, Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___center0, Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___halfExtents1, ColliderU5BU5D_t70D1FDAE17E4359298B2BAA828048D1B7CFFE252* ___results2, Quaternion_t319F3319A7D43FFA5D819AD6C0A98851F0095357  ___orientation3, int32_t ___layerMask4, int32_t ___queryTriggerInteraction5, const RuntimeMethod* method);
 // System.Int32 UnityEngine.Physics::OverlapBoxNonAlloc(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Collider[],UnityEngine.Quaternion,System.Int32,UnityEngine.QueryTriggerInteraction)
@@ -4075,6 +4081,57 @@ IL_0014:
 		return L_7;
 	}
 }
+// UnityEngine.Collider[] UnityEngine.Physics::OverlapBox_Internal(UnityEngine.PhysicsScene,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Quaternion,System.Int32,UnityEngine.QueryTriggerInteraction)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ColliderU5BU5D_t70D1FDAE17E4359298B2BAA828048D1B7CFFE252* Physics_OverlapBox_Internal_m301406831105037039206DB21DD2B755D3B593EA (PhysicsScene_tC24001806A99648F6EFD4D63957D47D8AB1668F5  ___physicsScene0, Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___center1, Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___halfExtents2, Quaternion_t319F3319A7D43FFA5D819AD6C0A98851F0095357  ___orientation3, int32_t ___layerMask4, int32_t ___queryTriggerInteraction5, const RuntimeMethod* method)
+{
+	{
+		int32_t L_0 = ___layerMask4;
+		int32_t L_1 = ___queryTriggerInteraction5;
+		ColliderU5BU5D_t70D1FDAE17E4359298B2BAA828048D1B7CFFE252* L_2 = Physics_OverlapBox_Internal_Injected_mFA173D8DA3A0B52A01D873B8CBE1819A49E78581((PhysicsScene_tC24001806A99648F6EFD4D63957D47D8AB1668F5 *)(&___physicsScene0), (Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 *)(&___center1), (Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 *)(&___halfExtents2), (Quaternion_t319F3319A7D43FFA5D819AD6C0A98851F0095357 *)(&___orientation3), L_0, L_1, /*hidden argument*/NULL);
+		return L_2;
+	}
+}
+// UnityEngine.Collider[] UnityEngine.Physics::OverlapBox(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Quaternion,System.Int32,UnityEngine.QueryTriggerInteraction)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ColliderU5BU5D_t70D1FDAE17E4359298B2BAA828048D1B7CFFE252* Physics_OverlapBox_m82863956D695C1DFE38EFE501B257BFC38F3F16D (Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___center0, Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___halfExtents1, Quaternion_t319F3319A7D43FFA5D819AD6C0A98851F0095357  ___orientation2, int32_t ___layerMask3, int32_t ___queryTriggerInteraction4, const RuntimeMethod* method)
+{
+	ColliderU5BU5D_t70D1FDAE17E4359298B2BAA828048D1B7CFFE252* V_0 = NULL;
+	{
+		PhysicsScene_tC24001806A99648F6EFD4D63957D47D8AB1668F5  L_0 = Physics_get_defaultPhysicsScene_mEA96CE906577479223C956BFF0B8D0B79BB47B30(/*hidden argument*/NULL);
+		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_1 = ___center0;
+		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_2 = ___halfExtents1;
+		Quaternion_t319F3319A7D43FFA5D819AD6C0A98851F0095357  L_3 = ___orientation2;
+		int32_t L_4 = ___layerMask3;
+		int32_t L_5 = ___queryTriggerInteraction4;
+		ColliderU5BU5D_t70D1FDAE17E4359298B2BAA828048D1B7CFFE252* L_6 = Physics_OverlapBox_Internal_m301406831105037039206DB21DD2B755D3B593EA(L_0, L_1, L_2, L_3, L_4, L_5, /*hidden argument*/NULL);
+		V_0 = L_6;
+		goto IL_0014;
+	}
+
+IL_0014:
+	{
+		ColliderU5BU5D_t70D1FDAE17E4359298B2BAA828048D1B7CFFE252* L_7 = V_0;
+		return L_7;
+	}
+}
+// UnityEngine.Collider[] UnityEngine.Physics::OverlapBox(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Quaternion)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ColliderU5BU5D_t70D1FDAE17E4359298B2BAA828048D1B7CFFE252* Physics_OverlapBox_m2E5A34EAF7006F28A078268D0589F75223C49CB4 (Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___center0, Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___halfExtents1, Quaternion_t319F3319A7D43FFA5D819AD6C0A98851F0095357  ___orientation2, const RuntimeMethod* method)
+{
+	ColliderU5BU5D_t70D1FDAE17E4359298B2BAA828048D1B7CFFE252* V_0 = NULL;
+	{
+		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_0 = ___center0;
+		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_1 = ___halfExtents1;
+		Quaternion_t319F3319A7D43FFA5D819AD6C0A98851F0095357  L_2 = ___orientation2;
+		ColliderU5BU5D_t70D1FDAE17E4359298B2BAA828048D1B7CFFE252* L_3 = Physics_OverlapBox_m82863956D695C1DFE38EFE501B257BFC38F3F16D(L_0, L_1, L_2, (-1), 0, /*hidden argument*/NULL);
+		V_0 = L_3;
+		goto IL_000e;
+	}
+
+IL_000e:
+	{
+		ColliderU5BU5D_t70D1FDAE17E4359298B2BAA828048D1B7CFFE252* L_4 = V_0;
+		return L_4;
+	}
+}
 // System.Int32 UnityEngine.Physics::OverlapBoxNonAlloc(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Collider[],UnityEngine.Quaternion,System.Int32,UnityEngine.QueryTriggerInteraction)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Physics_OverlapBoxNonAlloc_m9FE7BFE6CC086C554228001FE0BD2C93726B1FA0 (Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___center0, Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___halfExtents1, ColliderU5BU5D_t70D1FDAE17E4359298B2BAA828048D1B7CFFE252* ___results2, Quaternion_t319F3319A7D43FFA5D819AD6C0A98851F0095357  ___orientation3, int32_t ___mask4, int32_t ___queryTriggerInteraction5, const RuntimeMethod* method)
 {
@@ -4205,6 +4262,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Physics_CheckCapsule_Internal_Injected_m
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (Physics_CheckCapsule_Internal_Injected_m5ECBC4A33BD5E1AF817608CC12C95C9F54194C48_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Physics::CheckCapsule_Internal_Injected(UnityEngine.PhysicsScene&,UnityEngine.Vector3&,UnityEngine.Vector3&,System.Single,System.Int32,UnityEngine.QueryTriggerInteraction)");
 	bool retVal = _il2cpp_icall_func(___physicsScene0, ___start1, ___end2, ___radius3, ___layerMask4, ___queryTriggerInteraction5);
+	return retVal;
+}
+// UnityEngine.Collider[] UnityEngine.Physics::OverlapBox_Internal_Injected(UnityEngine.PhysicsScene&,UnityEngine.Vector3&,UnityEngine.Vector3&,UnityEngine.Quaternion&,System.Int32,UnityEngine.QueryTriggerInteraction)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ColliderU5BU5D_t70D1FDAE17E4359298B2BAA828048D1B7CFFE252* Physics_OverlapBox_Internal_Injected_mFA173D8DA3A0B52A01D873B8CBE1819A49E78581 (PhysicsScene_tC24001806A99648F6EFD4D63957D47D8AB1668F5 * ___physicsScene0, Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 * ___center1, Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 * ___halfExtents2, Quaternion_t319F3319A7D43FFA5D819AD6C0A98851F0095357 * ___orientation3, int32_t ___layerMask4, int32_t ___queryTriggerInteraction5, const RuntimeMethod* method)
+{
+	typedef ColliderU5BU5D_t70D1FDAE17E4359298B2BAA828048D1B7CFFE252* (*Physics_OverlapBox_Internal_Injected_mFA173D8DA3A0B52A01D873B8CBE1819A49E78581_ftn) (PhysicsScene_tC24001806A99648F6EFD4D63957D47D8AB1668F5 *, Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 *, Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 *, Quaternion_t319F3319A7D43FFA5D819AD6C0A98851F0095357 *, int32_t, int32_t);
+	static Physics_OverlapBox_Internal_Injected_mFA173D8DA3A0B52A01D873B8CBE1819A49E78581_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Physics_OverlapBox_Internal_Injected_mFA173D8DA3A0B52A01D873B8CBE1819A49E78581_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Physics::OverlapBox_Internal_Injected(UnityEngine.PhysicsScene&,UnityEngine.Vector3&,UnityEngine.Vector3&,UnityEngine.Quaternion&,System.Int32,UnityEngine.QueryTriggerInteraction)");
+	ColliderU5BU5D_t70D1FDAE17E4359298B2BAA828048D1B7CFFE252* retVal = _il2cpp_icall_func(___physicsScene0, ___center1, ___halfExtents2, ___orientation3, ___layerMask4, ___queryTriggerInteraction5);
 	return retVal;
 }
 #ifdef __clang__

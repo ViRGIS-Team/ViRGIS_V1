@@ -165,7 +165,7 @@ static const int32_t s_InvokerIndices[46] =
 	478,
 	14,
 	28,
-	2681,
+	2683,
 	182,
 	209,
 	14,
@@ -183,7 +183,7 @@ static const int32_t s_InvokerIndices[46] =
 	14,
 	26,
 	10,
-	2682,
+	2684,
 	26,
 	14,
 	26,
@@ -202,7 +202,7 @@ static const int32_t s_InvokerIndices[46] =
 	14,
 	28,
 	28,
-	2683,
+	2685,
 	3,
 	23,
 	37,
@@ -215,8 +215,8 @@ static const Il2CppTokenRangePair s_rgctxIndices[1] =
 };
 static const Il2CppRGCTXDefinition s_rgctxValues[2] = 
 {
-	{ (Il2CppRGCTXDataType)2, 51299 },
-	{ (Il2CppRGCTXDataType)3, 63494 },
+	{ (Il2CppRGCTXDataType)2, 51425 },
+	{ (Il2CppRGCTXDataType)3, 63786 },
 };
 extern const Il2CppCodeGenModule g_Mapbox_VectorTile_VectorTileReaderCodeGenModule;
 const Il2CppCodeGenModule g_Mapbox_VectorTile_VectorTileReaderCodeGenModule = 

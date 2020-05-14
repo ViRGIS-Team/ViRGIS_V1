@@ -117,24 +117,24 @@ struct Dictionary_2_t8EFC00C4F8BDBE8F7B70DFFDFEE083BD14B53BEC;
 struct EqualityComparer_1_t9918F2EC0F0844A7A97CFA33C602072D990AB562;
 // System.Collections.Generic.EqualityComparer`1<System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>>
 struct EqualityComparer_1_tA1B031EB207349E56E651D5BD38AB22654FB0A12;
-// System.Collections.Generic.EqualityComparer`1<System.Int32>
-struct EqualityComparer_1_tF7174A8BEF4C636DBBD3C6BBD234B0F315F64F33;
+// System.Collections.Generic.EqualityComparer`1<System.Guid>
+struct EqualityComparer_1_t0D118F538343D64A03149EE6C285141397B3217E;
 // System.Collections.Generic.ICollection`1<System.Object>
 struct ICollection_1_t6DFB531B62AFA3E16A8936F29107F83350147938;
 // System.Collections.Generic.IEnumerable`1<System.Char>
 struct IEnumerable_1_t7C3DC190B58F8A9DBC649E42BD2DEE6167626FEB;
 // System.Collections.Generic.IEnumerable`1<System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>>
 struct IEnumerable_1_t00C11E28587644E33CB7F154833508D63BFAC5B2;
-// System.Collections.Generic.IEnumerable`1<System.Int32>
-struct IEnumerable_1_t1AE8F03F101BA7578AF3A97EF1EBE8DB5FF31215;
+// System.Collections.Generic.IEnumerable`1<System.Guid>
+struct IEnumerable_1_tA391B94E2C32CE63405ED90F788B8AE7709709A8;
 // System.Collections.Generic.IEnumerable`1<System.Object>
 struct IEnumerable_1_t2F75FCBEC68AFE08982DA43985F9D04056E2BE73;
 // System.Collections.Generic.IEqualityComparer`1<System.Char>
 struct IEqualityComparer_1_t30A37653AE1C31A865CB24F35D1561495E7BA687;
 // System.Collections.Generic.IEqualityComparer`1<System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>>
 struct IEqualityComparer_1_tBC7545436FBA5AFA55EA7F7502B512100D4E6888;
-// System.Collections.Generic.IEqualityComparer`1<System.Int32>
-struct IEqualityComparer_1_t7B82AA0F8B96BAAA21E36DDF7A1FE4348BDDBE95;
+// System.Collections.Generic.IEqualityComparer`1<System.Guid>
+struct IEqualityComparer_1_t2AA4D20DBA302357E1F31C5F476C23E7FDE0A52C;
 // System.Collections.Generic.IList`1<System.Object>
 struct IList_1_tE09735A322C3B17000EF4E4BC8026FEDEB7B0D9B;
 // System.Collections.Generic.IReadOnlyList`1<System.Object>
@@ -1076,7 +1076,7 @@ IL2CPP_EXTERN_C const RuntimeMethod* Enumerable_All_TisRuntimeObject_m5AD55824EA
 IL2CPP_EXTERN_C const RuntimeMethod* Enumerable_Any_TisRuntimeObject_m4855AE1389C1E454FF70D74FD49D3C642E0DF458_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Enumerable_Any_TisRuntimeObject_m4B3CF18DD3DBE2A8213CC2E2E7A3D1EC86E86FC4_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Enumerable_Contains_TisChar_tBF22D9FC341BE970735250BB6FF1A4A92BBA58B9_mBE73F6A287FC48B19864BECD0A8BEFDCA89B940A_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* Enumerable_Contains_TisInt32_t585191389E07734F19F3156FF88FB3EF4800D102_m2FACBB7C776C739962DCD81D2608A37E82EF9311_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Enumerable_Contains_TisGuid_t_m4BF44AC2D24A1E10D666610CD3764F4386FB85CE_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Enumerable_Contains_TisKeyValuePair_2_t23481547E419E16E3B96A303578C1EB685C99EEE_mBD07854BA7E787C1FCF072D21BEA5977AD9F900C_RuntimeMethod_var;
 IL2CPP_EXTERN_C const uint32_t Array_InternalArray__ICollection_Contains_TisActionSource_tBDB5423E7F9BA861BCFD1D5DEF1BCDA115C77AEB_mE02592F75CE617DB3AE35CC69EF2F7135AEACCF8_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Array_InternalArray__ICollection_Contains_TisAxisAlignedBox2d_tC807E52BDA23E12337C785141476572285CD5880_m426ED71980609281255F572C66A0EE4FBF4245E2_MetadataUsageId;
@@ -1689,7 +1689,7 @@ IL2CPP_EXTERN_C const uint32_t Enumerable_All_TisRuntimeObject_m5AD55824EAE1A88D
 IL2CPP_EXTERN_C const uint32_t Enumerable_Any_TisRuntimeObject_m4855AE1389C1E454FF70D74FD49D3C642E0DF458_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Enumerable_Any_TisRuntimeObject_m4B3CF18DD3DBE2A8213CC2E2E7A3D1EC86E86FC4_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Enumerable_Contains_TisChar_tBF22D9FC341BE970735250BB6FF1A4A92BBA58B9_mBE73F6A287FC48B19864BECD0A8BEFDCA89B940A_MetadataUsageId;
-IL2CPP_EXTERN_C const uint32_t Enumerable_Contains_TisInt32_t585191389E07734F19F3156FF88FB3EF4800D102_m2FACBB7C776C739962DCD81D2608A37E82EF9311_MetadataUsageId;
+IL2CPP_EXTERN_C const uint32_t Enumerable_Contains_TisGuid_t_m4BF44AC2D24A1E10D666610CD3764F4386FB85CE_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Enumerable_Contains_TisKeyValuePair_2_t23481547E419E16E3B96A303578C1EB685C99EEE_mBD07854BA7E787C1FCF072D21BEA5977AD9F900C_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t ExpressionUtils_SameElementsInCollection_TisRuntimeObject_m685A5D0E6DC7684CE1B6DB62B13E985AED7F2142_MetadataUsageId;
 struct ActionEvent_t53CAB8B34F07E2C9898C3689A8FCFB7709AD40B2 ;
@@ -1800,25 +1800,25 @@ public:
 };
 
 
-// System.Collections.Generic.EqualityComparer`1<System.Int32>
-struct  EqualityComparer_1_tF7174A8BEF4C636DBBD3C6BBD234B0F315F64F33  : public RuntimeObject
+// System.Collections.Generic.EqualityComparer`1<System.Guid>
+struct  EqualityComparer_1_t0D118F538343D64A03149EE6C285141397B3217E  : public RuntimeObject
 {
 public:
 
 public:
 };
 
-struct EqualityComparer_1_tF7174A8BEF4C636DBBD3C6BBD234B0F315F64F33_StaticFields
+struct EqualityComparer_1_t0D118F538343D64A03149EE6C285141397B3217E_StaticFields
 {
 public:
 	// System.Collections.Generic.EqualityComparer`1<T> modreq(System.Runtime.CompilerServices.IsVolatile) System.Collections.Generic.EqualityComparer`1::defaultComparer
-	EqualityComparer_1_tF7174A8BEF4C636DBBD3C6BBD234B0F315F64F33 * ___defaultComparer_0;
+	EqualityComparer_1_t0D118F538343D64A03149EE6C285141397B3217E * ___defaultComparer_0;
 
 public:
-	inline static int32_t get_offset_of_defaultComparer_0() { return static_cast<int32_t>(offsetof(EqualityComparer_1_tF7174A8BEF4C636DBBD3C6BBD234B0F315F64F33_StaticFields, ___defaultComparer_0)); }
-	inline EqualityComparer_1_tF7174A8BEF4C636DBBD3C6BBD234B0F315F64F33 * get_defaultComparer_0() const { return ___defaultComparer_0; }
-	inline EqualityComparer_1_tF7174A8BEF4C636DBBD3C6BBD234B0F315F64F33 ** get_address_of_defaultComparer_0() { return &___defaultComparer_0; }
-	inline void set_defaultComparer_0(EqualityComparer_1_tF7174A8BEF4C636DBBD3C6BBD234B0F315F64F33 * value)
+	inline static int32_t get_offset_of_defaultComparer_0() { return static_cast<int32_t>(offsetof(EqualityComparer_1_t0D118F538343D64A03149EE6C285141397B3217E_StaticFields, ___defaultComparer_0)); }
+	inline EqualityComparer_1_t0D118F538343D64A03149EE6C285141397B3217E * get_defaultComparer_0() const { return ___defaultComparer_0; }
+	inline EqualityComparer_1_t0D118F538343D64A03149EE6C285141397B3217E ** get_address_of_defaultComparer_0() { return &___defaultComparer_0; }
+	inline void set_defaultComparer_0(EqualityComparer_1_t0D118F538343D64A03149EE6C285141397B3217E * value)
 	{
 		___defaultComparer_0 = value;
 		Il2CppCodeGenWriteBarrier((void**)(&___defaultComparer_0), (void*)value);
@@ -57457,8 +57457,8 @@ IL_004c:
 		return L_16;
 	}
 }
-// System.Boolean System.Linq.Enumerable::Contains<System.Int32>(System.Collections.Generic.IEnumerable`1<TSource>,TSource)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerable_Contains_TisInt32_t585191389E07734F19F3156FF88FB3EF4800D102_m98F7EB69012ED9F15C3E5193B46727DA6507162D_gshared (RuntimeObject* ___source0, int32_t ___value1, const RuntimeMethod* method)
+// System.Boolean System.Linq.Enumerable::Contains<System.Guid>(System.Collections.Generic.IEnumerable`1<TSource>,TSource)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerable_Contains_TisGuid_t_m02CC42D6CE8E6F1F9A0371C1031CA088C25D98AD_gshared (RuntimeObject* ___source0, Guid_t  ___value1, const RuntimeMethod* method)
 {
 	RuntimeObject* V_0 = NULL;
 	{
@@ -57472,31 +57472,32 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerable_Contains_TisInt32_t585191389E
 	}
 	{
 		RuntimeObject* L_2 = V_0;
-		int32_t L_3 = ___value1;
+		Guid_t  L_3 = ___value1;
 		NullCheck((RuntimeObject*)L_2);
-		bool L_4 = InterfaceFuncInvoker1< bool, int32_t >::Invoke(4 /* System.Boolean System.Collections.Generic.ICollection`1<System.Int32>::Contains(!0) */, IL2CPP_RGCTX_DATA(method->rgctx_data, 0), (RuntimeObject*)L_2, (int32_t)L_3);
+		bool L_4 = InterfaceFuncInvoker1< bool, Guid_t  >::Invoke(4 /* System.Boolean System.Collections.Generic.ICollection`1<System.Guid>::Contains(!0) */, IL2CPP_RGCTX_DATA(method->rgctx_data, 0), (RuntimeObject*)L_2, (Guid_t )L_3);
 		return L_4;
 	}
 
 IL_0012:
 	{
 		RuntimeObject* L_5 = ___source0;
-		int32_t L_6 = ___value1;
-		bool L_7 = ((  bool (*) (RuntimeObject*, int32_t, RuntimeObject*, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 1)->methodPointer)((RuntimeObject*)L_5, (int32_t)L_6, (RuntimeObject*)NULL, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 1));
+		Guid_t  L_6 = ___value1;
+		bool L_7 = ((  bool (*) (RuntimeObject*, Guid_t , RuntimeObject*, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 1)->methodPointer)((RuntimeObject*)L_5, (Guid_t )L_6, (RuntimeObject*)NULL, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 1));
 		return L_7;
 	}
 }
-// System.Boolean System.Linq.Enumerable::Contains<System.Int32>(System.Collections.Generic.IEnumerable`1<TSource>,TSource,System.Collections.Generic.IEqualityComparer`1<TSource>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerable_Contains_TisInt32_t585191389E07734F19F3156FF88FB3EF4800D102_m2FACBB7C776C739962DCD81D2608A37E82EF9311_gshared (RuntimeObject* ___source0, int32_t ___value1, RuntimeObject* ___comparer2, const RuntimeMethod* method)
+// System.Boolean System.Linq.Enumerable::Contains<System.Guid>(System.Collections.Generic.IEnumerable`1<TSource>,TSource,System.Collections.Generic.IEqualityComparer`1<TSource>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerable_Contains_TisGuid_t_m4BF44AC2D24A1E10D666610CD3764F4386FB85CE_gshared (RuntimeObject* ___source0, Guid_t  ___value1, RuntimeObject* ___comparer2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_method (Enumerable_Contains_TisInt32_t585191389E07734F19F3156FF88FB3EF4800D102_m2FACBB7C776C739962DCD81D2608A37E82EF9311_MetadataUsageId);
+		il2cpp_codegen_initialize_method (Enumerable_Contains_TisGuid_t_m4BF44AC2D24A1E10D666610CD3764F4386FB85CE_MetadataUsageId);
 		s_Il2CppMethodInitialized = true;
 	}
 	RuntimeObject* V_0 = NULL;
-	int32_t V_1 = 0;
+	Guid_t  V_1;
+	memset((&V_1), 0, sizeof(V_1));
 	bool V_2 = false;
 	Exception_t * __last_unhandled_exception = 0;
 	NO_UNUSED_WARNING (__last_unhandled_exception);
@@ -57513,7 +57514,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerable_Contains_TisInt32_t585191389E
 		}
 	}
 	{
-		EqualityComparer_1_tF7174A8BEF4C636DBBD3C6BBD234B0F315F64F33 * L_1 = ((  EqualityComparer_1_tF7174A8BEF4C636DBBD3C6BBD234B0F315F64F33 * (*) (const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 0)->methodPointer)(/*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 0));
+		EqualityComparer_1_t0D118F538343D64A03149EE6C285141397B3217E * L_1 = ((  EqualityComparer_1_t0D118F538343D64A03149EE6C285141397B3217E * (*) (const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 0)->methodPointer)(/*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 0));
 		___comparer2 = (RuntimeObject*)L_1;
 	}
 
@@ -57527,14 +57528,14 @@ IL_000a:
 	}
 	{
 		Exception_t * L_3 = Error_ArgumentNull_mCA126ED8F4F3B343A70E201C44B3A509690F1EA7((String_t*)_stringLiteral828D338A9B04221C9CBE286F50CD389F68DE4ECF, /*hidden argument*/NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_3, Enumerable_Contains_TisInt32_t585191389E07734F19F3156FF88FB3EF4800D102_m2FACBB7C776C739962DCD81D2608A37E82EF9311_RuntimeMethod_var);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_3, Enumerable_Contains_TisGuid_t_m4BF44AC2D24A1E10D666610CD3764F4386FB85CE_RuntimeMethod_var);
 	}
 
 IL_0018:
 	{
 		RuntimeObject* L_4 = ___source0;
 		NullCheck((RuntimeObject*)L_4);
-		RuntimeObject* L_5 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(0 /* System.Collections.Generic.IEnumerator`1<!0> System.Collections.Generic.IEnumerable`1<System.Int32>::GetEnumerator() */, IL2CPP_RGCTX_DATA(method->rgctx_data, 2), (RuntimeObject*)L_4);
+		RuntimeObject* L_5 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(0 /* System.Collections.Generic.IEnumerator`1<!0> System.Collections.Generic.IEnumerable`1<System.Guid>::GetEnumerator() */, IL2CPP_RGCTX_DATA(method->rgctx_data, 2), (RuntimeObject*)L_4);
 		V_0 = (RuntimeObject*)L_5;
 	}
 
@@ -57549,13 +57550,13 @@ IL_0021:
 		{
 			RuntimeObject* L_6 = V_0;
 			NullCheck((RuntimeObject*)L_6);
-			int32_t L_7 = InterfaceFuncInvoker0< int32_t >::Invoke(0 /* !0 System.Collections.Generic.IEnumerator`1<System.Int32>::get_Current() */, IL2CPP_RGCTX_DATA(method->rgctx_data, 3), (RuntimeObject*)L_6);
-			V_1 = (int32_t)L_7;
+			Guid_t  L_7 = InterfaceFuncInvoker0< Guid_t  >::Invoke(0 /* !0 System.Collections.Generic.IEnumerator`1<System.Guid>::get_Current() */, IL2CPP_RGCTX_DATA(method->rgctx_data, 3), (RuntimeObject*)L_6);
+			V_1 = (Guid_t )L_7;
 			RuntimeObject* L_8 = ___comparer2;
-			int32_t L_9 = V_1;
-			int32_t L_10 = ___value1;
+			Guid_t  L_9 = V_1;
+			Guid_t  L_10 = ___value1;
 			NullCheck((RuntimeObject*)L_8);
-			bool L_11 = InterfaceFuncInvoker2< bool, int32_t, int32_t >::Invoke(0 /* System.Boolean System.Collections.Generic.IEqualityComparer`1<System.Int32>::Equals(!0,!0) */, IL2CPP_RGCTX_DATA(method->rgctx_data, 4), (RuntimeObject*)L_8, (int32_t)L_9, (int32_t)L_10);
+			bool L_11 = InterfaceFuncInvoker2< bool, Guid_t , Guid_t  >::Invoke(0 /* System.Boolean System.Collections.Generic.IEqualityComparer`1<System.Guid>::Equals(!0,!0) */, IL2CPP_RGCTX_DATA(method->rgctx_data, 4), (RuntimeObject*)L_8, (Guid_t )L_9, (Guid_t )L_10);
 			if (!L_11)
 			{
 				goto IL_0036;

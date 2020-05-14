@@ -90,10 +90,13 @@ extern void TrackedPoseDriver_HasStereoCamera_m7F486388D53DCA5B04F48AC4EEB696143
 extern void TrackedPoseDriver_PerformUpdate_mA52E28882E16945B54EDEAC7E35D2A5BF58E4EF1 ();
 // 0x00000023 System.Void UnityEngine.SpatialTracking.TrackedPoseDriver::.ctor()
 extern void TrackedPoseDriver__ctor_mBBD0DDBF16072504682E6B7F75B2D66EB47BA28A ();
-// 0x00000024 System.Boolean UnityEngine.Experimental.XR.Interaction.BasePoseProvider::TryGetPoseFromProvider(UnityEngine.Pose&)
-// 0x00000025 System.Void UnityEngine.Experimental.XR.Interaction.BasePoseProvider::.ctor()
+// 0x00000024 UnityEngine.SpatialTracking.PoseDataFlags UnityEngine.Experimental.XR.Interaction.BasePoseProvider::GetPoseFromProvider(UnityEngine.Pose&)
+extern void BasePoseProvider_GetPoseFromProvider_m015EEE829F4177E0B0CB7BEB1CEA6160F450356E ();
+// 0x00000025 System.Boolean UnityEngine.Experimental.XR.Interaction.BasePoseProvider::TryGetPoseFromProvider(UnityEngine.Pose&)
+extern void BasePoseProvider_TryGetPoseFromProvider_m3A8B28F00A87C0E93EDF814386AEDE2BEF51BD6C ();
+// 0x00000026 System.Void UnityEngine.Experimental.XR.Interaction.BasePoseProvider::.ctor()
 extern void BasePoseProvider__ctor_mABDF3FDD6E86EFACAA6012CDC8C8EBE45340EC06 ();
-static Il2CppMethodPointer s_methodPointers[37] = 
+static Il2CppMethodPointer s_methodPointers[38] = 
 {
 	TrackedPoseDriverDataDescription__cctor_mAA90D171ADF2B121802C7C1C22CA577334397F08,
 	PoseDataSource_GetNodePoseData_m8A6FC86D6C51F89A03EA9E25F2140BC2FC850B71,
@@ -130,10 +133,11 @@ static Il2CppMethodPointer s_methodPointers[37] =
 	TrackedPoseDriver_HasStereoCamera_m7F486388D53DCA5B04F48AC4EEB696143B83A0B6,
 	TrackedPoseDriver_PerformUpdate_mA52E28882E16945B54EDEAC7E35D2A5BF58E4EF1,
 	TrackedPoseDriver__ctor_mBBD0DDBF16072504682E6B7F75B2D66EB47BA28A,
-	NULL,
+	BasePoseProvider_GetPoseFromProvider_m015EEE829F4177E0B0CB7BEB1CEA6160F450356E,
+	BasePoseProvider_TryGetPoseFromProvider_m3A8B28F00A87C0E93EDF814386AEDE2BEF51BD6C,
 	BasePoseProvider__ctor_mABDF3FDD6E86EFACAA6012CDC8C8EBE45340EC06,
 };
-static const int32_t s_InvokerIndices[37] = 
+static const int32_t s_InvokerIndices[38] = 
 {
 	3,
 	146,
@@ -147,29 +151,30 @@ static const int32_t s_InvokerIndices[37] =
 	52,
 	14,
 	26,
-	2848,
+	2850,
 	10,
 	32,
 	10,
 	32,
 	89,
 	31,
-	2849,
-	2850,
-	23,
-	23,
-	23,
-	23,
-	23,
-	23,
-	23,
-	23,
-	23,
 	2851,
-	1895,
+	2852,
+	23,
+	23,
+	23,
+	23,
+	23,
+	23,
+	23,
+	23,
+	23,
+	2853,
+	1893,
 	89,
 	23,
 	23,
+	1146,
 	879,
 	23,
 };
@@ -177,7 +182,7 @@ extern const Il2CppCodeGenModule g_UnityEngine_SpatialTrackingCodeGenModule;
 const Il2CppCodeGenModule g_UnityEngine_SpatialTrackingCodeGenModule = 
 {
 	"UnityEngine.SpatialTracking.dll",
-	37,
+	38,
 	s_methodPointers,
 	s_InvokerIndices,
 	0,

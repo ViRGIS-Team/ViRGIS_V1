@@ -466,25 +466,33 @@ extern void Physics_SphereCastNonAlloc_mA4F2BF70F594FABBC777AD1D28BD6C7D1B87D6DC
 extern void Physics_CheckCapsule_Internal_m1AFFD5C02FCB67563366F767389627F220AB01A0 ();
 // 0x000000DF System.Boolean UnityEngine.Physics::CheckCapsule(UnityEngine.Vector3,UnityEngine.Vector3,System.Single,System.Int32,UnityEngine.QueryTriggerInteraction)
 extern void Physics_CheckCapsule_m32EDEEB87337A296A667EF6B83DF70A467DC8EDE ();
-// 0x000000E0 System.Int32 UnityEngine.Physics::OverlapBoxNonAlloc(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Collider[],UnityEngine.Quaternion,System.Int32,UnityEngine.QueryTriggerInteraction)
+// 0x000000E0 UnityEngine.Collider[] UnityEngine.Physics::OverlapBox_Internal(UnityEngine.PhysicsScene,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Quaternion,System.Int32,UnityEngine.QueryTriggerInteraction)
+extern void Physics_OverlapBox_Internal_m301406831105037039206DB21DD2B755D3B593EA ();
+// 0x000000E1 UnityEngine.Collider[] UnityEngine.Physics::OverlapBox(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Quaternion,System.Int32,UnityEngine.QueryTriggerInteraction)
+extern void Physics_OverlapBox_m82863956D695C1DFE38EFE501B257BFC38F3F16D ();
+// 0x000000E2 UnityEngine.Collider[] UnityEngine.Physics::OverlapBox(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Quaternion)
+extern void Physics_OverlapBox_m2E5A34EAF7006F28A078268D0589F75223C49CB4 ();
+// 0x000000E3 System.Int32 UnityEngine.Physics::OverlapBoxNonAlloc(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Collider[],UnityEngine.Quaternion,System.Int32,UnityEngine.QueryTriggerInteraction)
 extern void Physics_OverlapBoxNonAlloc_m9FE7BFE6CC086C554228001FE0BD2C93726B1FA0 ();
-// 0x000000E1 System.Int32 UnityEngine.Physics::OverlapBoxNonAlloc(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Collider[],UnityEngine.Quaternion)
+// 0x000000E4 System.Int32 UnityEngine.Physics::OverlapBoxNonAlloc(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Collider[],UnityEngine.Quaternion)
 extern void Physics_OverlapBoxNonAlloc_m70F03D706E579CDAA90DB1D7FDBC6BAEC2C38BC3 ();
-// 0x000000E2 System.Int32 UnityEngine.Physics::BoxCastNonAlloc(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.RaycastHit[],UnityEngine.Quaternion,System.Single,System.Int32,UnityEngine.QueryTriggerInteraction)
+// 0x000000E5 System.Int32 UnityEngine.Physics::BoxCastNonAlloc(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.RaycastHit[],UnityEngine.Quaternion,System.Single,System.Int32,UnityEngine.QueryTriggerInteraction)
 extern void Physics_BoxCastNonAlloc_mF0DE8BC2382170169AAC07855851C7B90F541080 ();
-// 0x000000E3 System.Void UnityEngine.Physics::get_gravity_Injected(UnityEngine.Vector3&)
+// 0x000000E6 System.Void UnityEngine.Physics::get_gravity_Injected(UnityEngine.Vector3&)
 extern void Physics_get_gravity_Injected_m7B5CE9CF65B245C2C2EA078BE636E393225B0335 ();
-// 0x000000E4 System.Void UnityEngine.Physics::get_defaultPhysicsScene_Injected(UnityEngine.PhysicsScene&)
+// 0x000000E7 System.Void UnityEngine.Physics::get_defaultPhysicsScene_Injected(UnityEngine.PhysicsScene&)
 extern void Physics_get_defaultPhysicsScene_Injected_mEAB07CA5307D0DDB331A31E6A6BA28CF83009262 ();
-// 0x000000E5 UnityEngine.RaycastHit[] UnityEngine.Physics::Internal_RaycastAll_Injected(UnityEngine.PhysicsScene&,UnityEngine.Ray&,System.Single,System.Int32,UnityEngine.QueryTriggerInteraction)
+// 0x000000E8 UnityEngine.RaycastHit[] UnityEngine.Physics::Internal_RaycastAll_Injected(UnityEngine.PhysicsScene&,UnityEngine.Ray&,System.Single,System.Int32,UnityEngine.QueryTriggerInteraction)
 extern void Physics_Internal_RaycastAll_Injected_m1FD369E67F19BB09F85967481F69EB24B5247913 ();
-// 0x000000E6 UnityEngine.RaycastHit[] UnityEngine.Physics::Query_SphereCastAll_Injected(UnityEngine.PhysicsScene&,UnityEngine.Vector3&,System.Single,UnityEngine.Vector3&,System.Single,System.Int32,UnityEngine.QueryTriggerInteraction)
+// 0x000000E9 UnityEngine.RaycastHit[] UnityEngine.Physics::Query_SphereCastAll_Injected(UnityEngine.PhysicsScene&,UnityEngine.Vector3&,System.Single,UnityEngine.Vector3&,System.Single,System.Int32,UnityEngine.QueryTriggerInteraction)
 extern void Physics_Query_SphereCastAll_Injected_m679F7242E41A4D7E4ACB206EF6AE3BB92B1B6FD8 ();
-// 0x000000E7 UnityEngine.Collider[] UnityEngine.Physics::OverlapSphere_Internal_Injected(UnityEngine.PhysicsScene&,UnityEngine.Vector3&,System.Single,System.Int32,UnityEngine.QueryTriggerInteraction)
+// 0x000000EA UnityEngine.Collider[] UnityEngine.Physics::OverlapSphere_Internal_Injected(UnityEngine.PhysicsScene&,UnityEngine.Vector3&,System.Single,System.Int32,UnityEngine.QueryTriggerInteraction)
 extern void Physics_OverlapSphere_Internal_Injected_m315C4BB796FD73B41F5710D1DB52A6BCB57C344D ();
-// 0x000000E8 System.Boolean UnityEngine.Physics::CheckCapsule_Internal_Injected(UnityEngine.PhysicsScene&,UnityEngine.Vector3&,UnityEngine.Vector3&,System.Single,System.Int32,UnityEngine.QueryTriggerInteraction)
+// 0x000000EB System.Boolean UnityEngine.Physics::CheckCapsule_Internal_Injected(UnityEngine.PhysicsScene&,UnityEngine.Vector3&,UnityEngine.Vector3&,System.Single,System.Int32,UnityEngine.QueryTriggerInteraction)
 extern void Physics_CheckCapsule_Internal_Injected_m5ECBC4A33BD5E1AF817608CC12C95C9F54194C48 ();
-static Il2CppMethodPointer s_methodPointers[232] = 
+// 0x000000EC UnityEngine.Collider[] UnityEngine.Physics::OverlapBox_Internal_Injected(UnityEngine.PhysicsScene&,UnityEngine.Vector3&,UnityEngine.Vector3&,UnityEngine.Quaternion&,System.Int32,UnityEngine.QueryTriggerInteraction)
+extern void Physics_OverlapBox_Internal_Injected_mFA173D8DA3A0B52A01D873B8CBE1819A49E78581 ();
+static Il2CppMethodPointer s_methodPointers[236] = 
 {
 	SoftJointLimit_set_limit_m65386F3B7DE799354F233666054E36B4E244FE26_AdjustorThunk,
 	JointDrive_set_positionSpring_mB6FF4730ECEB6B03BACB391B34381EB34B70A9F8_AdjustorThunk,
@@ -709,6 +717,9 @@ static Il2CppMethodPointer s_methodPointers[232] =
 	Physics_SphereCastNonAlloc_mA4F2BF70F594FABBC777AD1D28BD6C7D1B87D6DC,
 	Physics_CheckCapsule_Internal_m1AFFD5C02FCB67563366F767389627F220AB01A0,
 	Physics_CheckCapsule_m32EDEEB87337A296A667EF6B83DF70A467DC8EDE,
+	Physics_OverlapBox_Internal_m301406831105037039206DB21DD2B755D3B593EA,
+	Physics_OverlapBox_m82863956D695C1DFE38EFE501B257BFC38F3F16D,
+	Physics_OverlapBox_m2E5A34EAF7006F28A078268D0589F75223C49CB4,
 	Physics_OverlapBoxNonAlloc_m9FE7BFE6CC086C554228001FE0BD2C93726B1FA0,
 	Physics_OverlapBoxNonAlloc_m70F03D706E579CDAA90DB1D7FDBC6BAEC2C38BC3,
 	Physics_BoxCastNonAlloc_mF0DE8BC2382170169AAC07855851C7B90F541080,
@@ -718,8 +729,9 @@ static Il2CppMethodPointer s_methodPointers[232] =
 	Physics_Query_SphereCastAll_Injected_m679F7242E41A4D7E4ACB206EF6AE3BB92B1B6FD8,
 	Physics_OverlapSphere_Internal_Injected_m315C4BB796FD73B41F5710D1DB52A6BCB57C344D,
 	Physics_CheckCapsule_Internal_Injected_m5ECBC4A33BD5E1AF817608CC12C95C9F54194C48,
+	Physics_OverlapBox_Internal_Injected_mFA173D8DA3A0B52A01D873B8CBE1819A49E78581,
 };
-static const int32_t s_InvokerIndices[232] = 
+static const int32_t s_InvokerIndices[236] = 
 {
 	353,
 	353,
@@ -754,13 +766,13 @@ static const int32_t s_InvokerIndices[232] =
 	31,
 	1657,
 	1658,
-	1898,
-	1899,
+	1896,
+	1897,
 	353,
 	1658,
-	1899,
-	1900,
-	2137,
+	1897,
+	1898,
+	2135,
 	23,
 	6,
 	6,
@@ -774,19 +786,19 @@ static const int32_t s_InvokerIndices[232] =
 	6,
 	6,
 	64,
-	2138,
+	2136,
 	89,
 	31,
 	14,
 	89,
 	31,
 	1638,
-	2139,
+	2137,
 	1638,
 	23,
 	595,
 	752,
-	2140,
+	2138,
 	1657,
 	89,
 	757,
@@ -824,8 +836,8 @@ static const int32_t s_InvokerIndices[232] =
 	6,
 	6,
 	6,
-	2141,
-	2142,
+	2139,
+	2140,
 	31,
 	89,
 	6,
@@ -836,11 +848,11 @@ static const int32_t s_InvokerIndices[232] =
 	32,
 	32,
 	32,
-	2143,
+	2141,
 	1658,
-	2144,
-	2144,
-	2144,
+	2142,
+	2142,
+	2142,
 	6,
 	6,
 	6,
@@ -849,6 +861,8 @@ static const int32_t s_InvokerIndices[232] =
 	14,
 	10,
 	9,
+	2143,
+	2144,
 	2145,
 	2146,
 	2147,
@@ -884,18 +898,18 @@ static const int32_t s_InvokerIndices[232] =
 	2177,
 	2178,
 	2179,
+	1815,
 	2180,
-	2181,
-	1816,
-	2182,
 	109,
-	2183,
+	2181,
 	174,
 	53,
+	2182,
+	2183,
 	2184,
+	1817,
 	2185,
 	2186,
-	1818,
 	2187,
 	2188,
 	2189,
@@ -941,24 +955,26 @@ static const int32_t s_InvokerIndices[232] =
 	2229,
 	2230,
 	2231,
+	2182,
 	2232,
 	2233,
-	2184,
 	2234,
 	2235,
 	2236,
-	17,
-	17,
 	2237,
+	17,
+	17,
 	2238,
-	2237,
 	2239,
+	2238,
+	2240,
+	2241,
 };
 extern const Il2CppCodeGenModule g_UnityEngine_PhysicsModuleCodeGenModule;
 const Il2CppCodeGenModule g_UnityEngine_PhysicsModuleCodeGenModule = 
 {
 	"UnityEngine.PhysicsModule.dll",
-	232,
+	236,
 	s_methodPointers,
 	s_InvokerIndices,
 	0,
