@@ -24,6 +24,9 @@ namespace Project
         [JsonProperty(PropertyName = "mapscale", Required = Required.Always)]
         public int MapScale;
 
+        [JsonProperty(PropertyName = "scale", Required = Required.Always)]
+        public float Scale;
+
         [JsonProperty(PropertyName = "grid-scale")]
         public float GridScale;
 
@@ -208,7 +211,8 @@ namespace Project
         Mesh,
         Record,
         XSect,
-        Tab
+        Tab,
+        CSV
     }
 
     public enum GeoTypes
