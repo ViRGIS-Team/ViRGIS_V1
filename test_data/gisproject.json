@@ -3,19 +3,20 @@
   "origin": {
     "type": "Point",
     "coordinates": [
-      1.377283,
-      51.299457
+      39.616389058180772,
+      24.469771590744383
     ]
   },
   "mapscale": 15,
-  "grid-scale": 0.0,
+  "scale": 100,
+  "grid-scale": 1.0,
   "cameras": [
     {
       "type": "Point",
       "coordinates": [
-        1.38,
-        51.29,
-        200.0
+        39.616791105373593,
+        24.471034577909684,
+        781.51275634765625
       ]
     }
   ],
@@ -44,20 +45,20 @@
                 1.0
               ],
               "scale": [
-                5.0,
-                5.0,
-                3.0
+                10.0,
+                10.0,
+                10.0
               ]
             },
-            "label": "name"
+            "label": "NAME"
           }
         }
       },
       "id": "001",
-      "display-name": "SB Points",
+      "display-name": "survey_ch",
       "type": "GeographyCollection",
       "datatype": "Point",
-      "source": "test_data/waypoint27092019up.geojson",
+      "source": "test_data/survey_ch.geojson",
       "features": null,
       "position": null,
       "transform": null
@@ -65,11 +66,11 @@
     {
       "properties": {
         "units": {
-          "line": {
+          "point": {
             "color": [
+              0.0,
               255.0,
-              0.0,
-              0.0,
+              255.0,
               1.0
             ],
             "shape": "Cylinder",
@@ -86,48 +87,20 @@
                 1.0
               ],
               "scale": [
-                3.0,
-                3.0,
-                1.0
+                10.0,
+                10.0,
+                10.0
               ]
             },
-            "label": "name"
-          },
-          "point": {
-            "color": [
-              255.0,
-              0.0,
-              0.0,
-              1.0
-            ],
-            "shape": "Spheroid",
-            "transform": {
-              "translate": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "rotate": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-              ],
-              "scale": [
-                5.0,
-                5.0,
-                5.0
-              ]
-            },
-            "label": "name"
+            "label": "ID"
           }
         }
       },
       "id": "002",
-      "display-name": null,
+      "display-name": "collars_aug_2015",
       "type": "GeographyCollection",
-      "datatype": "Line",
-      "source": "test_data/lines.geojson",
+      "datatype": "Point",
+      "source": "test_data/collars_aug_2015.geojson",
       "features": null,
       "position": null,
       "transform": null
@@ -135,67 +108,11 @@
     {
       "properties": {
         "units": {
-          "line": {
-            "color": [
-              0.0,
-              128.0,
-              128.0,
-              1.0
-            ],
-            "shape": "Cuboid",
-            "transform": {
-              "translate": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "rotate": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-              ],
-              "scale": [
-                0.5,
-                0.5,
-                0.5
-              ]
-            },
-            "label": null
-          },
           "point": {
             "color": [
               255.0,
-              255.0,
-              255.0,
-              1.0
-            ],
-            "shape": "Cuboid",
-            "transform": {
-              "translate": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "rotate": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-              ],
-              "scale": [
-                2.0,
-                2.0,
-                2.0
-              ]
-            },
-            "label": null
-          },
-          "body": {
-            "color": [
-              256.0,
-              256.0,
-              256.0,
+              0.0,
+              0.0,
               1.0
             ],
             "shape": "Spheroid",
@@ -212,20 +129,48 @@
                 1.0
               ],
               "scale": [
-                0.5,
-                0.5,
-                0.5
+                5.0,
+                5.0,
+                5.0
               ]
             },
-            "label": "name"
+            "label": null
+          },
+          "line": {
+            "color": [
+              255.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "shape": "Cuboid",
+            "transform": {
+              "translate": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotate": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "scale": [
+                5.0,
+                5.0,
+                0.1
+              ]
+            },
+            "label": null
           }
         }
       },
       "id": "003",
-      "display-name": null,
+      "display-name": "profiles_new_model_lines",
       "type": "GeographyCollection",
-      "datatype": "Polygon",
-      "source": "test_data/polys.geojson",
+      "datatype": "Line",
+      "source": "test_data/profiles_new_model_lines.geojson",
       "features": null,
       "position": null,
       "transform": null
@@ -254,80 +199,28 @@
                 1.0
               ],
               "scale": [
-                0.3,
-                0.3,
-                0.3
+                10.0,
+                10.0,
+                10.0
               ]
             },
-            "label": null
-          },
-          "handle": {
-            "color": [
-              0.0,
-              255.0,
-              255.0,
-              1.0
-            ],
-            "shape": "Spheroid",
-            "transform": {
-              "translate": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "rotate": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-              ],
-              "scale": [
-                5.0,
-                5.0,
-                5.0
-              ]
-            },
-            "label": "name"
+            "label": "ID"
           }
         }
       },
-      "id": "004",
-      "display-name": null,
+      "id": "005",
+      "display-name": "ct_srt_madinah2",
       "type": "GeographyCollection",
-      "datatype": "PointCloud",
-      "source": "test_data/test.ply",
+      "datatype": "Point",
+      "source": "test_data/ct_srt_madinah2.geojson",
       "features": null,
-      "position": {
-        "type": "Point",
-        "coordinates": [
-          1.3767756402652034,
-          51.299230975764353,
-          233.1304140008227
-        ]
-      },
-      "transform": {
-        "translate": [
-          0.0,
-          0.0,
-          0.0
-        ],
-        "rotate": [
-          -0.04396077,
-          0.7314077,
-          0.6587012,
-          -0.1709474
-        ],
-        "scale": [
-          18.5358257,
-          18.53583,
-          18.5358257
-        ]
-      }
+      "position": null,
+      "transform": null
     },
     {
       "properties": {
         "units": {
-          "handle": {
+          "point": {
             "color": [
               0.0,
               255.0,
@@ -348,18 +241,46 @@
                 1.0
               ],
               "scale": [
-                5.0,
-                5.0,
-                5.0
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "label": "ID"
+          },
+          "line": {
+            "color": [
+              0.0,
+              255.0,
+              255.0,
+              1.0
+            ],
+            "shape": "Spheroid",
+            "transform": {
+              "translate": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotate": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "scale": [
+                0.1,
+                0.1,
+                0.1
               ]
             },
             "label": null
           },
           "body": {
             "color": [
-              0.0,
               255.0,
-              0.0,
+              255.0,
+              255.0,
               1.0
             ],
             "shape": "Spheroid",
@@ -372,59 +293,35 @@
               "rotate": [
                 0.0,
                 0.0,
-                0.707,
-                -0.707
+                0.0,
+                1.0
               ],
               "scale": [
-                2.0,
-                2.0,
-                2.0
+                0.5,
+                0.5,
+                0.5
               ]
             },
             "label": "name"
           }
         }
       },
-      "id": "005",
-      "display-name": null,
+      "id": "006",
+      "display-name": "xsect_test",
       "type": "GeographyCollection",
-      "datatype": "Mesh",
-      "source": "test_data/test2.obj",
+      "datatype": "Polygon",
+      "source": "test_data/xsect_polys.geojson",
       "features": null,
-      "position": {
-        "type": "Point",
-        "coordinates": [
-          1.3814961662542531,
-          51.298439428119508,
-          360.25479994909415
-        ]
-      },
-      "transform": {
-        "translate": [
-          0.0,
-          0.0,
-          0.0
-        ],
-        "rotate": [
-          -0.493868142,
-          0.476874173,
-          0.274578124,
-          0.6732698
-        ],
-        "scale": [
-          78.55564,
-          78.55564,
-          78.55564
-        ]
-      }
+      "position": null,
+      "transform": null
     }
   ],
   "Camera": {
     "type": "Point",
     "coordinates": [
-      1.38,
-      51.29,
-      200.0
+      39.616791105373593,
+      24.471034577909684,
+      781.51275634765625
     ]
   }
 }
