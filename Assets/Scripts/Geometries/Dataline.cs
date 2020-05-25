@@ -9,6 +9,7 @@ using Mapbox.Unity.Map;
 using Project;
 using g3;
 using UnityEngine.UI;
+using System.Linq;
 
 namespace Virgis
 {
@@ -24,6 +25,13 @@ namespace Virgis
         private bool BlockMove = false; // is this line in a block-move state
         private bool Lr = false; // is this line a Linear Ring - i.e. used to define a polygon
         public List<VertexLookup> VertexTable = new List<VertexLookup>();
+        private Dictionary<string, Unit> symbology;
+        private GameObject LinePrefab;
+        private GameObject HandlePrefab;
+        private GameObject LabelPrefab;
+        private Material lineMain;
+        private Material lineSelected;
+
 
 
         /// <summary>
@@ -35,11 +43,6 @@ namespace Virgis
 
         }
 
-
-        public override void SetColor(Color newColor)
-        {
-            BroadcastMessage("SetColor", newColor, SendMessageOptions.DontRequireReceiver);
-        }
 
         public override void VertexMove(MoveArgs data)
         {
@@ -107,11 +110,17 @@ namespace Virgis
         /// <param name="LinePrefab"> The prefab to be used for the line</param>
         /// <param name="HandlePrefab"> The prefab to be used for the handle</param>
         /// <param name="LabelPrefab"> the prefab to used for the label</param>
-        public void Draw(LineString lineIn, Dictionary<string, Unit> symbology, GameObject LinePrefab, GameObject HandlePrefab, GameObject LabelPrefab)
+        public void Draw(Vector3[] line, bool Lr,  Dictionary<string, Unit> symbology, GameObject LinePrefab, GameObject HandlePrefab, GameObject LabelPrefab, Material mainMat, Material selectedMat, Material lineMain, Material lineSelected)
         {
-            AbstractMap _map = AppState.instance.abstractMap;
-            Vector3[] line = lineIn.Vector3();
-            Lr = lineIn.IsLinearRing();
+            this.symbology = symbology;
+            this.LinePrefab = LinePrefab;
+            this.HandlePrefab = HandlePrefab;
+            this.LabelPrefab = LabelPrefab;
+            this.mainMat = mainMat;
+            this.selectedMat = selectedMat;
+            this.lineMain = lineMain;
+            this.lineSelected = lineSelected;
+
             DCurve3 curve = new DCurve3();
             curve.Vector3(line, Lr);
             Vector3 center = (Vector3)curve.CenterMark();
@@ -121,19 +130,11 @@ namespace Virgis
             {
                 if (!(i + 1 == line.Length && Lr))
                 {
-                    GameObject handle = Instantiate(HandlePrefab, vertex, Quaternion.identity, transform );
-                    VirgisComponent com = handle.GetComponent<VirgisComponent>();
-                    VertexTable.Add(new VertexLookup() { Id = com.id, Vertex = i, isVertex = true, Com = com });
-                    com.SetColor ((Color)symbology["point"].Color);
-                    handle.transform.localScale = symbology["point"].Transform.Scale;
+                    _createVertex(vertex, i);
                 }
                 if (i + 1 != line.Length)
                 {
-                    GameObject lineSegment = Instantiate(CylinderObject, vertex, Quaternion.identity, transform);
-                    LineSegment com = lineSegment.GetComponent<LineSegment>();
-                    com.Draw(vertex, line[i + 1], i, i + 1, symbology["line"].Transform.Scale.magnitude);
-                    com.SetColor((Color)symbology["line"].Color);
-                    if (i + 2 == line.Length && Lr) com.vEnd = 0;
+                    _createSegment(vertex, line[i + 1],i , (i + 2 == line.Length && Lr));
                 }
                 i++;
             }
@@ -224,7 +225,7 @@ namespace Virgis
         }
 
 
-        public override void MoveTo(Vector3 newPos)
+        public override void MoveTo(MoveArgs args)
         {
             throw new NotImplementedException();
         }
@@ -239,15 +240,71 @@ namespace Virgis
             throw new NotImplementedException();
         }
 
-        /* static public Gradient ColorGrad(Color color1)
-        {
-            float alpha = 1.0f;
-            Gradient gradient = new Gradient();
-            gradient.SetKeys(
-                new GradientColorKey[] { new GradientColorKey(color1, 0.5f) },
-                new GradientAlphaKey[] { new GradientAlphaKey(alpha, 0.5f) }
-            );
-            return gradient;
-        } */
+        public override VirgisComponent AddVertex(Vector3 position) {
+            DCurve3 curve = new DCurve3();
+            curve.Vector3(GetVerteces(), Lr);
+            LineSegment segment = VertexTable.Find(item => item.Vertex == curve.NearestSegment(position)).Line;
+            return AddVertex(segment, position);
+        }
+
+        public VirgisComponent AddVertex(LineSegment segment, Vector3 position) {
+            int start = segment.vStart;
+            int next = segment.vEnd;
+            VertexTable.ForEach(item => {
+                if (item.Vertex >= next) {
+                    item.Vertex++;
+                    if (item.Line != null) {
+                        item.Line.vStart++;
+                        item.Line.vEnd++;
+                    }
+                }
+            });
+            segment.MoveEnd(position);
+            Datapoint vertex = _createVertex(position, next);
+            _createSegment(position, VertexTable.Find(item => item.Vertex == next + 1).Com.transform.position, next, false);
+            return vertex;
+        }
+
+        public override void RemoveVertex(VirgisComponent vertex) {
+            VertexLookup vLookup = VertexTable.Find(item => item.Id == vertex.id);
+            int start = vLookup.Vertex;
+            if (vLookup.Line != null) vLookup.Line.gameObject.Destroy();
+            vLookup.Com.gameObject.Destroy();
+            VertexTable.Remove(vLookup);
+            VertexTable.ForEach(item => {
+                if (item.Vertex >= start) {
+                    item.Vertex--;
+                    if (item.Line != null) {
+                        item.Line.vStart--;
+                        item.Line.vEnd--;
+                    }
+                }
+            });
+            if (VertexTable.Count > 1) {
+                VertexTable.Find(item => item.Vertex == start - 1).Line.MoveEnd(VertexTable.Find(item => item.Vertex == start).Com.transform.position);
+            } else {
+                gameObject.Destroy();
+            }
+        }
+
+        private Datapoint _createVertex(Vector3 vertex, int i) {
+            GameObject handle = Instantiate(HandlePrefab, vertex, Quaternion.identity, transform );
+            Datapoint com = handle.GetComponent<Datapoint>();
+            VertexTable.Add(new VertexLookup() { Id = com.id, Vertex = i, isVertex = true, Com = com });
+            com.SetMaterial(mainMat, selectedMat);
+            handle.transform.localScale = symbology["point"].Transform.Scale;
+            return com;
+        }
+
+        private LineSegment _createSegment(Vector3 start, Vector3 end, int i, bool close) {
+            GameObject lineSegment = Instantiate(CylinderObject, start, Quaternion.identity, transform);
+            LineSegment com = lineSegment.GetComponent<LineSegment>();
+            com.Draw(start, end, i, i + 1, symbology["line"].Transform.Scale.magnitude);
+            com.SetMaterial(lineMain, lineSelected);
+            if (close)
+                com.vEnd = 0;
+            VertexTable.Find(item => item.Vertex == i).Line = com;
+            return com;
+        }
     }
 }

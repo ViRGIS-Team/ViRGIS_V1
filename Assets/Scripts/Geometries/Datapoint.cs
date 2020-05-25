@@ -10,25 +10,17 @@ using GeoJSON.Net.Geometry;
 
 namespace Virgis
 {
-
-
     /// <summary>
     /// Controls an instance of a data pointor handle
     /// </summary>
     public class Datapoint : VirgisComponent
     {
         private Renderer thisRenderer; // convenience link to the rendere for this marker
-        private bool newSelect = false;
-        private Vector3 moveOffset = Vector3.zero;
 
-        void Start()
-        {
-            thisRenderer = GetComponent<Renderer>();
-            if (color != null)
-            {
-                thisRenderer.material.SetColor("_BaseColor", color);
-            }
-            if (transform.childCount > 0) label = transform.GetChild(0);
+
+        private void Start() {
+            if (transform.childCount > 0)
+                label = transform.GetChild(0);
         }
         /// <summary>
         /// Every frame - realign the billboard
@@ -39,26 +31,20 @@ namespace Virgis
         }
 
 
-        public override void Selected(SelectionTypes button)
-        {
-            newSelect = true;
-            thisRenderer.material.SetColor("_BaseColor", anticolor);
-            if (button != SelectionTypes.BROADCAST)
-            {
-                gameObject.transform.parent.gameObject.SendMessageUpwards("Selected", button, SendMessageOptions.DontRequireReceiver);
+        public override void Selected(SelectionTypes button){
+            thisRenderer.material = selectedMat;
+            if (button != SelectionTypes.BROADCAST){
+                transform.parent.SendMessageUpwards("Selected", button, SendMessageOptions.DontRequireReceiver);
             }
         }
 
 
-        public override void UnSelected(SelectionTypes button)
-        {
-            thisRenderer.material.SetColor("_BaseColor", color);
-            if (button != SelectionTypes.BROADCAST)
-            {
-                gameObject.transform.parent.gameObject.SendMessageUpwards("UnSelected", button, SendMessageOptions.DontRequireReceiver);
+        public override void UnSelected(SelectionTypes button){
+            thisRenderer.material = mainMat;
+            if (button != SelectionTypes.BROADCAST){
+                transform.parent.SendMessageUpwards("UnSelected", button, SendMessageOptions.DontRequireReceiver);
                 MoveArgs args = new MoveArgs();
-                switch (AppState.instance.editSession.mode)
-                {
+                switch (AppState.instance.editSession.mode){
                     case EditSession.EditMode.None:
                         break;
                     case EditSession.EditMode.SnapAnchor:
@@ -84,33 +70,21 @@ namespace Virgis
         }
 
  
-        public override void SetColor(Color newColor)
+        public override void SetMaterial(Material mainMat, Material selectedMat)
         {
-            color = newColor;
-            anticolor = Color.white - newColor;
-            anticolor.a = color.a;
-            Renderer thisRenderer = GetComponent<Renderer>();
+            this.mainMat = mainMat;
+            this.selectedMat = selectedMat;
+            thisRenderer = GetComponent<Renderer>();
             if (thisRenderer)
             {
-                thisRenderer.material.SetColor("_BaseColor", color);
+                thisRenderer.material = mainMat;
             }
         }
 
 
-        public override void MoveTo(Vector3 newPos)
-        {
-            if (newSelect)
-            {
-                newSelect = false;
-                moveOffset = newPos - transform.position;
-            }
-            else
-            {
-                MoveArgs args = new MoveArgs();
-                args.translate = newPos - transform.position - moveOffset;
-                args.oldPos = transform.position;
+        public override void MoveTo(MoveArgs args) {
+            if (args.translate != Vector3.zero) {
                 args.id = id;
-                args.pos = newPos;
                 SendMessageUpwards("Translate", args, SendMessageOptions.DontRequireReceiver);
             }
         }
@@ -119,13 +93,11 @@ namespace Virgis
         ///  Sent by the parent entity to request this market to move as part of an entity move
         /// </summary>
         /// <param name="argsin">MoveArgs</param>
-        void TranslateHandle(MoveArgs argsin)
-        {
-            if (argsin.id == id && argsin.pos != transform.position)
-            {
+        void TranslateHandle(MoveArgs argsin) {
+            if (argsin.id == id) {
                 MoveArgs argsout = new MoveArgs();
                 argsout.oldPos = transform.position;
-                transform.position = argsin.pos;
+                transform.Translate(argsin.translate, Space.World);
                 argsout.id = id;
                 argsout.pos = transform.position;
                 SendMessageUpwards("VertexMove", argsout, SendMessageOptions.DontRequireReceiver);
@@ -133,36 +105,28 @@ namespace Virgis
         }
 
 
-        public override void MoveAxis(MoveArgs args)
-        {
-            if (args.pos == null)
-            {
-                args.translate = args.pos - transform.position;
-            }
-            else
-            {
-                args.pos = transform.position;
-            }
+        public override void MoveAxis(MoveArgs args) {
+            args.pos = transform.position;
             transform.parent.SendMessageUpwards("MoveAxis", args, SendMessageOptions.DontRequireReceiver);
         }
 
-        public override void VertexMove(MoveArgs args)
-        {
+        public override void VertexMove(MoveArgs args) {
             
         }
 
-        public override void Translate(MoveArgs args)
-        {
+        public override void Translate(MoveArgs args) {
             
         }
 
-        public override Vector3 GetClosest(Vector3 coords)
-        {
+        public override Vector3 GetClosest(Vector3 coords) {
             return transform.position;
         }
 
-        public override T GetGeometry<T>()
-        {
+        public void Delete() {
+            transform.parent.SendMessage("RemoveVertex", this, SendMessageOptions.DontRequireReceiver);
+        }
+
+        public override T GetGeometry<T>() {
             switch (typeof(T).Name)
             {
                 case "Vector3":

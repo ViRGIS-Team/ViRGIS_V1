@@ -10,11 +10,14 @@ namespace Virgis
     /// </summary>
     public class LineSegment : VirgisComponent
     {
+        private Renderer thisRenderer; // convenience link to the rendere for this marker
+
         private Vector3 start; // coords of the start of the line in Map.local space coordinates
         private Vector3 end;  // coords of the start of the line in Map.local space coordinates
         private float diameter; // Diameter of the vertex in Map.local units
         public int vStart; // Vertex ID of the start of the lins
         public int vEnd; // Vertex ID of the end of the line
+        private bool selected; //used to hold if this is a valid selection for this line segment
 
         /// <summary>
         /// Called to draw the line Segment 
@@ -24,6 +27,8 @@ namespace Virgis
         /// <param name="vertStart">vertex ID for the vertex at the start of the line segment</param>
         /// <param name="vertEnd"> vertex ID for the vertex at the end of the line segment </param>
         /// <param name="dia">Diamtere of the line segement in Map.local units</param>
+
+
         public void Draw(Vector3 from, Vector3 to, int vertStart, int vertEnd, float dia)
         {
             start = transform.parent.InverseTransformPoint(from);
@@ -36,14 +41,15 @@ namespace Virgis
         }
         public override void Selected(SelectionTypes button)
         {
-            if (button == SelectionTypes.SELECTALL)
-            {
-
+            if (button == SelectionTypes.SELECTALL) {
+                transform.parent.SendMessageUpwards("Selected", button, SendMessageOptions.DontRequireReceiver);
+                selected = true;
             }
         }
 
         public override void UnSelected(SelectionTypes button)
         {
+            selected = false;
             if (button != SelectionTypes.BROADCAST)
             {
 
@@ -51,9 +57,13 @@ namespace Virgis
         }
 
 
-        public override void SetColor(Color newCol)
-        {
-            gameObject.GetComponentInChildren<Renderer>().material.SetColor("_BaseColor", newCol);
+        public override void SetMaterial(Material mainMat, Material selectedMat) {
+            this.mainMat = mainMat;
+            this.selectedMat = selectedMat;
+            thisRenderer = GetComponentInChildren<Renderer>();
+            if (thisRenderer) {
+                thisRenderer.material = mainMat;
+            }
         }
 
         // Move the start of line to newStart point in World Coords
@@ -81,33 +91,34 @@ namespace Virgis
         }
 
 
-        public override void Translate(MoveArgs args)
-        {
+        public override void Translate(MoveArgs args){
             
         }
 
-        public override void VertexMove(MoveArgs args)
-        {
+        public override void VertexMove(MoveArgs args){
             
         }
 
-        public override void MoveAxis(MoveArgs args)
-        {
-      
+        public override void MoveAxis(MoveArgs args){
+            args.pos = transform.position;
+            transform.parent.SendMessageUpwards("MoveAxis", args, SendMessageOptions.DontRequireReceiver);
         }
 
-        public override void MoveTo(Vector3 newPos)
-        {
+        public override void MoveTo(MoveArgs args){
+            if (selected)
+                SendMessageUpwards("Translate", args, SendMessageOptions.DontRequireReceiver);
+        }
+
+        public override VirgisComponent AddVertex(Vector3 position) {
+            GetComponentInParent<Dataline>().AddVertex( this, position);
+            return this;
+        } 
+
+        public override Vector3 GetClosest(Vector3 coords){
             throw new System.NotImplementedException();
         }
 
-        public override Vector3 GetClosest(Vector3 coords)
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public override T GetGeometry<T>()
-        {
+        public override T GetGeometry<T>(){
             throw new System.NotImplementedException();
         }
     }

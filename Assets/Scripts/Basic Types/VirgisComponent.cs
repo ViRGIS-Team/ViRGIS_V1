@@ -21,13 +21,16 @@ namespace Virgis
     /// </summary>
     public interface IVirgisComponent : IVirgisEntity
     {
-        void SetColor(Color color);
+        void SetMaterial(Material mainMat, Material selectedMat);
         //void MoveTo(Vector3 newPos);
 
-        void MoveTo(Vector3 newPos);
+        void MoveTo(MoveArgs args);
         void MoveAxis(MoveArgs args);
         void Translate(MoveArgs args);
         void VertexMove(MoveArgs args);
+
+        VirgisComponent AddVertex(Vector3 position);
+        void RemoveVertex(VirgisComponent vertex);
 
         Vector3 GetClosest(Vector3 coords);
         T GetGeometry<T>();
@@ -36,8 +39,8 @@ namespace Virgis
 
     public abstract class VirgisComponent : MonoBehaviour, IVirgisComponent
     {
-        public Color color; // color of the component
-        public Color anticolor; // color of the component when selected
+        protected Material mainMat; // color of the component
+        protected Material selectedMat; // color of the component when selected
         public string gisId; // ID of this component in the geoJSON
         public IDictionary<string, object> gisProperties; //  geoJSON properties of this component
 
@@ -52,10 +55,14 @@ namespace Virgis
 
 
         /// <summary>
-        /// Use to set the color of the feature
+        /// Use to set the material of the feature
         /// </summary>
-        /// <param name="color"> Color Object</param>
-        public abstract void SetColor(Color color);
+        /// <param name="mainMat"> Usual material</param>
+        /// /// <param name="selectedMat"> Material to be used when feature is selected</param>
+        public virtual void SetMaterial(Material mainMat, Material selectedMat) {
+            this.mainMat = mainMat;
+            this.selectedMat = selectedMat;
+        }
 
         /// <summary>
         /// Use to tell the Component that it is selected
@@ -87,7 +94,7 @@ namespace Virgis
         /// Sent by the UI to request this component to move.
         /// </summary>
         /// <param name="newPos">Vector3 Worldspace Location to move to </param>
-        public abstract void MoveTo(Vector3 newPos);
+        public abstract void MoveTo(MoveArgs args);
 
         /// <summary>
         /// received when a Move Axis request is made by the user
@@ -113,6 +120,24 @@ namespace Virgis
         /// <param name="coords"> Vector3 Target Coordinates </param>
         /// <returns> Vector3 in world space coordinates </returns>
         public abstract Vector3 GetClosest(Vector3 coords);
+
+        /// <summary>
+        /// call this to add a vertex to a feature.
+        /// </summary>
+        /// <param name="position">Vector3</param>
+        /// <returns>VirgisComponent The new vertex</returns>
+        public virtual VirgisComponent AddVertex(Vector3 position) {
+            // do nothing
+            return this;
+        }
+
+        /// <summary>
+        /// call this to remove a vertxe from a feature
+        /// </summary>
+        /// <param name="vertex">Vertex to remove</param>
+        public virtual void RemoveVertex(VirgisComponent vertex) {
+            // do nothing
+        }
 
 
         /// <summary>
