@@ -58,7 +58,7 @@
       "display-name": "survey_ch",
       "type": "GeographyCollection",
       "datatype": "Point",
-      "source": "test_data/survey_ch.geojson",
+      "source": "/sdcard/virgis/test_data/survey_ch.geojson",
       "features": null,
       "position": null,
       "transform": null
@@ -100,7 +100,7 @@
       "display-name": "collars_aug_2015",
       "type": "GeographyCollection",
       "datatype": "Point",
-      "source": "test_data/collars_aug_2015.geojson",
+      "source": "/sdcard/virgis/test_data/collars_aug_2015.geojson",
       "features": null,
       "position": null,
       "transform": null
@@ -170,7 +170,7 @@
       "display-name": "profiles_new_model_lines",
       "type": "GeographyCollection",
       "datatype": "Line",
-      "source": "test_data/profiles_new_model_lines.geojson",
+      "source": "/sdcard/virgis/test_data/profiles_new_model_lines.geojson",
       "features": null,
       "position": null,
       "transform": null
@@ -212,7 +212,7 @@
       "display-name": "ct_srt_madinah2",
       "type": "GeographyCollection",
       "datatype": "Point",
-      "source": "test_data/ct_srt_madinah2.geojson",
+      "source": "/sdcard/virgis/test_data/ct_srt_madinah2.geojson",
       "features": null,
       "position": null,
       "transform": null
@@ -310,7 +310,7 @@
       "display-name": "xsect_test",
       "type": "GeographyCollection",
       "datatype": "Polygon",
-      "source": "test_data/xsect_polys.geojson",
+      "source": "/sdcard/virgis/test_data/xsect_polys.geojson",
       "features": null,
       "position": null,
       "transform": null

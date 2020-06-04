@@ -56,7 +56,7 @@
       "id": "001",
       "type": "GeographyCollection",
       "datatype": "Point",
-      "source": "test_data/waypoint27092019up.geojson",
+      "source": "/sdcard/virgis/test_data/waypoint27092019up.geojson",
       "features": null,
       "position": null,
       "transform": null
@@ -125,7 +125,7 @@
       "id": "002",
       "type": "GeographyCollection",
       "datatype": "Line",
-      "source": "test_data/lines.geojson",
+      "source": "/sdcard/virgis/test_data/lines.geojson",
       "features": null,
       "position": null,
       "transform": null
@@ -222,7 +222,7 @@
       "id": "003",
       "type": "GeographyCollection",
       "datatype": "Polygon",
-      "source": "test_data/polys.geojson",
+      "source": "/sdcard/virgis/test_data/polys.geojson",
       "features": null,
       "position": null,
       "transform": null
@@ -291,7 +291,7 @@
       "id": "004",
       "type": "GeographyCollection",
       "datatype": "PointCloud",
-      "source": "test_data/test.ply",
+      "source": "/sdcard/virgis/test_data/test.ply",
       "features": null,
       "position": {
         "type": "Point",
@@ -384,7 +384,7 @@
       "id": "005",
       "type": "GeographyCollection",
       "datatype": "Mesh",
-      "source": "test_data/test2.obj",
+      "source": "/sdcard/virgis/test_data/test2.obj",
       "features": null,
       "position": {
         "type": "Point",
