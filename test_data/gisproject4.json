@@ -1,0 +1,100 @@
+{
+  "name": "test_project",
+  "origin": {
+    "type": "Point",
+    "coordinates": [
+      -2.01678,
+      54.15831
+    ]
+  },
+  "mapscale": 15,
+  "scale": 9.983333,
+  "grid-scale": 0.0,
+  "cameras": [
+    {
+      "type": "Point",
+      "coordinates": [
+        1.3782420133119688,
+        51.297978745916822,
+        82.382896423339844
+      ]
+    }
+  ],
+  "recordsets": [
+    {
+      "properties": {
+        "units": {
+          "point": {
+            "color": [
+              0.0,
+              0.0,
+              255.0,
+              1.0
+            ],
+            "shape": "Spheroid",
+            "transform": {
+              "translate": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotate": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            }, "line": {
+              "color": [
+                0.0,
+                0.0,
+                255.0,
+                1.0
+              ],
+              "shape": "Cylinder",
+              "transform": {
+                "translate": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "rotate": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "scale": [
+                  1.0,
+                  1.0,
+                  1.0
+                ]
+              }
+            }
+          }
+        }
+      },
+      "id": "008",
+      "display-name": null,
+      "type": "GeographyCollection",
+      "datatype": "Line",
+      "source": "test_data/DowProv.geojson",
+      "features": null,
+      "position": null,
+      "transform": null
+    }
+  ],
+  "Camera": {
+    "type": "Point",
+    "coordinates": [
+      1.3782420133119688,
+      51.297978745916822,
+      82.382896423339844
+    ]
+  }
+}
