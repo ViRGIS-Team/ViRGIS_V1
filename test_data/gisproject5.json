@@ -3,20 +3,20 @@
   "origin": {
     "type": "Point",
     "coordinates": [
-      -2.01678,
-      54.15831
+      1.377283,
+      51.299457
     ]
   },
   "mapscale": 15,
-  "scale": 34.3921127,
+  "scale": 10.7410145,
   "grid-scale": 0.0,
   "cameras": [
     {
       "type": "Point",
       "coordinates": [
-        -2.0153268059520175,
-        54.154279773103447,
-        382.22625732421875
+        1.3798555239352144,
+        51.289995249254495,
+        6.98777437210083
       ]
     }
   ],
@@ -26,65 +26,9 @@
         "units": {
           "point": {
             "color": [
-              230.0,
-              90.0,
-              100.0,
-              1.0
-            ],
-            "shape": "Spheroid",
-            "transform": {
-              "translate": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "rotate": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-              ],
-              "scale": [
-                1.0,
-                1.0,
-                1.0
-              ]
-            },
-            "label": null
-          },
-          "line": {
-            "color": [
-              230.0,
-              90.0,
-              100.0,
-              1.0
-            ],
-            "shape": "Cylinder",
-            "transform": {
-              "translate": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "rotate": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-              ],
-              "scale": [
-                1.0,
-                1.0,
-                1.0
-              ]
-            },
-            "label": null
-          },
-          "body": {
-            "color": [
-              230.0,
-              240.0,
               0.0,
+              0.0,
+              255.0,
               1.0
             ],
             "shape": "Cylinder",
@@ -101,20 +45,20 @@
                 1.0
               ],
               "scale": [
-                1.0,
-                1.0,
-                1.0
+                2.0,
+                2.0,
+                2.0
               ]
             },
-            "label": null
+            "label": "SB_No"
           }
         }
       },
       "id": "001",
-      "display-name": "Dow Prov Main",
+      "display-name": null,
       "type": "GeographyCollection",
-      "datatype": "Line",
-      "source": "test_data/DowProv.geojson",
+      "datatype": "Point",
+      "source": "test_data/sbs_points.geojson",
       "features": null,
       "position": null,
       "transform": null
@@ -124,40 +68,12 @@
         "units": {
           "point": {
             "color": [
-              230.0,
-              240.0,
-              0.0,
-              0.0
+              255.0,
+              255.0,
+              255.0,
+              1.0
             ],
             "shape": "Spheroid",
-            "transform": {
-              "translate": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "rotate": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-              ],
-              "scale": [
-                1.0,
-                1.0,
-                1.0
-              ]
-            },
-            "label": null
-          },
-          "line": {
-            "color": [
-              230.0,
-              240.0,
-              0.0,
-              0.0
-            ],
-            "shape": "Cylinder",
             "transform": {
               "translate": [
                 0.0,
@@ -176,16 +92,30 @@
                 0.1
               ]
             },
-            "label": null
-          },
-          "body": {
+            "label": "name"
+          }
+        }
+      },
+      "id": "002",
+      "display-name": null,
+      "type": "GeographyCollection",
+      "datatype": "Point",
+      "source": "test_data/all_points.geojson",
+      "features": null,
+      "position": null,
+      "transform": null
+    },
+    {
+      "properties": {
+        "units": {
+          "line": {
             "color": [
-              230.0,
-              240.0,
+              255.0,
+              0.0,
               0.0,
               1.0
             ],
-            "shape": "Cylinder",
+            "shape": "Spheroid",
             "transform": {
               "translate": [
                 0.0,
@@ -199,20 +129,48 @@
                 1.0
               ],
               "scale": [
-                1.0,
-                1.0,
-                1.0
+                0.2,
+                0.2,
+                0.2
               ]
             },
-            "label": null
+            "label": "name"
+          },
+          "point": {
+            "color": [
+              255.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "shape": "Spheroid",
+            "transform": {
+              "translate": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotate": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "scale": [
+                0.5,
+                0.5,
+                0.5
+              ]
+            },
+            "label": "name"
           }
         }
       },
-      "id": "002",
-      "display-name": "Dow Prov Poly",
+      "id": "003",
+      "display-name": null,
       "type": "GeographyCollection",
-      "datatype": "Polygon",
-      "source": "test_data/DowProvPoly.geojson",
+      "datatype": "Line",
+      "source": "test_data/lines.geojson",
       "features": null,
       "position": null,
       "transform": null
@@ -221,9 +179,9 @@
   "Camera": {
     "type": "Point",
     "coordinates": [
-      -2.0153268059520175,
-      54.154279773103447,
-      382.22625732421875
+      1.3798555239352144,
+      51.289995249254495,
+      6.98777437210083
     ]
   }
 }
