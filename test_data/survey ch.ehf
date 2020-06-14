@@ -1,7 +1,0 @@
-
-Version = 1.000000
-Version = 1.000000
-DownholeInfo Begin
-	DesurveyMode = "Back_Calculation"
-	DipSign = 1.000000
-DownholeInfo End
