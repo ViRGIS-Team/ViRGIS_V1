@@ -13,7 +13,7 @@ namespace Mapbox.Unity.Map
 		[SerializeField]
 		ImageryLayerProperties _layerProperty = new ImageryLayerProperties();
 
-		[NodeEditorElement("Image Layer")]
+		[NodeEditorElement("Image ILayer")]
 		public ImageryLayerProperties LayerProperty
 		{
 			get

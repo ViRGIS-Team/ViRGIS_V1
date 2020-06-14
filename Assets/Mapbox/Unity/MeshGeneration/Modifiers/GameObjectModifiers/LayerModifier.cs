@@ -4,7 +4,7 @@ namespace Mapbox.Unity.MeshGeneration.Modifiers
     using Mapbox.Unity.MeshGeneration.Components;
 	using Mapbox.Unity.MeshGeneration.Data;
 
-    [CreateAssetMenu(menuName = "Mapbox/Modifiers/Layer Modifier")]
+    [CreateAssetMenu(menuName = "Mapbox/Modifiers/ILayer Modifier")]
     public class LayerModifier : GameObjectModifier
     {
         [SerializeField]
