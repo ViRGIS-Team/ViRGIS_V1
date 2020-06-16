@@ -1,0 +1,77 @@
+{
+  "name": "test_project",
+  "origin": {
+    "type": "Point",
+    "coordinates": [
+      -1.791218230167096,
+      53.316200583246534
+    ]
+  },
+  "mapscale": 15,
+  "scale": 9.983333,
+  "grid-scale": 0.0,
+  "cameras": [
+    {
+      "type": "Point",
+      "coordinates": [
+        -1.7912182301670889,
+        53.316200583246562,
+        1.4504094556926127E-16
+      ]
+    }
+  ],
+  "recordsets": [
+    {
+      "properties": {
+        "units": {
+          "point": {
+            "color": [
+              0.0,
+              0.0,
+              255.0,
+              1.0
+            ],
+            "shape": "Cylinder",
+            "transform": {
+              "translate": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotate": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "scale": [
+                5.0,
+                5.0,
+                3.0
+              ]
+            },
+            "label": "name"
+          }
+        },
+        "lines": null,
+        "x_sect_type": null
+      },
+      "id": "001",
+      "display-name": null,
+      "type": "GeologyCollection",
+      "datatype": "XSect",
+      "source": "test_data/narea_ert_lines.egb",
+      "features": null,
+      "position": null,
+      "transform": null
+    }
+  ],
+  "Camera": {
+    "type": "Point",
+    "coordinates": [
+      -1.7912182301670889,
+      53.316200583246562,
+      1.4504094556926127E-16
+    ]
+  }
+}
