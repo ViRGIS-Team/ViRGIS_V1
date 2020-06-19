@@ -8,15 +8,15 @@
     ]
   },
   "mapscale": 15,
-  "scale": 124.862526,
+  "scale": 6.66543436,
   "grid-scale": 0.0,
   "cameras": [
     {
       "type": "Point",
       "coordinates": [
-        -1.7832921315292969,
-        53.3303776248342,
-        395.504150390625
+        -1.7712363078170725,
+        53.322029789660682,
+        172.91110229492188
       ]
     }
   ],
@@ -57,10 +57,80 @@
         "x_sect_type": null
       },
       "id": "001",
-      "display-name": null,
+      "display-name": "Narea ERT Lines",
       "type": "GeologyCollection",
       "datatype": "XSect",
       "source": "test_data/narea_ert_lines.egb",
+      "features": null,
+      "position": null,
+      "transform": null
+    },
+    {
+      "properties": {
+        "units": {
+          "point": {
+            "color": [
+              0.0,
+              0.0,
+              255.0,
+              1.0
+            ],
+            "shape": "Cylinder",
+            "transform": {
+              "translate": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotate": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "scale": [
+                60.0,
+                60.0,
+                60.0
+              ]
+            },
+            "label": null
+          },
+          "handle": {
+            "color": [
+              0.0,
+              0.0,
+              255.0,
+              1.0
+            ],
+            "shape": "Cylinder",
+            "transform": {
+              "translate": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotate": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "label": null
+          }
+        }
+      },
+      "id": "002",
+      "display-name": "Magnetic TFI RTP",
+      "type": "GeographyCollection",
+      "datatype": "PointCloud",
+      "source": "test_data/Magnetic_TFI_RTP.txt",
       "features": null,
       "position": null,
       "transform": null
@@ -69,9 +139,9 @@
   "Camera": {
     "type": "Point",
     "coordinates": [
-      -1.7832921315292969,
-      53.3303776248342,
-      395.504150390625
+      -1.7712363078170725,
+      53.322029789660682,
+      172.91110229492188
     ]
   }
 }
