@@ -14,9 +14,9 @@
     {
       "type": "Point",
       "coordinates": [
-        -1.7902720025640555,
-        53.316501594636627,
-        91.581939697265625
+        -1.7818689427527998,
+        53.317240650805523,
+        271.22610473632813
       ]
     }
   ],
@@ -134,14 +134,84 @@
       "features": null,
       "position": null,
       "transform": null
+    },
+    {
+      "properties": {
+        "units": {
+          "point": {
+            "color": [
+              0.0,
+              0.0,
+              255.0,
+              1.0
+            ],
+            "shape": "Cylinder",
+            "transform": {
+              "translate": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotate": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "scale": [
+                60.0,
+                60.0,
+                60.0
+              ]
+            },
+            "label": null
+          },
+          "handle": {
+            "color": [
+              0.0,
+              0.0,
+              255.0,
+              1.0
+            ],
+            "shape": "Cylinder",
+            "transform": {
+              "translate": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotate": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "label": null
+          }
+        }
+      },
+      "id": "003",
+      "display-name": "Electrical Conductivity",
+      "type": "GeographyCollection",
+      "datatype": "PointCloud",
+      "source": "test_data/Electrical_conductivity.txt",
+      "features": null,
+      "position": null,
+      "transform": null
     }
   ],
   "Camera": {
     "type": "Point",
     "coordinates": [
-      -1.7902720025640555,
-      53.316501594636627,
-      91.581939697265625
+      -1.7818689427527998,
+      53.317240650805523,
+      271.22610473632813
     ]
   }
 }
