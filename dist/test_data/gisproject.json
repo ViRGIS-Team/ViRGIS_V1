@@ -1,0 +1,251 @@
+{
+  "name": "test_project",
+  "origin": {
+    "type": "Point",
+    "coordinates": [
+      -1.791218230167096,
+      53.316200583246534
+    ]
+  },
+  "mapscale": 15,
+  "scale": 31.7503624,
+  "grid-scale": 0.0,
+  "cameras": [
+    {
+      "type": "Point",
+      "coordinates": [
+        -1.7878531829104893,
+        53.314503566147394,
+        278.2080078125
+      ]
+    }
+  ],
+  "recordsets": [
+    {
+      "properties": {
+        "units": {
+          "point": {
+            "color": [
+              0.0,
+              0.0,
+              255.0,
+              1.0
+            ],
+            "shape": "Cylinder",
+            "transform": {
+              "translate": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotate": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "label": "name"
+          }
+        },
+        "lines": null,
+        "x_sect_type": null
+      },
+      "id": "001",
+      "display-name": "Narea ERT Lines",
+      "type": "GeologyCollection",
+      "datatype": "XSect",
+      "source": "test_data/narea_ert_lines.egb",
+      "features": null,
+      "position": null,
+      "transform": null
+    },
+    {
+      "properties": {
+        "units": {
+          "point": {
+            "color": [
+              0.0,
+              0.0,
+              255.0,
+              1.0
+            ],
+            "shape": "Cylinder",
+            "transform": {
+              "translate": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotate": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "scale": [
+                60.0,
+                60.0,
+                60.0
+              ]
+            },
+            "label": null
+          },
+          "handle": {
+            "color": [
+              0.0,
+              0.0,
+              255.0,
+              1.0
+            ],
+            "shape": "Cylinder",
+            "transform": {
+              "translate": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotate": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "label": null
+          }
+        }
+      },
+      "id": "002",
+      "display-name": "Magnetic TFI RTP",
+      "type": "GeographyCollection",
+      "datatype": "PointCloud",
+      "source": "test_data/Magnetic_TFI_RTP.txt",
+      "features": null,
+      "position": null,
+      "transform": {
+        "translate": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotate": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    },
+    {
+      "properties": {
+        "units": {
+          "point": {
+            "color": [
+              0.0,
+              0.0,
+              255.0,
+              1.0
+            ],
+            "shape": "Cylinder",
+            "transform": {
+              "translate": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotate": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "scale": [
+                60.0,
+                60.0,
+                60.0
+              ]
+            },
+            "label": null
+          },
+          "handle": {
+            "color": [
+              0.0,
+              0.0,
+              255.0,
+              1.0
+            ],
+            "shape": "Cylinder",
+            "transform": {
+              "translate": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotate": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "label": null
+          }
+        }
+      },
+      "id": "003",
+      "display-name": "Electrical Conductivity",
+      "type": "GeographyCollection",
+      "datatype": "PointCloud",
+      "source": "test_data/Electrical_conductivity.txt",
+      "features": null,
+      "position": null,
+      "transform": {
+        "translate": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotate": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    }
+  ],
+  "Camera": {
+    "type": "Point",
+    "coordinates": [
+      -1.7878531829104893,
+      53.314503566147394,
+      278.2080078125
+    ]
+  }
+}

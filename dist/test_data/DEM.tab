@@ -1,0 +1,60 @@
+!table
+!version 500
+!charset WindowsLatin1
+
+Definition Table
+  File "DEM.ers"
+  Type "RASTER"
+  (413604.000000,382540.000000) (0,0) Label "Pt 1",
+  (416812.000000,382540.000000) (401,0) Label "Pt 2",
+  (416812.000000,379652.000000) (401,361) Label "Pt 3",
+  (413604.000000,379652.000000) (0,361) Label "Pt 4"
+  CoordSys Earth Projection 8, 79, "m", -2, 49, 0.9996012717, 400000, -100000
+  Units "m"
+  RasterStyle 6 1
+begin_metadata
+"\ISREADONLY" = "FALSE"
+"\MAPINFO" = ""
+"\MAPINFO\TABLEID" = "97949D08-1CF2-46FE-A650-13F99ED0308C"
+"\Encom" = ""
+"\Encom\Grid" = ""
+"\Encom\Grid\Display" = ""
+"\IsReadOnly" = "FALSE"
+"\Encom\Grid\Display\MinCellValue" = "179.565964"
+"\Encom\Grid\Display\MaxCellValue" = "464.501465"
+"\Encom\Grid\Display\Min Cell Value to Colour" = "179.565964"
+"\Encom\Grid\Display\Max Cell Value to Colour" = "464.501465"
+"\Encom\Grid\Display\ClipMinMaxColour" = "0"
+"\Encom\Grid\Display\Type" = "1"
+"\Encom\Grid\Display\LUT" = "DIRT.CLR"
+"\Encom\Grid\Display\Colouring" = ""
+"\Encom\Grid\Display\Colouring\Ranges" = "16"
+"\Encom\Grid\Display\Colouring\Range 0" = "179.566"
+"\Encom\Grid\Display\Colouring\Range 1" = "241.061"
+"\Encom\Grid\Display\Colouring\Range 2" = "265.826"
+"\Encom\Grid\Display\Colouring\Range 3" = "282.799"
+"\Encom\Grid\Display\Colouring\Range 4" = "294.208"
+"\Encom\Grid\Display\Colouring\Range 5" = "312.573"
+"\Encom\Grid\Display\Colouring\Range 6" = "343.738"
+"\Encom\Grid\Display\Colouring\Range 7" = "358.207"
+"\Encom\Grid\Display\Colouring\Range 8" = "374.346"
+"\Encom\Grid\Display\Colouring\Range 9" = "387.424"
+"\Encom\Grid\Display\Colouring\Range 10" = "396.607"
+"\Encom\Grid\Display\Colouring\Range 11" = "404.12"
+"\Encom\Grid\Display\Colouring\Range 12" = "412.189"
+"\Encom\Grid\Display\Colouring\Range 13" = "423.319"
+"\Encom\Grid\Display\Colouring\Range 14" = "436.119"
+"\Encom\Grid\Display\Colouring\Range 15" = "450.31"
+"\Encom\Grid\Display\Colouring\Range 16" = "464.501"
+"\Encom\Grid\Display\SunShading" = "1"
+"\Encom\Grid\Display\SunAzimuthDeg" = "185"
+"\Encom\Grid\Display\SunElevation" = "80"
+"\Encom\Grid\Display\SunColorSaturation" = "0.0"
+"\Encom\Grid\Display\SunIntensitySaturation" = "100.0"
+"\Encom\Grid\Display\SunShadowDepth" = "50"
+"\Encom\Grid\Display\SunHighlight" = "0"
+"\Encom\Grid\Display\SunHighlightAzimuth" = "315"
+"\Encom\Grid\Display\SunHighlightElevation" = "60"
+"\Encom\Grid\Display\SunHighlightSaturation" = "0.0"
+"\Encom\Grid\Display\SunHighlightIntensity" = "50.0"
+end_metadata
