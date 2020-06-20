@@ -8,15 +8,15 @@
     ]
   },
   "mapscale": 15,
-  "scale": 14.154809,
+  "scale": 31.7503624,
   "grid-scale": 0.0,
   "cameras": [
     {
       "type": "Point",
       "coordinates": [
-        -1.7818689427527998,
-        53.317240650805523,
-        271.22610473632813
+        -1.7909882884996891,
+        53.316383463851345,
+        0.56739109754562378
       ]
     }
   ],
@@ -133,7 +133,24 @@
       "source": "test_data/Magnetic_TFI_RTP.txt",
       "features": null,
       "position": null,
-      "transform": null
+      "transform": {
+        "translate": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotate": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
     },
     {
       "properties": {
@@ -203,15 +220,32 @@
       "source": "test_data/Electrical_conductivity.txt",
       "features": null,
       "position": null,
-      "transform": null
+      "transform": {
+        "translate": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotate": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
     }
   ],
   "Camera": {
     "type": "Point",
     "coordinates": [
-      -1.7818689427527998,
-      53.317240650805523,
-      271.22610473632813
+      -1.7909882884996891,
+      53.316383463851345,
+      0.56739109754562378
     ]
   }
 }
