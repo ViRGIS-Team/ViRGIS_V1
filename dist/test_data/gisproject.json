@@ -7,20 +7,32 @@
       53.316200583246534
     ]
   },
-  "mapscale": 15,
   "scale": 31.7503624,
-  "grid-scale": 0.0,
+  "grid-scale": 1.0,
   "cameras": [
     {
       "type": "Point",
       "coordinates": [
-        -1.7878531829104893,
-        53.314503566147394,
-        278.2080078125
+        -1.7898274534438385,
+        53.319668584902452,
+        251.29861450195313
       ]
     }
   ],
   "recordsets": [
+    {
+      "id": "_map_",
+      "display-name": "MapBox Map",
+      "type": "RecordSet",
+      "datatype": "MapBox",
+      "source": null,
+      "features": null,
+      "position": null,
+      "transform": null,
+      "properties": {
+        "mapscale": 15
+      }
+    },
     {
       "properties": {
         "units": {
@@ -57,7 +69,7 @@
         "x_sect_type": null
       },
       "id": "001",
-      "display-name": "Narea ERT Lines",
+      "display-name": "Narea ERTY Lines",
       "type": "GeologyCollection",
       "datatype": "XSect",
       "source": "test_data/narea_ert_lines.egb",
@@ -89,9 +101,9 @@
                 1.0
               ],
               "scale": [
-                60.0,
-                60.0,
-                60.0
+                30.0,
+                30.0,
+                30.0
               ]
             },
             "label": null
@@ -176,9 +188,9 @@
                 1.0
               ],
               "scale": [
-                60.0,
-                60.0,
-                60.0
+                30.0,
+                30.0,
+                30.0
               ]
             },
             "label": null
@@ -224,7 +236,7 @@
         "translate": [
           0.0,
           0.0,
-          0.0
+          -10.0
         ],
         "rotate": [
           0.0,
@@ -239,13 +251,5 @@
         ]
       }
     }
-  ],
-  "Camera": {
-    "type": "Point",
-    "coordinates": [
-      -1.7878531829104893,
-      53.314503566147394,
-      278.2080078125
-    ]
-  }
+  ]
 }
