@@ -1,7 +1,6 @@
 {
 "type": "FeatureCollection",
 "name": "os-maps",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
 "features": [
 { "type": "Feature", "properties": { "id": null }, "geometry": { "type": "Point", "coordinates": [ -1.791218230167096, 53.316200583246534 ] } },
 { "type": "Feature", "properties": { "id": null }, "geometry": { "type": "Point", "coordinates": [ -1.790947706074966, 53.316287915570086 ] } },
