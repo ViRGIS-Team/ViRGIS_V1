@@ -1,0 +1,13 @@
+{
+"type": "FeatureCollection",
+"name": "bradwell_moor_ecology",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::27700" } },
+"features": [
+{ "type": "Feature", "properties": { "id": null, "Name": "TN6", "Details": "Concrete lined pond" }, "geometry": { "type": "Point", "coordinates": [ 413768.541400661750231, 379935.319303933996707 ] } },
+{ "type": "Feature", "properties": { "id": null, "Name": "TN5", "Details": "Unimproved Grassland" }, "geometry": { "type": "Point", "coordinates": [ 414248.197492404200602, 380436.178699777694419 ] } },
+{ "type": "Feature", "properties": { "id": null, "Name": "TN4", "Details": "Dry dwarf shrub heath" }, "geometry": { "type": "Point", "coordinates": [ 414216.557328771159519, 380755.217016410781071 ] } },
+{ "type": "Feature", "properties": { "id": null, "Name": "TN3", "Details": "2 no. areas of botanical interest" }, "geometry": { "type": "Point", "coordinates": [ 415145.108242057263851, 380636.126956069841981 ] } },
+{ "type": "Feature", "properties": { "id": null, "Name": "TN2", "Details": "Fenced off rake\/shaft" }, "geometry": { "type": "Point", "coordinates": [ 415242.885136617696844, 380789.05441362952115 ] } },
+{ "type": "Feature", "properties": { "id": null, "Name": "TN1", "Details": "Pond 1" }, "geometry": { "type": "Point", "coordinates": [ 415630.916587839368731, 380945.057998209085781 ] } }
+]
+}

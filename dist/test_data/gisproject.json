@@ -13,9 +13,9 @@
     {
       "type": "Point",
       "coordinates": [
-        -1.7898274534438385,
-        53.319668584902452,
-        251.29861450195313
+        -1.7680197118717931,
+        53.315672245236144,
+        184.27018737792969
       ]
     }
   ],
@@ -235,8 +235,165 @@
       "transform": {
         "translate": [
           0.0,
+          -1.0,
+          0.0
+        ],
+        "rotate": [
           0.0,
-          -10.0
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    },
+    {
+      "properties": {
+        "units": {
+          "point": {
+            "color": [
+              255.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "shape": "Cuboid",
+            "transform": {
+              "translate": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotate": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "scale": [
+                10.0,
+                10.0,
+                10.0
+              ]
+            },
+            "label": null
+          }
+        }
+      },
+      "id": "004",
+      "display-name": "OS Map - Mines",
+      "type": "GeographyCollection",
+      "datatype": "Point",
+      "source": "test_data/os_map_mines.geojson",
+      "features": null,
+      "position": null,
+      "transform": null
+    },
+    {
+      "properties": {
+        "units": {
+          "line": {
+            "color": [
+              0.0,
+              128.0,
+              128.0,
+              1.0
+            ],
+            "shape": "Spheroid",
+            "transform": {
+              "translate": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotate": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "scale": [
+                0.5,
+                0.5,
+                0.5
+              ]
+            },
+            "label": null
+          },
+          "point": {
+            "color": [
+              255.0,
+              255.0,
+              255.0,
+              1.0
+            ],
+            "shape": "Cuboid",
+            "transform": {
+              "translate": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotate": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "scale": [
+                2.0,
+                2.0,
+                2.0
+              ]
+            },
+            "label": null
+          },
+          "body": {
+            "color": [
+              0.0,
+              128.0,
+              128.0,
+              1.0
+            ],
+            "shape": "Spheroid",
+            "transform": {
+              "translate": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotate": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "scale": [
+                0.5,
+                0.5,
+                0.5
+              ]
+            },
+            "label": null
+          }
+        }
+      },
+      "id": "005",
+      "display-name": "Site Boundary",
+      "type": "GeographyCollection",
+      "datatype": "Polygon",
+      "source": "test_data/site_boundary.geojson",
+      "features": null,
+      "position": null,
+      "transform": {
+        "translate": [
+          0.0,
+          0.0,
+          0.1
         ],
         "rotate": [
           0.0,

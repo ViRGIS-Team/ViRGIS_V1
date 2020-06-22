@@ -389,7 +389,24 @@
       "source": "test_data/site_boundary.geojson",
       "features": null,
       "position": null,
-      "transform": null
+      "transform": {
+        "translate": [
+          0.0,
+          0.0,
+          0.1
+        ],
+        "rotate": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
     }
   ]
 }

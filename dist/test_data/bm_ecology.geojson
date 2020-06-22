@@ -1,0 +1,13 @@
+{
+"type": "FeatureCollection",
+"name": "bm_ecology",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "id": null, "Name": "TN6", "Details": "Concrete lined pond" }, "geometry": { "type": "Point", "coordinates": [ -1.794790427723792, 53.3161894589581 ] } },
+{ "type": "Feature", "properties": { "id": null, "Name": "TN5", "Details": "Unimproved Grassland" }, "geometry": { "type": "Point", "coordinates": [ -1.787568390663758, 53.32067895994944 ] } },
+{ "type": "Feature", "properties": { "id": null, "Name": "TN4", "Details": "Dry dwarf shrub heath" }, "geometry": { "type": "Point", "coordinates": [ -1.788029177182018, 53.323547515861868 ] } },
+{ "type": "Feature", "properties": { "id": null, "Name": "TN3", "Details": "2 no. areas of botanical interest" }, "geometry": { "type": "Point", "coordinates": [ -1.774094752154132, 53.322451607396367 ] } },
+{ "type": "Feature", "properties": { "id": null, "Name": "TN2", "Details": "Fenced off rake\/shaft" }, "geometry": { "type": "Point", "coordinates": [ -1.77261959393975, 53.323823438184071 ] } },
+{ "type": "Feature", "properties": { "id": null, "Name": "TN1", "Details": "Pond 1" }, "geometry": { "type": "Point", "coordinates": [ -1.766786514273027, 53.325214503045203 ] } }
+]
+}
