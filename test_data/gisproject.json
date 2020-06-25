@@ -139,10 +139,10 @@
         }
       },
       "id": "002",
-      "display-name": "Magnetic TFI RTP",
+      "display-name": "Magnetic",
       "type": "GeographyCollection",
       "datatype": "PointCloud",
-      "source": "test_data/Magnetic_TFI_RTP.txt",
+      "source": "test_data/MAG_DML.txt",
       "features": null,
       "position": null,
       "transform": {
@@ -229,7 +229,7 @@
       "display-name": "Electrical Conductivity",
       "type": "GeographyCollection",
       "datatype": "PointCloud",
-      "source": "test_data/Electrical_conductivity.txt",
+      "source": "test_data/EC_DML.txt",
       "features": null,
       "position": null,
       "transform": {
@@ -292,121 +292,6 @@
       "features": null,
       "position": null,
       "transform": null
-    },
-    {
-      "properties": {
-        "units": {
-          "line": {
-            "color": [
-              0.0,
-              128.0,
-              128.0,
-              1.0
-            ],
-            "shape": "Spheroid",
-            "transform": {
-              "translate": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "rotate": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-              ],
-              "scale": [
-                0.5,
-                0.5,
-                0.5
-              ]
-            },
-            "label": null
-          },
-          "point": {
-            "color": [
-              255.0,
-              255.0,
-              255.0,
-              1.0
-            ],
-            "shape": "Cuboid",
-            "transform": {
-              "translate": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "rotate": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-              ],
-              "scale": [
-                2.0,
-                2.0,
-                2.0
-              ]
-            },
-            "label": null
-          },
-          "body": {
-            "color": [
-              0.0,
-              128.0,
-              128.0,
-              1.0
-            ],
-            "shape": "Spheroid",
-            "transform": {
-              "translate": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "rotate": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-              ],
-              "scale": [
-                0.5,
-                0.5,
-                0.5
-              ]
-            },
-            "label": null
-          }
-        }
-      },
-      "id": "005",
-      "display-name": "Site Boundary",
-      "type": "GeographyCollection",
-      "datatype": "Polygon",
-      "source": "test_data/site_boundary.geojson",
-      "features": null,
-      "position": null,
-      "transform": {
-        "translate": [
-          0.0,
-          0.0,
-          0.1
-        ],
-        "rotate": [
-          0.0,
-          0.0,
-          0.0,
-          1.0
-        ],
-        "scale": [
-          1.0,
-          1.0,
-          1.0
-        ]
-      }
     }
   ]
 }
