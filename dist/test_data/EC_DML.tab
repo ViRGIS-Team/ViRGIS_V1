@@ -1,0 +1,64 @@
+!table
+!version 500
+!charset WindowsLatin1
+
+Definition Table
+  File "EC_DML.ers"
+  Type "RASTER"
+  (414605.600000,381682.400000) (0,0) Label "Pt 1",
+  (415189.600000,381682.400000) (365,0) Label "Pt 2",
+  (415189.600000,381176.800000) (365,316) Label "Pt 3",
+  (414605.600000,381176.800000) (0,316) Label "Pt 4"
+  CoordSys Earth Projection 8, 79, "m", -2, 49, 0.9996012717, 400000, -100000
+  Units "m"
+  RasterStyle 6 1
+begin_metadata
+"\IsReadOnly" = "FALSE"
+"\MapInfo" = ""
+"\MapInfo\TableID" = "3f817f10-2a6a-436c-93aa-ff1efcc930f9"
+"\Encom" = ""
+"\Encom\Grid" = ""
+"\Encom\Grid\Display" = ""
+"\Encom\Grid\Display\SunShading" = "0"
+"\Encom\Grid\Display\SunShadowDepth" = "50.0"
+"\Encom\Grid\Display\MaxCellValue" = "33.505913"
+"\Encom\Grid\Display\Type" = "1"
+"\Encom\Grid\Display\Max Cell Percentile to Colour" = "100.00"
+"\Encom\Grid\Display\SunAzimuthDeg" = "45.0"
+"\Encom\Grid\Display\Min Cell Value To Colour" = "11.410574"
+"\Encom\Grid\Display\Min Cell Percentile to Colour" = "0.00"
+"\Encom\Grid\Display\Max Cell Percentage to Colour" = "95.82"
+"\Encom\Grid\Display\SunHighlight" = "0"
+"\Encom\Grid\Display\MinCellValue" = "11.410574"
+"\Encom\Grid\Display\SunElevation" = "60.0"
+"\Encom\Grid\Display\SunHighlightAzimuth" = "315.0"
+"\Encom\Grid\Display\SunHighlightIntensity" = "50.0"
+"\Encom\Grid\Display\SunIntensitySaturation" = "100.0"
+"\Encom\Grid\Display\ClipKey" = "VALUE"
+"\Encom\Grid\Display\SunHighlightSaturation" = "0.0"
+"\Encom\Grid\Display\LUT" = "pseudocolor_reversed.lut"
+"\Encom\Grid\Display\Min Cell Percentage to Colour" = "0.00"
+"\Encom\Grid\Display\ClipMinMaxColour" = "0"
+"\Encom\Grid\Display\SunColorSaturation" = "0.0"
+"\Encom\Grid\Display\Max Cell Value To Colour" = "33.505913"
+"\Encom\Grid\Display\SunHighlightElevation" = "60.0"
+"\Encom\Grid\Display\Colouring" = ""
+"\Encom\Grid\Display\Colouring\Ranges" = "16"
+"\Encom\Grid\Display\Colouring\Range 0" = "11.4106"
+"\Encom\Grid\Display\Colouring\Range 1" = "12.4679"
+"\Encom\Grid\Display\Colouring\Range 2" = "12.6621"
+"\Encom\Grid\Display\Colouring\Range 3" = "12.8131"
+"\Encom\Grid\Display\Colouring\Range 4" = "12.921"
+"\Encom\Grid\Display\Colouring\Range 5" = "13.0505"
+"\Encom\Grid\Display\Colouring\Range 6" = "13.1583"
+"\Encom\Grid\Display\Colouring\Range 7" = "13.2878"
+"\Encom\Grid\Display\Colouring\Range 8" = "13.4173"
+"\Encom\Grid\Display\Colouring\Range 9" = "13.5467"
+"\Encom\Grid\Display\Colouring\Range 10" = "13.7194"
+"\Encom\Grid\Display\Colouring\Range 11" = "13.9136"
+"\Encom\Grid\Display\Colouring\Range 12" = "14.1509"
+"\Encom\Grid\Display\Colouring\Range 13" = "14.4314"
+"\Encom\Grid\Display\Colouring\Range 14" = "14.8414"
+"\Encom\Grid\Display\Colouring\Range 15" = "15.4456"
+"\Encom\Grid\Display\Colouring\Range 16" = "33.5059"
+end_metadata
