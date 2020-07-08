@@ -7,15 +7,15 @@
       53.316200583246534
     ]
   },
-  "scale": 31.7503624,
+  "scale": 11.7733555,
   "grid-scale": 1.0,
   "cameras": [
     {
       "type": "Point",
       "coordinates": [
-        -1.7737692275003063,
-        53.319612711946682,
-        164.00224304199219
+        -1.7798107997597585,
+        53.327075899134108,
+        412.54629516601563
       ]
     }
   ],
@@ -144,7 +144,14 @@
       "datatype": "PointCloud",
       "source": "test_data/MAG_DML.txt",
       "features": null,
-      "position": null,
+      "position": {
+        "type": "Point",
+        "coordinates": [
+          -1.7911776422883132,
+          53.316205011584856,
+          0.6342892050743103
+        ]
+      },
       "transform": {
         "translate": [
           0.0,
@@ -162,7 +169,8 @@
           1.0,
           1.0
         ]
-      }
+      },
+      "visible": false
     },
     {
       "properties": {
@@ -231,11 +239,18 @@
       "datatype": "PointCloud",
       "source": "test_data/EC_DML.txt",
       "features": null,
-      "position": null,
+      "position": {
+        "type": "Point",
+        "coordinates": [
+          -1.7912145911597532,
+          53.316209670339767,
+          -2.5283901691436768
+        ]
+      },
       "transform": {
         "translate": [
           0.0,
-          -1.0,
+          0.0,
           0.0
         ],
         "rotate": [
