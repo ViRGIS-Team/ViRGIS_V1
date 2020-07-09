@@ -7,7 +7,6 @@
       51.299457
     ]
   },
-  "mapscale": 15,
   "scale": 9.983333,
   "grid-scale": 0.0,
   "cameras": [
@@ -21,6 +20,19 @@
     }
   ],
   "recordsets": [
+    {
+      "id": "_map_",
+      "display-name": "MapBox Map",
+      "type": "RecordSet",
+      "datatype": "MapBox",
+      "source": null,
+      "features": null,
+      "position": null,
+      "transform": null,
+      "properties": {
+        "mapscale": 15
+      }
+    },
     {
       "properties": {
         "units": {
