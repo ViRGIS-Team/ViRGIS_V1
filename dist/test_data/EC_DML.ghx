@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes" ?> 
+<ghx>
+	<version>1.0</version>
+	<grid>
+		<name>EC_DML</name>
+		<url>EC_DML.ers</url>
+		<extent>
+			<rows>316</rows>
+			<columns>365</columns>
+			<cellwidth>1.60000000000000</cellwidth>
+			<cellheight>1.60000000000000</cellheight>
+		</extent>
+		<coordinatespace>
+			<coordsys>2008, 79, 7, -2, 49,0.9996012717, 400000, -100000, 0, -100000, 2000000, 1900000</coordsys>
+		</coordinatespace>
+		<registration>
+			<originx>414605.59999999997672</originx>
+			<originy>381176.80000000004657</originy>
+			<centroidx>414606.39999999996508</centroidx>
+			<centroidy>381177.60000000003492</centroidy>
+		</registration>
+		<storage>
+			<celltype>IEEE4ByteReal</celltype>
+			<nullcell>-1.0e+32</nullcell>
+			<sense>RowMajorDown</sense>
+			<byteorder>LSBFirst</byteorder>
+		</storage>
+		<bands>
+			<band>
+				<name>Band_1</name>
+				<statistics>
+					<sampled>100%</sampled>
+					<undefined>74095</undefined>
+					<defined>41245</defined>
+					<min>11.41057395935059</min>
+					<max>33.50591278076172</max>
+					<avg>13.69110473025162</avg>
+					<variance>1.36028560156710</variance>
+					<stddev>1.16631282320272</stddev>
+				</statistics>
+				<histogram>
+					<clip>100.00000000000000</clip>
+					<min>11.41057395935059</min>
+					<max>33.50591278076172</max>
+					<definedlow>0</definedlow>
+					<defined>41245</defined>
+					<definedhigh>0</definedhigh>
+					<nbins>4096</nbins>
+					<bins>
+						1 0 0 0 0 1 0 0 0 0 1 0 1 0 0 0 0 0 0 0 0 0 2 0 0 0 0 1 0 1 1 0 
+						0 0 0 0 0 0 0 0 1 2 0 1 1 0 1 0 1 0 0 1 1 0 0 0 1 1 2 3 0 3 0 1 
+						2 2 1 1 0 3 0 3 1 0 0 2 0 6 1 0 1 1 1 1 6 3 0 3 2 1 4 1 2 6 2 3 
+						7 2 3 6 7 10 1 5 3 4 4 9 4 9 11 6 3 11 7 9 8 5 15 7 11 9 9 9 12 6 11 9 
+						10 12 13 12 12 7 10 14 8 22 15 18 24 23 14 20 21 14 24 22 23 24 16 27 24 27 26 25 27 30 28 31 
+						31 29 38 40 31 37 30 37 43 32 42 42 43 49 30 33 37 43 48 37 48 43 41 41 56 54 46 54 59 61 53 46 
+						55 42 58 45 50 64 49 61 49 51 55 63 69 59 62 75 56 70 80 57 69 69 64 67 79 69 82 72 70 84 70 72 
+						67 85 90 67 79 82 75 85 86 108 91 72 83 78 96 86 82 88 101 90 108 79 91 92 100 82 102 100 91 103 109 106 
+						113 122 110 105 104 122 109 125 123 123 116 107 102 112 121 112 110 97 99 111 110 135 122 118 106 89 106 126 136 132 108 133 
+						117 133 111 108 111 98 134 118 136 105 124 116 121 106 110 124 120 99 118 130 127 128 109 100 100 136 112 106 139 128 123 127 
+						107 125 118 114 139 114 125 118 91 107 103 124 104 112 116 110 112 122 128 117 125 134 125 133 125 114 113 107 109 102 118 107 
+						114 121 112 95 120 86 101 95 130 108 123 108 93 106 89 105 108 114 91 110 110 104 97 98 106 107 110 86 114 117 79 94 
+						107 105 99 100 98 97 105 124 92 105 94 80 93 89 99 98 95 70 100 90 99 92 88 91 81 91 96 97 91 81 82 95 
+						86 81 88 70 75 84 91 90 95 70 79 83 86 64 83 70 112 65 68 65 87 70 70 62 76 74 79 62 87 80 77 58 
+						74 71 73 60 80 73 67 82 63 61 62 70 61 80 84 53 59 57 60 55 60 73 63 65 70 65 64 58 62 56 55 67 
+						58 49 66 73 61 61 56 62 58 66 54 56 56 66 46 53 67 55 62 52 57 59 48 59 47 53 53 44 58 62 62 51 
+						49 54 51 56 59 56 55 58 42 49 58 52 45 49 39 57 55 44 51 57 41 47 43 50 45 48 47 56 50 41 37 43 
+						43 39 36 53 45 49 34 55 40 52 38 41 44 35 44 42 38 41 40 41 41 39 34 37 43 27 39 45 42 44 37 31 
+						40 24 30 40 53 41 42 35 24 36 39 35 32 42 24 41 30 26 40 32 36 36 36 30 34 35 25 40 37 42 34 36 
+						34 35 31 33 34 34 43 38 37 28 25 25 33 24 28 35 36 28 29 40 34 38 26 27 31 32 30 30 28 26 40 24 
+						24 31 37 35 36 33 37 35 35 23 20 31 27 35 39 22 27 25 28 23 31 25 25 29 32 27 37 28 32 31 25 32 
+						34 23 29 24 20 29 26 27 30 28 27 29 20 19 19 23 36 22 22 20 21 29 27 17 26 20 15 23 21 22 21 20 
+						16 21 17 26 31 14 21 18 15 20 15 21 14 13 22 16 10 12 22 14 17 17 15 20 14 23 15 22 13 18 21 10 
+						16 17 19 16 17 13 15 11 18 22 11 16 15 13 11 17 18 12 13 20 19 19 13 18 14 12 14 18 12 13 19 13 
+						11 12 12 13 11 10 10 13 13 13 16 7 13 10 16 16 11 9 12 9 11 9 18 16 7 15 10 13 16 7 11 17 
+						15 11 7 8 9 14 11 16 8 12 9 11 10 11 10 5 12 8 10 11 12 7 10 12 6 3 5 10 8 4 6 7 
+						11 9 11 7 7 4 10 7 3 6 8 7 5 5 9 7 6 7 9 7 2 5 7 4 5 7 6 2 7 9 5 7 
+						7 7 9 5 6 5 5 8 7 2 3 3 4 4 6 8 6 5 5 3 2 5 6 4 6 8 3 4 3 6 4 3 
+						4 4 6 5 3 4 5 3 2 5 2 4 3 4 4 4 5 2 5 4 4 3 2 6 5 2 4 6 4 3 0 0 
+						2 5 4 4 6 2 0 8 3 5 6 0 4 1 2 2 5 3 2 3 0 4 0 4 2 0 2 2 1 2 4 4 
+						2 5 3 3 2 2 3 5 1 3 3 1 2 4 5 3 4 1 5 4 2 3 1 3 3 2 5 5 0 2 3 1 
+						4 1 5 2 3 1 1 1 2 2 6 0 3 2 3 2 2 1 3 3 5 3 3 1 2 1 3 2 5 2 2 1 
+						5 4 2 2 2 4 2 1 1 0 2 6 3 1 4 4 1 4 1 1 2 5 3 0 2 3 3 2 3 4 1 3 
+						1 3 0 0 6 0 4 1 2 3 3 1 2 1 3 3 2 2 1 1 1 2 1 6 1 0 3 3 2 1 1 3 
+						2 3 1 1 1 1 3 4 1 3 2 0 2 1 1 2 3 4 3 4 3 2 2 1 6 1 1 1 3 2 2 1 
+						0 1 2 5 1 0 2 0 2 2 5 0 2 0 3 0 3 1 4 2 4 2 3 2 1 3 1 0 0 0 1 2 
+						4 3 0 1 1 1 2 0 0 1 1 0 0 1 3 2 0 0 1 2 5 2 0 2 2 3 1 1 0 0 0 2 
+						1 0 2 1 0 1 3 1 1 2 3 1 0 3 1 2 0 0 2 4 2 1 0 1 1 3 3 2 0 0 0 1 
+						3 3 3 4 0 0 2 0 0 0 2 1 1 3 3 2 0 0 1 1 0 1 1 2 2 0 1 2 3 1 0 2 
+						2 1 1 0 0 0 0 2 0 2 0 2 2 1 1 1 1 0 2 0 3 0 4 2 1 1 1 2 5 2 1 1 
+						2 1 0 1 0 1 0 2 0 1 2 0 0 1 1 2 1 1 2 0 1 2 4 1 1 0 0 0 1 1 1 3 
+						3 0 2 1 1 1 0 2 0 0 2 2 2 1 0 2 0 1 2 0 1 1 3 1 1 0 2 1 0 0 1 2 
+						1 0 1 0 2 1 1 0 1 0 0 1 0 0 1 0 1 1 1 0 0 2 0 2 0 0 0 1 2 3 0 1 
+						0 1 1 0 1 2 1 1 1 1 1 2 1 2 0 1 1 0 0 1 1 0 1 2 0 0 0 1 0 1 1 1 
+						1 1 1 1 1 0 1 1 1 0 1 0 0 0 1 2 1 1 2 0 1 2 0 0 0 1 1 2 2 1 4 1 
+						2 1 3 2 1 1 0 1 0 0 0 0 1 0 2 0 0 0 0 0 4 1 0 0 0 0 0 0 0 2 2 3 
+						1 0 1 1 0 0 0 1 0 2 0 0 3 1 0 1 1 2 1 2 0 1 1 1 0 3 0 0 1 0 1 1 
+						1 1 0 0 0 1 2 1 1 0 1 1 3 2 0 1 0 0 1 4 2 0 1 0 2 0 0 1 2 1 0 0 
+						0 0 0 0 1 1 4 2 3 0 1 0 0 1 0 0 0 1 1 0 0 1 2 3 0 1 1 0 0 1 4 1 
+						0 0 2 1 0 1 0 3 0 3 0 0 1 1 3 0 2 0 0 0 2 0 0 1 0 1 1 0 0 3 1 0 
+						0 1 0 0 2 0 2 0 0 0 0 1 1 1 1 0 0 2 1 2 1 0 1 2 0 1 0 3 0 2 0 1 
+						1 1 0 1 0 3 0 0 1 0 0 0 0 3 0 0 0 1 1 1 1 2 0 1 0 1 1 0 0 0 0 0 
+						1 1 0 1 0 1 0 1 0 1 1 0 0 0 2 0 0 0 0 1 0 0 0 2 1 0 0 1 0 0 2 2 
+						0 1 2 0 0 0 0 1 0 1 0 1 0 0 1 1 1 0 1 0 0 2 0 1 2 0 1 0 0 1 1 0 
+						1 1 1 0 0 0 1 0 1 0 0 1 0 0 0 0 0 0 0 0 2 0 0 2 1 0 0 0 0 0 0 0 
+						1 0 0 1 0 1 1 0 1 0 0 1 0 1 0 0 0 1 0 0 0 0 0 0 1 1 0 1 0 0 1 0 
+						0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 
+						0 0 1 0 0 0 1 0 0 2 0 0 0 0 1 0 0 0 0 0 0 1 1 0 0 0 0 0 0 0 0 0 
+						0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+						0 0 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+						0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 
+						0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 1 0 
+						0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+						0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+						0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+						0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+						0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+						0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+						0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 
+						0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+						0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 0 0 0 0 0 0 
+						0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+						0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 
+						0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+						0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 
+						0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+						0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 
+						0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+						0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+						0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+						0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+						0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+						0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+						0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 
+						0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+						0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+						0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+						0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+						0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+						0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+						0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+						0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+						0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+						0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+						0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+						0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+						0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+						0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+						0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+						0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+						0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+						0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+						0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+						0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+						0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+						0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+						0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+						0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+						0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+						0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+						0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+						0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+						0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+						0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+						0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+						0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+						0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+						0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+						0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+						0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+						0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+						0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+						0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+						0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+						0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+						0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+						0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+						0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+					</bins>
+				</histogram>
+				<thumbnail>
+					<width>64</width>
+					<height>55</height>
+					<planes>8</planes>
+					<encoding>HEXADECIMAL</encoding>
+					<nullvalue>ff</nullvalue>
+					<thumbdata>
+						fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffd
+						fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffefdfefafaf9
+						fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffdfefbf9fafaf7efe8e0e4dee5
+						fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffbf6f7a0d7e6d883af864c12a9d2ddb5b7b2aab9c5
+						fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff8fef8cde6bcccc2b1a99af38b481003020687908ccbc27299ffff
+						fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff8e4d7c2779155a5d5b3b19d302937ca22373d639a8883507f91f8ffffff
+						ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffefdefecf7063861b0c71c0a960672b0107d86b37969659249272d1ffffffffff
+						ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffefecc9cbf3f64544775913648d974e270a000067b38940713d56cbffffffffffffff
+						ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffc4d2dce3b87ff755317724417a220e1e0500013285eedf55485cb3ffffffffffffffff
+						fffffffffffffffffffffffffffffffffffffffffffffffffffffff1e3aca1a94b4f2d3f751820282e940a0305180623096db9f65161ffffffffffffffffffff
+						ffffffffffffffffffffffffffffffffffffffffffffffffffffe7f6e9c8c5920f306465b92b00090022010643627e86061ea8f8ffffffffffffffffffffffff
+						ffffffffffffffffffffffffffffffffffffffffffffffffffd4f2f3cbb7c8320a6a3a2b79391d0802091d346e7b85232723b5ffffffffffffffffffffffffff
+						ffffffffffffffffffffffffffffffffffffffffffffffb8a2e5f3e6a55ea63f4e495e0d56b07407041318613c45306e45ffffffffffffffffffffffffffffff
+						ffffffffffffffffffffffffffffffffffffffffffffc2408be9d270683a7427211b0e158258150523140c627a3741cfffffffffffffffffffffffffffffffff
+						fffffffffff7ffffffffffffffffffffffffffffffb0658678c3dbb4725b312f0a1b170a0b03127216131c554a62b0ffffffffffffffffffffffffffffffffff
+						fffffffffff5f3fffffffffffffffffffffffff9a59599779f7d729a782057165f3824091103389e74535f6167baffffffffffffffffffffffffffffffffffff
+						fffffffffff5dafffffffffffffffffffff6d0ac9655706a3f7357b1717d301ab42b1803011925b8e6a06b328fffffffffffffffffffffffffffffffffffffff
+						fffffffffadcb27cffffffffffffffffebd25d7c5b6fab8d254883e7b2a4191696250000200458a9c6c2a7ffffffffffffffffffffffffffffffffffffffffff
+						ffffffffe0e5e2f8ffffffffffff5e64a574a0bf8f617f52433ac1d7e98e3b0c290801233576577892ffffffffffffffffffffffffffffffffffffffffffffff
+						fffffffbf0dcd1bcfffffffffa481d2f2815aeb8a37f211274bae6c295e1542c0f1a33105d77615fffffffffffffffffffffffffffffffffffffffffffffffff
+						ffffffe8d6ccc4ab95ffffeea323490d0c18ab9e706e83638fdddca9baedc75e341d466b395c39ffffffffffffffffffffffffffffffffffffffffffffffffff
+						ffffffbfa8a1a4768ba6a549347f582325105cda9ba696c4c9c1a35ba9e5c2891609507d222fffffffffffffffffffffffffffffffffffffffffffffffffffff
+						ffffd29ea03a1e119090bd681e969b94727165edbf97a7bfbfb1274c6ee4cc4126653e2947ffffffffffffffffffffffffffffffffffffffffffffffffffffff
+						ffffbca6993636203f58ceca436e8854879f1e9372627b771f325e455edac38b71602fb4ffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+						ffffa1bc650f5008103d81835a5e182164988d2699579c59193b484560d9eaa99699f9ffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+						ffd6b2a29527162506262b2f15710e593a9c826554626a706d325067b5c8f9f5e7ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+						ffb7aa8e0d26061c05103a3d4287181276a8787a7a9a688d827e9e85d4f3fafbffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+						ff6282836722074002286770128b3f34624b5665a9b7929065b5b5bbd8cdffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+						ff979237262d312d20125c4b396b93654862347f84868a968edcd8bbbdffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+						ff928109481829233a1a1015442d9cb921553f38aa72747bc5e3c8d0ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+						ff473d1821775a1f0a1b0200351b63c8613a2a5b589052bcdbd9ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+						ffaf11427fc31a4e173632013580557fbe8d2d3748acadbec7ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+						ffe5340da5dd4c091b280f0b1f4d312f7d6b6651639eabacffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+						ffd8679653ae39250b2325200f0b0d291e4fb7917daf7effffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+						ffbaeff05a40485920140c743a404d663a63bb99bba1d2ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+						ffd2fcfad6673b372718307b6f508264531d6ecaad927bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+						fff7fdfbf2c6bb4b330925236e6845748732b6dfadac8fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+						fff9f5ecd3817b858b26202f6867cdbee1c2c8ccbfa19c5effffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+						fffbe1d3e11b1b19a958c1c0a32dcde6c6a5b9b6ba996e5c60ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+						fffffee2f0e15f9f307fbc99c3a9d4ba969c5ca3c379807d715affffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+						fffffdebdef2ce007d98c0c2c4c5bba774501ac3c7d648a948969cffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+						fffff7f3dbe9dbe1c4c8ccbb8fa6a0203b69a370a3728d783d74a6a9ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+						fffff4f4f1e8e7d086cfb29e9390af98a8b089576a777d1b4a3592ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+						fffff8f3f0e5e5d6d6cbacaac6c2b4acad926178666f674381ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+						ffffffeddfd9ebebcadec2bccdc5aeb4a5a0995b535925ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+						fffffff1ead5e6d8e2e0e3cbe4dce4c4c784894d24ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+						fffffffaefcc61dce5d5edebebf4dfd9ccd18babffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+						fffffffff2eaa66abdbbe4f1f5f4dcdcd4d2ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+						ffffffffdce8886f9397c8e2f4f4e2e5cbffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+						ffffffffff7f5a4e434f86b4f3e6e7ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+						ffffffffff653731573b6a65c2c6ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+						ffffffffffff191850444d7b5bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+						ffffffffffff6028501c4543ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+						ffffffffffffff37123d52ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+						ffffffffffffff9250ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+					</thumbdata>
+				</thumbnail>
+			</band>
+		</bands>
+	</grid>
+</ghx>

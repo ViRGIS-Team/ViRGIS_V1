@@ -7,20 +7,32 @@
       51.299457
     ]
   },
-  "mapscale": 15,
-  "scale": 9.983333,
+  "scale": 99.64066,
   "grid-scale": 0.0,
   "cameras": [
     {
       "type": "Point",
       "coordinates": [
-        1.3782420133119688,
-        51.297978745916822,
-        82.382896423339844
+        1.3865315959890754,
+        51.302317296358851,
+        214.24952697753906
       ]
     }
   ],
   "recordsets": [
+    {
+      "id": "_map_",
+      "display-name": "MapBox Map",
+      "type": "RecordSet",
+      "datatype": "MapBox",
+      "source": null,
+      "features": null,
+      "position": null,
+      "transform": null,
+      "properties": {
+        "mapscale": 15
+      }
+    },
     {
       "properties": {
         "units": {
@@ -61,7 +73,8 @@
       "source": "test_data/waypoint27092019up.geojson",
       "features": null,
       "position": null,
-      "transform": null
+      "transform": null,
+      "visible": false
     },
     {
       "properties": {
@@ -103,7 +116,8 @@
       "source": "test_data/waypoint27092019up.geojson",
       "features": null,
       "position": null,
-      "transform": null
+      "transform": null,
+      "visible": false
     },
     {
       "properties": {
@@ -145,7 +159,8 @@
       "source": "test_data/waypoint27092019up.geojson",
       "features": null,
       "position": null,
-      "transform": null
+      "transform": null,
+      "visible": false
     },
     {
       "properties": {
@@ -422,14 +437,14 @@
       "display-name": null,
       "type": "GeographyCollection",
       "datatype": "PointCloud",
-      "source": "test_data/test.ply",
+      "source": "test_data/test.txt",
       "features": null,
       "position": {
         "type": "Point",
         "coordinates": [
-          1.3770467505699098,
-          51.299359663286666,
-          84.472236633300781
+          1.3795478808534143,
+          51.301851761426924,
+          42.993869781494141
         ]
       },
       "transform": {
@@ -517,13 +532,5 @@
         ]
       }
     }
-  ],
-  "Camera": {
-    "type": "Point",
-    "coordinates": [
-      1.3782420133119688,
-      51.297978745916822,
-      82.382896423339844
-    ]
-  }
+  ]
 }

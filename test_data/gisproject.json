@@ -1,0 +1,312 @@
+{
+  "name": "test_project",
+  "origin": {
+    "type": "Point",
+    "coordinates": [
+      -1.791218230167096,
+      53.316200583246534
+    ]
+  },
+  "scale": 11.1849451,
+  "grid-scale": 1.0,
+  "cameras": [
+    {
+      "type": "Point",
+      "coordinates": [
+        -1.78004713390724,
+        53.324683570903694,
+        183.1871337890625
+      ]
+    }
+  ],
+  "recordsets": [
+    {
+      "id": "_map_",
+      "display-name": "MapBox Map",
+      "type": "RecordSet",
+      "datatype": "MapBox",
+      "source": null,
+      "features": null,
+      "position": null,
+      "transform": null,
+      "properties": {
+        "mapscale": 15
+      }
+    },
+    {
+      "properties": {
+        "units": {
+          "point": {
+            "color": [
+              0.0,
+              0.0,
+              255.0,
+              1.0
+            ],
+            "shape": "Cylinder",
+            "transform": {
+              "translate": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotate": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "label": "name"
+          }
+        },
+        "lines": null,
+        "x_sect_type": null
+      },
+      "id": "001",
+      "display-name": "Narea ERTY Lines",
+      "type": "GeologyCollection",
+      "datatype": "XSect",
+      "source": "test_data/narea_ert_lines.egb",
+      "features": null,
+      "position": null,
+      "transform": null
+    },
+    {
+      "properties": {
+        "units": {
+          "point": {
+            "color": [
+              0.0,
+              0.0,
+              255.0,
+              1.0
+            ],
+            "shape": "Cylinder",
+            "transform": {
+              "translate": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotate": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "scale": [
+                30.0,
+                30.0,
+                30.0
+              ]
+            },
+            "label": null
+          },
+          "handle": {
+            "color": [
+              0.0,
+              0.0,
+              255.0,
+              1.0
+            ],
+            "shape": "Cylinder",
+            "transform": {
+              "translate": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotate": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "label": null
+          }
+        }
+      },
+      "id": "002",
+      "display-name": "Magnetic",
+      "type": "GeographyCollection",
+      "datatype": "PointCloud",
+      "source": "test_data/MAG_DML.txt",
+      "features": null,
+      "position": {
+        "type": "Point",
+        "coordinates": [
+          -1.7911776422883132,
+          53.316205011584856,
+          0.6342892050743103
+        ]
+      },
+      "transform": {
+        "translate": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotate": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "visible": false
+    },
+    {
+      "properties": {
+        "units": {
+          "point": {
+            "color": [
+              0.0,
+              0.0,
+              255.0,
+              1.0
+            ],
+            "shape": "Cylinder",
+            "transform": {
+              "translate": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotate": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "scale": [
+                20.0,
+                20.0,
+                20.0
+              ]
+            },
+            "label": null
+          },
+          "handle": {
+            "color": [
+              0.0,
+              0.0,
+              255.0,
+              1.0
+            ],
+            "shape": "Cylinder",
+            "transform": {
+              "translate": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotate": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "label": null
+          }
+        }
+      },
+      "id": "003",
+      "display-name": "Electrical Conductivity",
+      "type": "GeographyCollection",
+      "datatype": "PointCloud",
+      "source": "test_data/EC_DML.txt",
+      "features": null,
+      "position": {
+        "type": "Point",
+        "coordinates": [
+          -1.7912145911597532,
+          53.316209670339767,
+          -2.5283901691436768
+        ]
+      },
+      "transform": {
+        "translate": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotate": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    },
+    {
+      "properties": {
+        "units": {
+          "point": {
+            "color": [
+              255.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "shape": "Cuboid",
+            "transform": {
+              "translate": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotate": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "scale": [
+                15.0,
+                15.0,
+                15.0
+              ]
+            },
+            "label": null
+          }
+        }
+      },
+      "id": "004",
+      "display-name": "OS Map - Mines",
+      "type": "GeographyCollection",
+      "datatype": "Point",
+      "source": "test_data/os_map_mines.geojson",
+      "features": null,
+      "position": null,
+      "transform": null
+    }
+  ]
+}
