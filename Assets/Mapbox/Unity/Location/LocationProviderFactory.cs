@@ -60,7 +60,7 @@ namespace Mapbox.Unity.Location
 		/// In the Unity editor, this will be an <see cref="T:Mapbox.Unity.Location.EditorLocationProvider"/>
 		/// </summary>
 		/// <example>
-		/// Fetch location to set a transform's position:
+		/// Get location to set a transform's position:
 		/// <code>
 		/// void Update()
 		/// {
