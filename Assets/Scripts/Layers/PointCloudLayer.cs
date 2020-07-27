@@ -25,8 +25,8 @@ namespace Virgis
         private Material selectedMat;
 
 
-        protected override async Task _init(GeographyCollection layer)
-        {
+        protected override async Task _init() {
+            GeographyCollection layer = _layer as GeographyCollection;
             //PlyImport reader = new PlyImport();
             //features = await reader.Load(layer.Source);
             CSVReader reader = new CSVReader();

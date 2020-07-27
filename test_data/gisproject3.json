@@ -7,15 +7,15 @@
       51.299457
     ]
   },
-  "scale": 474.299347,
+  "scale": 17.07861,
   "grid-scale": 0.0,
   "cameras": [
     {
       "type": "Point",
       "coordinates": [
-        1.3679343211704216,
-        51.310215856999115,
-        609.25726318359375
+        1.380377813640451,
+        51.302743291169683,
+        221.81742858886719
       ]
     }
   ],
@@ -66,139 +66,10 @@
           }
         }
       },
-      "id": "008",
-      "display-name": null,
-      "type": "GeographyCollection",
-      "datatype": "Point",
-      "source": "test_data/waypoint27092019up.geojson",
-      "features": null,
-      "position": null,
-      "transform": null,
-      "visible": false
-    },
-    {
-      "properties": {
-        "units": {
-          "point": {
-            "color": [
-              0.0,
-              0.0,
-              255.0,
-              1.0
-            ],
-            "shape": "Cylinder",
-            "transform": {
-              "translate": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "rotate": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-              ],
-              "scale": [
-                5.0,
-                5.0,
-                3.0
-              ]
-            },
-            "label": "name"
-          }
-        }
-      },
-      "id": "007",
-      "display-name": null,
-      "type": "GeographyCollection",
-      "datatype": "Point",
-      "source": "test_data/waypoint27092019up.geojson",
-      "features": null,
-      "position": null,
-      "transform": null,
-      "visible": false
-    },
-    {
-      "properties": {
-        "units": {
-          "point": {
-            "color": [
-              0.0,
-              0.0,
-              255.0,
-              1.0
-            ],
-            "shape": "Cylinder",
-            "transform": {
-              "translate": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "rotate": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-              ],
-              "scale": [
-                5.0,
-                5.0,
-                3.0
-              ]
-            },
-            "label": "name"
-          }
-        }
-      },
-      "id": "006",
-      "display-name": null,
-      "type": "GeographyCollection",
-      "datatype": "Point",
-      "source": "test_data/waypoint27092019up.geojson",
-      "features": null,
-      "position": null,
-      "transform": null,
-      "visible": false
-    },
-    {
-      "properties": {
-        "units": {
-          "point": {
-            "color": [
-              0.0,
-              0.0,
-              255.0,
-              1.0
-            ],
-            "shape": "Cylinder",
-            "transform": {
-              "translate": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "rotate": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-              ],
-              "scale": [
-                5.0,
-                5.0,
-                3.0
-              ]
-            },
-            "label": "name"
-          }
-        }
-      },
       "id": "001",
       "display-name": null,
       "type": "GeographyCollection",
-      "datatype": "Point",
+      "datatype": "Vector",
       "source": "test_data/waypoint27092019up.geojson",
       "features": null,
       "position": null,
@@ -268,7 +139,7 @@
       "id": "002",
       "display-name": null,
       "type": "GeographyCollection",
-      "datatype": "Line",
+      "datatype": "Vector",
       "source": "test_data/lines.geojson",
       "features": null,
       "position": null,
@@ -366,7 +237,7 @@
       "id": "003",
       "display-name": null,
       "type": "GeographyCollection",
-      "datatype": "Polygon",
+      "datatype": "Vector",
       "source": "test_data/polys.geojson",
       "features": null,
       "position": null,
@@ -442,9 +313,9 @@
       "position": {
         "type": "Point",
         "coordinates": [
-          1.3795478808534143,
-          51.301851761426924,
-          42.993869781494141
+          1.3792295414138362,
+          51.301775863301813,
+          70.366569519042969
         ]
       },
       "transform": {
@@ -454,15 +325,15 @@
           0.0
         ],
         "rotate": [
-          0.0,
-          0.0,
-          0.0,
-          1.0
+          0.393473059,
+          -0.3822132,
+          -0.320936441,
+          0.7720699
         ],
         "scale": [
-          9.983333,
-          9.983333,
-          9.983333
+          46.4688835,
+          46.4688835,
+          46.4688835
         ]
       }
     },
@@ -508,9 +379,9 @@
       "position": {
         "type": "Point",
         "coordinates": [
-          1.3772829771041901,
-          51.299457550048793,
-          0.0
+          1.3772479607908021,
+          51.29974980955199,
+          20.304510116577148
         ]
       },
       "transform": {
@@ -520,15 +391,15 @@
           0.0
         ],
         "rotate": [
-          0.0,
-          0.0,
-          0.0,
-          1.0
+          0.0258275568,
+          -0.00955965649,
+          -0.168975025,
+          0.9852355
         ],
         "scale": [
-          9.983333,
-          9.983333,
-          9.983333
+          43.697094,
+          43.697094,
+          43.697094
         ]
       }
     }
