@@ -440,7 +440,7 @@
       "display-name": null,
       "type": "GeographyCollection",
       "datatype": "Mdal",
-      "source": "test_data/xms_tin/paraboloid.m.tin",
+      "source": "test_data/netcdf/indonesia_nc3.nc",
       "features": null,
       "position": {
         "type": "Point",
