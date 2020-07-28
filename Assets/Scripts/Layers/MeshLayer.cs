@@ -5,29 +5,25 @@ using System.IO;
 using Project;
 using g3;
 using System;
-using GeoJSON.Net.Geometry;
+
 
 namespace Virgis
 {
 
-    public class MeshLayer : VirgisLayer<GeographyCollection, MeshData>
+    public class MeshLayer : VirgisLayer<GeographyCollection, List<DMesh3>>
     {
         // The prefab for the data points to be instantiated
-        public Material material;
-        public GameObject handle;
-        public List<GameObject> meshes;
-        public Material HandleMaterial;
+        public GameObject Mesh;
 
+        private List<Transform> meshes;
         private Dictionary<string, Unit> symbology;
-        private Material mainMat;
-        private Material selectedMat;
 
-        private async Task<SimpleMeshBuilder> loadObj(string filename)
+        private async Task<DMesh3Builder> loadObj(string filename)
         {
             using (StreamReader reader = File.OpenText(filename))
             {
                 OBJReader objReader = new OBJReader();
-                SimpleMeshBuilder meshBuilder = new SimpleMeshBuilder();
+                DMesh3Builder meshBuilder = new DMesh3Builder();
                 try
                 {
                     IOReadResult result = objReader.Read(reader, new ReadOptions(), meshBuilder);
@@ -40,25 +36,17 @@ namespace Virgis
                  )
                 {
                     Debug.LogError("Failed to Load" + filename + " : " + e.ToString());
-                    meshBuilder = new SimpleMeshBuilder();
+                    meshBuilder = new DMesh3Builder();
                 }
                 return meshBuilder;
             }
         }
 
-        protected override async Task _init(GeographyCollection layer)
-        {
-            MeshData Mesh = new MeshData();
-            Mesh.Mesh = await loadObj(layer.Source);
-            features = Mesh;
+        protected override async Task _init() {
+            GeographyCollection layer = _layer as GeographyCollection;
+            DMesh3Builder meshes = await loadObj(layer.Source);
+            features = meshes.Meshes;
             symbology = layer.Properties.Units;
-
-            Color col = symbology.ContainsKey("point") ? (Color)symbology["point"].Color : Color.white;
-            Color sel = symbology.ContainsKey("point") ? new Color(1 - col.r, 1 - col.g, 1 - col.b, col.a) : Color.red;
-            mainMat = Instantiate(HandleMaterial);
-            mainMat.SetColor("_BaseColor", col);
-            selectedMat = Instantiate(HandleMaterial);
-            selectedMat.SetColor("_BaseColor", sel);
         }
 
         protected override VirgisFeature _addFeature(Vector3[] geometry)
@@ -69,38 +57,22 @@ namespace Virgis
         {
             GeographyCollection layer = GetMetadata();
             transform.position = layer.Position.ToVector3();
-            transform.Translate(AppState.instance.map.transform.TransformVector((Vector3)layer.Transform.Position ));
+            transform.Translate(AppState.instance.map.transform.TransformVector((Vector3) layer.Transform.Position));
             Dictionary<string, Unit> symbology = GetMetadata().Properties.Units;
-            meshes = new List<GameObject>();
+            meshes = new List<Transform>();
 
-            foreach (SimpleMesh simpleMesh in (features as MeshData).Mesh.Meshes)
-            {
-                GameObject meshGameObject = new GameObject();
-                MeshFilter mf = meshGameObject.AddComponent<MeshFilter>();
-                MeshRenderer renderer = meshGameObject.AddComponent<MeshRenderer>();
-                renderer.material = material;
-                meshGameObject.transform.localScale = AppState.instance.map.transform.localScale;
-                meshGameObject.transform.parent = transform;
-                meshGameObject.transform.localPosition = Vector3.zero;
-                mf.mesh = simpleMesh.ToMesh();
-                meshes.Add(meshGameObject);
+            foreach (DMesh3 dMesh in features) {
+                meshes.Add(Instantiate(Mesh, transform).GetComponent<DataMesh>().Draw(dMesh));
             }
             transform.rotation = layer.Transform.Rotate;
             transform.localScale = layer.Transform.Scale;
-            GameObject centreHandle = Instantiate(handle, transform.position, Quaternion.identity);
-            centreHandle.transform.localScale = AppState.instance.map.transform.TransformVector((Vector3) symbology["handle"].Transform.Scale);
-            centreHandle.GetComponent<Datapoint>().SetMaterial(mainMat, selectedMat);
-            centreHandle.transform.parent = transform;
 
         }
 
         public override void Translate(MoveArgs args)
         {
-            foreach (GameObject mesh in meshes)
-            {
                 if (args.translate != Vector3.zero) transform.Translate(args.translate, Space.World);
                 changed = true;
-            }
         }
 
         /// https://answers.unity.com/questions/14170/scaling-an-object-from-a-different-center.html
