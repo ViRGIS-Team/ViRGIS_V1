@@ -13,9 +13,9 @@
     {
       "type": "Point",
       "coordinates": [
-        -1.7807428563437087,
-        53.3285474300527,
-        387.27969360351563
+        -1.7800994906542769,
+        53.327991430478846,
+        420.83450317382813
       ]
     }
   ],
@@ -32,7 +32,7 @@
       "properties": {
         "mapscale": 15
       },
-      "visible": false
+      "proj4": null
     },
     {
       "properties": {
@@ -76,7 +76,8 @@
       "source": "test_data/narea_ert_lines.egb",
       "features": null,
       "position": null,
-      "transform": null
+      "transform": null,
+      "proj4": null
     },
     {
       "properties": {
@@ -171,7 +172,8 @@
           1.0
         ]
       },
-      "visible": false
+      "visible": false,
+      "proj4": null
     },
     {
       "properties": {
@@ -266,7 +268,7 @@
           1.0
         ]
       },
-      "visible": false
+      "proj4": null
     },
     {
       "properties": {
@@ -304,11 +306,12 @@
       "id": "004",
       "display-name": "OS Map - Mines",
       "type": "GeographyCollection",
-      "datatype": "Point",
+      "datatype": "Vector",
       "source": "test_data/os_map_mines.geojson",
       "features": null,
       "position": null,
-      "transform": null
+      "transform": null,
+      "proj4": null
     }
   ]
 }

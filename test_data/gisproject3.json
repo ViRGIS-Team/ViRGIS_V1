@@ -13,9 +13,9 @@
     {
       "type": "Point",
       "coordinates": [
-        1.3773463679643467,
-        51.299134123756353,
-        222.39349365234375
+        1.3773542813577468,
+        51.296997234875754,
+        200.37263488769531
       ]
     }
   ],
@@ -31,7 +31,8 @@
       "transform": null,
       "properties": {
         "mapscale": 15
-      }
+      },
+      "proj4": null
     },
     {
       "properties": {
@@ -73,7 +74,8 @@
       "source": "test_data/waypoint27092019up.geojson",
       "features": null,
       "position": null,
-      "transform": null
+      "transform": null,
+      "proj4": null
     },
     {
       "properties": {
@@ -143,7 +145,8 @@
       "source": "test_data/lines.geojson",
       "features": null,
       "position": null,
-      "transform": null
+      "transform": null,
+      "proj4": null
     },
     {
       "properties": {
@@ -241,7 +244,8 @@
       "source": "test_data/polys.geojson",
       "features": null,
       "position": null,
-      "transform": null
+      "transform": null,
+      "proj4": null
     },
     {
       "properties": {
@@ -335,7 +339,8 @@
           46.4688835,
           46.4688835
         ]
-      }
+      },
+      "proj4": null
     },
     {
       "properties": {
@@ -401,7 +406,8 @@
           130.328751,
           130.328751
         ]
-      }
+      },
+      "proj4": null
     },
     {
       "properties": {
@@ -440,7 +446,7 @@
       "display-name": null,
       "type": "GeographyCollection",
       "datatype": "Mdal",
-      "source": "test_data/netcdf/indonesia_nc3.nc",
+      "source": "test_data/xms_tin/paraboloid.m.tin",
       "features": null,
       "position": {
         "type": "Point",
@@ -467,7 +473,8 @@
           0.9578706,
           0.9578706
         ]
-      }
+      },
+      "proj4": null
     }
   ]
 }
