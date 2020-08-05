@@ -1,9 +1,10 @@
 // copyright Runette Software Ltd, 2020. All rights reserved
 using System.Collections.ObjectModel;
+using System.Collections.Generic;
+using System;
 using UnityEngine;
 using GeoJSON.Net.Geometry;
 using g3;
-using System;
 using Mapbox.Unity.Utilities;
 
 
@@ -56,7 +57,7 @@ namespace Virgis
         }
     }
 
-    public static class Vector3ExtebnsionMethods {
+    public static class Vector3ExtensionMethods {
         /// <summary>
         /// Convert Vector3 World Space location to Position taking account of zoom, scale and mapscale
         /// </summary>
@@ -232,6 +233,49 @@ namespace Virgis
     }
 
 
+    public static class PolygonExtensions {
+
+        public static GeneralPolygon2d ToPolygon(this List<Dataline> list, ref Frame3f frame) {
+            List<VertexLookup> VertexTable = list[0].VertexTable;
+            Vector3d[] vertices = new Vector3d[VertexTable.Count];
+            for (int j = 0; j < VertexTable.Count; j++) {
+                vertices[j] = VertexTable.Find(item => item.Vertex == j).Com.transform.position;
+            }
+            OrthogonalPlaneFit3 orth = new OrthogonalPlaneFit3(vertices);
+            frame = new Frame3f(orth.Origin, orth.Normal);
+            GeneralPolygon2d poly = new GeneralPolygon2d(new Polygon2d());
+            for (int i = 0; i<list.Count; i++) {
+                VertexTable = list[i].VertexTable;
+                vertices = new Vector3d[VertexTable.Count];
+                for (int j = 0; j < VertexTable.Count; j++) {
+                    vertices[j] = VertexTable.Find(item => item.Vertex == j).Com.transform.position;
+                }
+                List<Vector2d> vertices2d = new List<Vector2d>();
+                foreach (Vector3d v in vertices) {
+                    Vector2f vertex = frame.ToPlaneUV((Vector3f) v, 3);
+                    if (i != 0 && !poly.Outer.Contains(vertex))
+                        break;
+                    vertices2d.Add(vertex);
+                }
+                Polygon2d p2d = new Polygon2d(vertices2d);
+                if (i == 0) {
+                    p2d = new Polygon2d(vertices2d);
+                    p2d.Reverse();
+                    poly.Outer = p2d;
+                } else {
+                    try {
+                        poly.AddHole(p2d, true, true);
+                    } catch {
+                        p2d.Reverse();
+                        poly.AddHole(p2d, true, true);
+                    }
+                   
+                }
+            }
+            return poly;
+        }
+    }
+
 
     public static class SimpleMeshExtensions
     {
@@ -243,6 +287,7 @@ namespace Virgis
         public static Mesh ToMesh(this SimpleMesh simpleMesh)
         {
             Mesh unityMesh = new Mesh();
+            MeshTransforms.ConvertZUpToYUp(simpleMesh);
             Vector3[] vertices = new Vector3[simpleMesh.VertexCount];
             Color[] colors = new Color[simpleMesh.VertexCount];
             Vector2[] uvs = new Vector2[simpleMesh.VertexCount];
@@ -302,7 +347,8 @@ namespace Virgis
         public bool isVertex;
         public VirgisFeature Com;
         public LineSegment Line;
-
+        public int pVertex;
+        
         public override bool Equals(object obj)
         {
             if (obj == null) return false;

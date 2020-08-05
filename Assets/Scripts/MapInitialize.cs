@@ -17,7 +17,7 @@ namespace Virgis
     /// 
     /// It is run once at Startup
     /// </summary>
-    public class MapInitialize : VirgisLayer<RecordSet, FeatureObject>
+    public class MapInitialize : VirgisLayer<RecordSet, object>
     {
         // Refernce to the Main Camera GameObject
         public GameObject MainCamera;
@@ -86,7 +86,7 @@ namespace Virgis
             Draw();
         }
 
-        async new Task<VirgisLayer<RecordSet, FeatureObject>> Init(RecordSet layer)
+        async new Task<VirgisLayer<RecordSet, object>> Init(RecordSet layer)
         {
             Component temp = null;
             foreach (RecordSet thisLayer in appState.project.RecordSets)
@@ -148,32 +148,39 @@ namespace Virgis
             throw new System.NotImplementedException();
         }
 
-        public override void ExitEditSession(bool saved) {
+        public override async void ExitEditSession(bool saved) {
             if (!saved) {
                 Draw();
             }
-            Save();
+            await Save();
         }
 
         protected override void _checkpoint()
         {
         }
 
-        public new async void Save()
+        public async Task<RecordSet> Save(bool all = true)
         {
-            foreach (IVirgisLayer com in appState.layers)
-            {
-                RecordSet layer = com.Save();
-                int index = appState.project.RecordSets.FindIndex(x => x.Id == layer.Id);
-                appState.project.RecordSets[index] = layer;
+            // TODO: wrap this in try/catch block
+            Debug.Log("MapInitialize.Save starts");
+
+            if (all) {
+                foreach (IVirgisLayer com in appState.layers) {
+                    RecordSet alayer = await com.Save();
+                    int index = appState.project.RecordSets.FindIndex(x => x.Id == alayer.Id);
+                    appState.project.RecordSets[index] = alayer;
+                }
             }
             appState.project.Scale = appState.GetScale();
             appState.project.Cameras = new List<Point>() { MainCamera.transform.position.ToPoint() };
             geoJsonReader.SetProject(appState.project);
             await geoJsonReader.Save();
+            Debug.Log("MapInitialize.Save ends");
+            // TODO: should return the root layer in v2
+            return null;
         }
 
-        protected override void _save()
+        protected override Task _save()
         {
             throw new System.NotImplementedException();
         }
@@ -210,11 +217,6 @@ namespace Virgis
         public override GameObject GetFeatureShape()
         {
             return null;
-        }
-
-        private void OnApplicationQuit() {
-            Debug.Log("MapInitialize: OnApplicationQuit");
-            //Save();
         }
 
     }
