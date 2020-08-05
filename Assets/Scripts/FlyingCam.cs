@@ -1,5 +1,6 @@
 ﻿//https://stackoverflow.com/questions/58328209/how-to-make-a-free-fly-camera-script-in-unity-with-acceleration-and-decceleratio
 // copyright Runette Software Ltd, 2020. All rights reserved
+using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using Zinnia.Cast;
@@ -172,7 +173,7 @@ namespace Virgis
         // use this for processing any key inputs
         // 
 
-        public void HandleKeyInput(InputAction.CallbackContext context)
+        public async void HandleKeyInput(InputAction.CallbackContext context)
         {
             InputAction action = context.action;
             switch (action.name)
@@ -187,6 +188,10 @@ namespace Virgis
                     appState.StopDiscardEditSession();
                     break;
                 case "Exit":
+                    Debug.Log("FlyingCam.Exit save before quit");
+                    MapInitialize mi = appState.map.GetComponentInChildren<MapInitialize>();
+                    await mi.Save();
+                    Debug.Log("FlyingCam.Exit now quit");
                     Application.Quit();
                     break;
             }
