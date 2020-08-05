@@ -1,0 +1,896 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.3832059353709198,
+          51.285698462616359,
+          0.0
+        ]
+      },
+      "properties": {
+        "SB_No": "SB0001",
+        "Type": "Wreck",
+        "HO_Ref": null,
+        "HE_Ref": null,
+        "HER_Ref": null,
+        "WA_Ref_201": "Site A",
+        "Citizan_Re": null,
+        "Easting": 636011.0,
+        "Northing": 159499.0,
+        "Lat": "51°17'8.58\"N",
+        "Long": "1°22'59.88\"E",
+        "Position_n": "Position from GPS. Origionally thought to be the wreck visible on the multibeam further offshore but this does not appear to be the case.",
+        "Date_surve": "2018/10/08",
+        "Survey_not": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.3837059851178821,
+          51.288140237924537,
+          0.15979990363121033
+        ]
+      },
+      "properties": {
+        "SB_No": "SB0002",
+        "Type": "Wreck",
+        "HO_Ref": "77608",
+        "HE_Ref": null,
+        "HER_Ref": null,
+        "WA_Ref_201": "Site B",
+        "Citizan_Re": null,
+        "Easting": 636132.0,
+        "Northing": 159901.0,
+        "Lat": null,
+        "Long": null,
+        "Position_n": "Position from bathymetry. Note, may not be the same wreck",
+        "Date_surve": null,
+        "Survey_not": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.3821967765121035,
+          51.294408014392737,
+          0.0
+        ]
+      },
+      "properties": {
+        "SB_No": "SB0003",
+        "Type": "Wreck",
+        "HO_Ref": null,
+        "HE_Ref": null,
+        "HER_Ref": null,
+        "WA_Ref_201": null,
+        "Citizan_Re": null,
+        "Easting": 635896.0,
+        "Northing": 160464.0,
+        "Lat": null,
+        "Long": null,
+        "Position_n": "Position from georeferenced total station survey. The survey was georeferenced using handheld GPS positions across the site.",
+        "Date_surve": "2018/10/08",
+        "Survey_not": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.3835500081085885,
+          51.29525041004888,
+          0.0
+        ]
+      },
+      "properties": {
+        "SB_No": "SB0004",
+        "Type": "Aircraft Wreck",
+        "HO_Ref": null,
+        "HE_Ref": null,
+        "HER_Ref": "MKE103954",
+        "WA_Ref_201": null,
+        "Citizan_Re": null,
+        "Easting": 635986.0,
+        "Northing": 160562.0,
+        "Lat": "51.29526186",
+        "Long": "1.3835846",
+        "Position_n": "Position GPS app.",
+        "Date_surve": null,
+        "Survey_not": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.382677984885516,
+          51.287296888834028,
+          0.0
+        ]
+      },
+      "properties": {
+        "SB_No": "SB0005",
+        "Type": "Loose Timbers",
+        "HO_Ref": null,
+        "HE_Ref": null,
+        "HER_Ref": null,
+        "WA_Ref_201": null,
+        "Citizan_Re": null,
+        "Easting": 635966.0,
+        "Northing": 159675.0,
+        "Lat": "51.287285",
+        "Long": "1.382702",
+        "Position_n": "Position from smart phone app.",
+        "Date_surve": null,
+        "Survey_not": "Sketch by Ayetin Mahmoud and recording form by Richard Martin."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.3823650083095533,
+          51.28791761257358,
+          0.0
+        ]
+      },
+      "properties": {
+        "SB_No": "SB0006",
+        "Type": "Barrel",
+        "HO_Ref": null,
+        "HE_Ref": null,
+        "HER_Ref": null,
+        "WA_Ref_201": null,
+        "Citizan_Re": null,
+        "Easting": 635941.0,
+        "Northing": 159743.0,
+        "Lat": "51.28792082",
+        "Long": "1.38236661",
+        "Position_n": null,
+        "Date_surve": null,
+        "Survey_not": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.3803881480287004,
+          51.291078100987015,
+          0.0
+        ]
+      },
+      "properties": {
+        "SB_No": "SB0007",
+        "Type": "Wreck",
+        "HO_Ref": null,
+        "HE_Ref": null,
+        "HER_Ref": null,
+        "WA_Ref_201": null,
+        "Citizan_Re": null,
+        "Easting": 635787.0,
+        "Northing": 160088.0,
+        "Lat": null,
+        "Long": null,
+        "Position_n": "Position from georeferenced total station survey. The survey was georeferenced using handheld GPS positions across the site. Correlates generally with Tony Ovenden's position (51 17.462; 01 22.809 from his handheld GPS).",
+        "Date_surve": null,
+        "Survey_not": "Found doing walkover survey in intertidal zone. 2D survey undertaken on day two. May have also been photogrammetryed by Mark's team."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -15.358604752204151,
+          -89.995924825238561,
+          0.0
+        ]
+      },
+      "properties": {
+        "SB_No": "SB0008",
+        "Type": "Wreck",
+        "HO_Ref": null,
+        "HE_Ref": null,
+        "HER_Ref": null,
+        "WA_Ref_201": null,
+        "Citizan_Re": null,
+        "Easting": 0.0,
+        "Northing": 0.0,
+        "Lat": null,
+        "Long": null,
+        "Position_n": "Position not recorded.",
+        "Date_surve": null,
+        "Survey_not": "Photogrammetry of the bow post undertaken."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.3832065675471421,
+          51.291167528741234,
+          0.0
+        ]
+      },
+      "properties": {
+        "SB_No": "SB0009",
+        "Type": "Wreck",
+        "HO_Ref": null,
+        "HE_Ref": null,
+        "HER_Ref": null,
+        "WA_Ref_201": null,
+        "Citizan_Re": null,
+        "Easting": 635983.0,
+        "Northing": 160107.0,
+        "Lat": null,
+        "Long": null,
+        "Position_n": "Position from georeferenced total station survey.",
+        "Date_surve": null,
+        "Survey_not": "photgrammetry model processed 9/10/18"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.3832365468459125,
+          51.296060048453292,
+          0.0
+        ]
+      },
+      "properties": {
+        "SB_No": "SB0010",
+        "Type": "Wreck",
+        "HO_Ref": null,
+        "HE_Ref": null,
+        "HER_Ref": null,
+        "WA_Ref_201": "Site C",
+        "Citizan_Re": null,
+        "Easting": 635960.0,
+        "Northing": 160651.0,
+        "Lat": "51.296061",
+        "Long": "1.3832365",
+        "Position_n": "Handheld GPS",
+        "Date_surve": null,
+        "Survey_not": "May be 51.29…"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.3792521163914937,
+          51.287917631776168,
+          0.0
+        ]
+      },
+      "properties": {
+        "SB_No": "SB0011",
+        "Type": "Wreck",
+        "HO_Ref": null,
+        "HE_Ref": null,
+        "HER_Ref": null,
+        "WA_Ref_201": null,
+        "Citizan_Re": null,
+        "Easting": 635724.0,
+        "Northing": 159733.0,
+        "Lat": "51.28792",
+        "Long": "1.37925",
+        "Position_n": "Handheld GPS",
+        "Date_surve": null,
+        "Survey_not": "Site found by search line walk on 9th October  2018. Recorded rapidly in 2D."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.3773335783379521,
+          51.299297977329047,
+          0.0
+        ]
+      },
+      "properties": {
+        "SB_No": "SB0012",
+        "Type": "Wreck",
+        "HO_Ref": null,
+        "HE_Ref": null,
+        "HER_Ref": null,
+        "WA_Ref_201": null,
+        "Citizan_Re": null,
+        "Easting": 635532.0,
+        "Northing": 160992.0,
+        "Lat": "51°17'58.016\"N",
+        "Long": "1°22'38.189\"E",
+        "Position_n": "Position from smart phone app",
+        "Date_surve": null,
+        "Survey_not": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -15.358604752204151,
+          -89.995924825238561,
+          0.0
+        ]
+      },
+      "properties": {
+        "SB_No": "SB0013",
+        "Type": null,
+        "HO_Ref": null,
+        "HE_Ref": null,
+        "HER_Ref": null,
+        "WA_Ref_201": null,
+        "Citizan_Re": null,
+        "Easting": 0.0,
+        "Northing": 0.0,
+        "Lat": null,
+        "Long": null,
+        "Position_n": null,
+        "Date_surve": null,
+        "Survey_not": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -15.358604752204151,
+          -89.995924825238561,
+          0.0
+        ]
+      },
+      "properties": {
+        "SB_No": "SB0014",
+        "Type": null,
+        "HO_Ref": null,
+        "HE_Ref": null,
+        "HER_Ref": null,
+        "WA_Ref_201": null,
+        "Citizan_Re": null,
+        "Easting": 0.0,
+        "Northing": 0.0,
+        "Lat": null,
+        "Long": null,
+        "Position_n": null,
+        "Date_surve": null,
+        "Survey_not": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -15.358604752204151,
+          -89.995924825238561,
+          0.0
+        ]
+      },
+      "properties": {
+        "SB_No": "SB0015",
+        "Type": null,
+        "HO_Ref": null,
+        "HE_Ref": null,
+        "HER_Ref": null,
+        "WA_Ref_201": null,
+        "Citizan_Re": null,
+        "Easting": 0.0,
+        "Northing": 0.0,
+        "Lat": null,
+        "Long": null,
+        "Position_n": null,
+        "Date_surve": null,
+        "Survey_not": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -15.358604752204151,
+          -89.995924825238561,
+          0.0
+        ]
+      },
+      "properties": {
+        "SB_No": "SB0016",
+        "Type": null,
+        "HO_Ref": null,
+        "HE_Ref": null,
+        "HER_Ref": null,
+        "WA_Ref_201": null,
+        "Citizan_Re": null,
+        "Easting": 0.0,
+        "Northing": 0.0,
+        "Lat": null,
+        "Long": null,
+        "Position_n": null,
+        "Date_surve": null,
+        "Survey_not": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.3797855094590923,
+          51.289710255080884,
+          0.0
+        ]
+      },
+      "properties": {
+        "SB_No": "SB0017",
+        "Type": "Stake",
+        "HO_Ref": null,
+        "HE_Ref": null,
+        "HER_Ref": null,
+        "WA_Ref_201": null,
+        "Citizan_Re": null,
+        "Easting": 635752.0,
+        "Northing": 159934.0,
+        "Lat": "51.28971",
+        "Long": "1.37978",
+        "Position_n": null,
+        "Date_surve": null,
+        "Survey_not": "Position taken with iPad GPS. Accuracy +/- 3m."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.3794639772579631,
+          51.289629592201344,
+          0.0
+        ]
+      },
+      "properties": {
+        "SB_No": "SB0018",
+        "Type": "Stake",
+        "HO_Ref": null,
+        "HE_Ref": null,
+        "HER_Ref": null,
+        "WA_Ref_201": null,
+        "Citizan_Re": null,
+        "Easting": 635730.0,
+        "Northing": 159924.0,
+        "Lat": "51.28963",
+        "Long": "1.37946",
+        "Position_n": null,
+        "Date_surve": null,
+        "Survey_not": "Position taken with iPad GPS. Accuracy +/- 3m."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.3792140224282916,
+          51.289546862232044,
+          0.0
+        ]
+      },
+      "properties": {
+        "SB_No": "SB0019",
+        "Type": "Stake",
+        "HO_Ref": null,
+        "HE_Ref": null,
+        "HER_Ref": null,
+        "WA_Ref_201": null,
+        "Citizan_Re": null,
+        "Easting": 635713.0,
+        "Northing": 159914.0,
+        "Lat": "51.28955",
+        "Long": "1.37921",
+        "Position_n": null,
+        "Date_surve": null,
+        "Survey_not": "Position taken with iPad GPS. Accuracy +/- 3m."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.3790968624371811,
+          51.289514264926368,
+          0.0
+        ]
+      },
+      "properties": {
+        "SB_No": "SB0020",
+        "Type": "Stake",
+        "HO_Ref": null,
+        "HE_Ref": null,
+        "HER_Ref": null,
+        "WA_Ref_201": null,
+        "Citizan_Re": null,
+        "Easting": 635705.0,
+        "Northing": 159910.0,
+        "Lat": "51.28951",
+        "Long": "1.37909",
+        "Position_n": null,
+        "Date_surve": null,
+        "Survey_not": "Position taken with iPad GPS. Accuracy +/- 3m."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.3789653876023107,
+          51.289482081810689,
+          0.0
+        ]
+      },
+      "properties": {
+        "SB_No": "SB0021",
+        "Type": "Stake",
+        "HO_Ref": null,
+        "HE_Ref": null,
+        "HER_Ref": null,
+        "WA_Ref_201": null,
+        "Citizan_Re": null,
+        "Easting": 635696.0,
+        "Northing": 159906.0,
+        "Lat": "51.28948",
+        "Long": "1.37896",
+        "Position_n": null,
+        "Date_surve": null,
+        "Survey_not": "Position taken with iPad GPS. Accuracy +/- 3m."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -15.358604752204151,
+          -89.995924825238561,
+          0.0
+        ]
+      },
+      "properties": {
+        "SB_No": "SB0022",
+        "Type": null,
+        "HO_Ref": null,
+        "HE_Ref": null,
+        "HER_Ref": null,
+        "WA_Ref_201": null,
+        "Citizan_Re": null,
+        "Easting": 0.0,
+        "Northing": 0.0,
+        "Lat": null,
+        "Long": null,
+        "Position_n": null,
+        "Date_surve": null,
+        "Survey_not": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -15.358604752204151,
+          -89.995924825238561,
+          0.0
+        ]
+      },
+      "properties": {
+        "SB_No": "SB0023",
+        "Type": null,
+        "HO_Ref": null,
+        "HE_Ref": null,
+        "HER_Ref": null,
+        "WA_Ref_201": null,
+        "Citizan_Re": null,
+        "Easting": 0.0,
+        "Northing": 0.0,
+        "Lat": null,
+        "Long": null,
+        "Position_n": null,
+        "Date_surve": null,
+        "Survey_not": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -15.358604752204151,
+          -89.995924825238561,
+          0.0
+        ]
+      },
+      "properties": {
+        "SB_No": "SB0024",
+        "Type": null,
+        "HO_Ref": null,
+        "HE_Ref": null,
+        "HER_Ref": null,
+        "WA_Ref_201": null,
+        "Citizan_Re": null,
+        "Easting": 0.0,
+        "Northing": 0.0,
+        "Lat": null,
+        "Long": null,
+        "Position_n": null,
+        "Date_surve": null,
+        "Survey_not": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -15.358604752204151,
+          -89.995924825238561,
+          0.0
+        ]
+      },
+      "properties": {
+        "SB_No": "SB0025",
+        "Type": null,
+        "HO_Ref": null,
+        "HE_Ref": null,
+        "HER_Ref": null,
+        "WA_Ref_201": null,
+        "Citizan_Re": null,
+        "Easting": 0.0,
+        "Northing": 0.0,
+        "Lat": null,
+        "Long": null,
+        "Position_n": null,
+        "Date_surve": null,
+        "Survey_not": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -15.358604752204151,
+          -89.995924825238561,
+          0.0
+        ]
+      },
+      "properties": {
+        "SB_No": "SB0026",
+        "Type": null,
+        "HO_Ref": null,
+        "HE_Ref": null,
+        "HER_Ref": null,
+        "WA_Ref_201": null,
+        "Citizan_Re": null,
+        "Easting": 0.0,
+        "Northing": 0.0,
+        "Lat": null,
+        "Long": null,
+        "Position_n": null,
+        "Date_surve": null,
+        "Survey_not": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -15.358604752204151,
+          -89.995924825238561,
+          0.0
+        ]
+      },
+      "properties": {
+        "SB_No": "SB0027",
+        "Type": null,
+        "HO_Ref": null,
+        "HE_Ref": null,
+        "HER_Ref": null,
+        "WA_Ref_201": null,
+        "Citizan_Re": null,
+        "Easting": 0.0,
+        "Northing": 0.0,
+        "Lat": null,
+        "Long": null,
+        "Position_n": null,
+        "Date_surve": null,
+        "Survey_not": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -15.358604752204151,
+          -89.995924825238561,
+          0.0
+        ]
+      },
+      "properties": {
+        "SB_No": "SB0028",
+        "Type": null,
+        "HO_Ref": null,
+        "HE_Ref": null,
+        "HER_Ref": null,
+        "WA_Ref_201": null,
+        "Citizan_Re": null,
+        "Easting": 0.0,
+        "Northing": 0.0,
+        "Lat": null,
+        "Long": null,
+        "Position_n": null,
+        "Date_surve": null,
+        "Survey_not": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -15.358604752204151,
+          -89.995924825238561,
+          0.0
+        ]
+      },
+      "properties": {
+        "SB_No": "SB0029",
+        "Type": null,
+        "HO_Ref": null,
+        "HE_Ref": null,
+        "HER_Ref": null,
+        "WA_Ref_201": null,
+        "Citizan_Re": null,
+        "Easting": 0.0,
+        "Northing": 0.0,
+        "Lat": null,
+        "Long": null,
+        "Position_n": null,
+        "Date_surve": null,
+        "Survey_not": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -15.358604752204151,
+          -89.995924825238561,
+          0.0
+        ]
+      },
+      "properties": {
+        "SB_No": "SB0030",
+        "Type": null,
+        "HO_Ref": null,
+        "HE_Ref": null,
+        "HER_Ref": null,
+        "WA_Ref_201": null,
+        "Citizan_Re": null,
+        "Easting": 0.0,
+        "Northing": 0.0,
+        "Lat": null,
+        "Long": null,
+        "Position_n": null,
+        "Date_surve": null,
+        "Survey_not": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -15.358604752204151,
+          -89.995924825238561,
+          0.0
+        ]
+      },
+      "properties": {
+        "SB_No": "SB0031",
+        "Type": null,
+        "HO_Ref": null,
+        "HE_Ref": null,
+        "HER_Ref": null,
+        "WA_Ref_201": null,
+        "Citizan_Re": null,
+        "Easting": 0.0,
+        "Northing": 0.0,
+        "Lat": null,
+        "Long": null,
+        "Position_n": null,
+        "Date_surve": null,
+        "Survey_not": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -15.358604752204151,
+          -89.995924825238561,
+          0.0
+        ]
+      },
+      "properties": {
+        "SB_No": "SB0032",
+        "Type": null,
+        "HO_Ref": null,
+        "HE_Ref": null,
+        "HER_Ref": null,
+        "WA_Ref_201": null,
+        "Citizan_Re": null,
+        "Easting": 0.0,
+        "Northing": 0.0,
+        "Lat": null,
+        "Long": null,
+        "Position_n": null,
+        "Date_surve": null,
+        "Survey_not": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -15.358604752204151,
+          -89.995924825238561,
+          0.0
+        ]
+      },
+      "properties": {
+        "SB_No": "SB0033",
+        "Type": null,
+        "HO_Ref": null,
+        "HE_Ref": null,
+        "HER_Ref": null,
+        "WA_Ref_201": null,
+        "Citizan_Re": null,
+        "Easting": 0.0,
+        "Northing": 0.0,
+        "Lat": null,
+        "Long": null,
+        "Position_n": null,
+        "Date_surve": null,
+        "Survey_not": null
+      }
+    }
+  ]
+}
