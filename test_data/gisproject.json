@@ -7,15 +7,15 @@
       53.316200583246534
     ]
   },
-  "scale": 12.4644747,
+  "scale": 81.57676,
   "grid-scale": 1.0,
   "cameras": [
     {
       "type": "Point",
       "coordinates": [
-        -1.7807428563437087,
-        53.3285474300527,
-        387.27969360351563
+        -1.755810062099731,
+        53.326337559609534,
+        227.77880859375
       ]
     }
   ],
@@ -32,7 +32,7 @@
       "properties": {
         "mapscale": 15
       },
-      "visible": false
+      "proj4": null
     },
     {
       "properties": {
@@ -76,7 +76,8 @@
       "source": "test_data/narea_ert_lines.egb",
       "features": null,
       "position": null,
-      "transform": null
+      "transform": null,
+      "proj4": null
     },
     {
       "properties": {
@@ -171,7 +172,7 @@
           1.0
         ]
       },
-      "visible": false
+      "proj4": null
     },
     {
       "properties": {
@@ -237,7 +238,7 @@
       "id": "003",
       "display-name": "Electrical Conductivity",
       "type": "GeographyCollection",
-      "datatype": "PointCloud",
+      "datatype": "Raster",
       "source": "test_data/EC_DML.txt",
       "features": null,
       "position": {
@@ -266,7 +267,7 @@
           1.0
         ]
       },
-      "visible": false
+      "proj4": null
     },
     {
       "properties": {
@@ -304,11 +305,43 @@
       "id": "004",
       "display-name": "OS Map - Mines",
       "type": "GeographyCollection",
-      "datatype": "Point",
+      "datatype": "Vector",
       "source": "test_data/os_map_mines.geojson",
       "features": null,
       "position": null,
-      "transform": null
+      "transform": null,
+      "proj4": null
+    },
+    {
+      "properties": {
+        "units": {}
+      },
+      "id": "005",
+      "display-name": "DEM",
+      "type": "GeographyCollection",
+      "datatype": "Mdal",
+      "source": "test_data/test_mesh.ply",
+      "features": null,
+      "position": null,
+      "transform": {
+        "translate": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotate": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "proj4": "+proj=tmerc +lat_0=49 +lon_0=-2 +k=0.9996012717 +x_0=400000 +y_0=-100000 +ellps=airy +units=m +no_defs +type=crs"
     }
   ]
 }
