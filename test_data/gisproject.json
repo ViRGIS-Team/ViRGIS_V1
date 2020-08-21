@@ -143,8 +143,8 @@
       "id": "002",
       "display-name": "Magnetic",
       "type": "GeographyCollection",
-      "datatype": "PointCloud",
-      "source": "test_data/MAG_DML.txt",
+      "datatype": "Raster",
+      "source": "test_data/MAG_DML.ply",
       "features": null,
       "position": {
         "type": "Point",
@@ -239,7 +239,7 @@
       "display-name": "Electrical Conductivity",
       "type": "GeographyCollection",
       "datatype": "Raster",
-      "source": "test_data/EC_DML.txt",
+      "source": "test_data/EC_DML.ply",
       "features": null,
       "position": {
         "type": "Point",

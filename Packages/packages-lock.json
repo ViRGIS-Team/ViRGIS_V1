@@ -22,7 +22,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.collab-proxy": {
-      "version": "1.3.8",
+      "version": "1.3.9",
       "depth": 0,
       "source": "registry",
       "dependencies": {},
@@ -232,7 +232,7 @@
       "url": "https://registry.npmjs.org"
     },
     "jillejr.newtonsoft.json-for-unity": {
-      "version": "12.0.201",
+      "version": "12.0.301",
       "depth": 0,
       "source": "registry",
       "dependencies": {},
