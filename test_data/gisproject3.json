@@ -312,7 +312,7 @@
       "display-name": null,
       "type": "GeographyCollection",
       "datatype": "PointCloud",
-      "source": "test_data/test.txt",
+      "source": "test_data/test.ply",
       "features": null,
       "position": {
         "type": "Point",
