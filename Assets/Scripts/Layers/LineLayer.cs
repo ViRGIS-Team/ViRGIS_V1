@@ -6,6 +6,7 @@ using GeoJSON.Net.Geometry;
 using Project;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using UnityEngine;
 
@@ -162,7 +163,7 @@ namespace Virgis
         {
         }
 
-        protected override void _save()
+        protected override async Task _save()
         {
             Dataline[] dataFeatures = gameObject.GetComponentsInChildren<Dataline>();
             List<Feature> thisFeatures = new List<Feature>();
@@ -180,7 +181,7 @@ namespace Virgis
             };
             FeatureCollection FC = new FeatureCollection(thisFeatures);
             geoJsonReader.SetFeatureCollection(FC);
-            geoJsonReader.Save();
+            await geoJsonReader.Save();
             features = FC;
         }
 
@@ -195,6 +196,8 @@ namespace Virgis
         public override void Translate(MoveArgs args)
         {
             changed = true;
+            Dataline[] dataFeatures = gameObject.GetComponentsInChildren<Dataline>();
+            dataFeatures.ToList<Dataline>().Find(item => args.id == item.GetId()).transform.Translate(args.translate, Space.World);
         }
 
 
