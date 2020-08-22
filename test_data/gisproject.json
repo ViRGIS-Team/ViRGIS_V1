@@ -140,7 +140,16 @@
           }
         },
         "dem":"test_data/hope_dem_new.tif",
-        "color_ramp":"pestel_shades"
+        "colorinterp":{
+          "ramp":"heat_map", 
+          "k": 2,
+          "mad": true,
+          "dimension": "m"
+        },
+        "filter":{
+          "type":"filters.range",
+          "limits":"m[0:50000]"
+        }
       },
       "id": "002",
       "display-name": "Magnetic",
@@ -237,7 +246,16 @@
           }
         },
         "dem":"test_data/hope_dem_new.tif",
-        "color_ramp":"pestel_shades"
+        "colorinterp":{
+          "ramp":"pestel_shades", 
+          "k": 2,
+          "mad": true,
+          "dimension": "m"
+        },
+        "filter":{
+          "type":"filters.range",
+          "limits":"m[0:50000]"
+        }
       },
       "id": "003",
       "display-name": "Electrical Conductivity",
