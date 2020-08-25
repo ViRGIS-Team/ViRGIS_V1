@@ -138,13 +138,24 @@
             },
             "label": null
           }
+        },
+        "dem":"test_data/hope_dem_new.tif",
+        "colorinterp":{
+          "ramp":"heat_map", 
+          "k": 2,
+          "mad": true,
+          "dimension": "m"
+        },
+        "filter":{
+          "type":"filters.range",
+          "limits":"m[0:50000]"
         }
       },
       "id": "002",
       "display-name": "Magnetic",
       "type": "GeographyCollection",
       "datatype": "Raster",
-      "source": "test_data/MAG_DML.ply",
+      "source": "test_data/MAG_DML.ers",
       "features": null,
       "position": {
         "type": "Point",
@@ -172,7 +183,7 @@
           1.0
         ]
       },
-      "proj4": null
+      "proj4":"epsg:27700"
     },
     {
       "properties": {
@@ -233,13 +244,24 @@
             },
             "label": null
           }
+        },
+        "dem":"test_data/hope_dem_new.tif",
+        "colorinterp":{
+          "ramp":"pestel_shades", 
+          "k": 2,
+          "mad": true,
+          "dimension": "m"
+        },
+        "filter":{
+          "type":"filters.range",
+          "limits":"m[0:50000]"
         }
       },
       "id": "003",
       "display-name": "Electrical Conductivity",
       "type": "GeographyCollection",
       "datatype": "Raster",
-      "source": "test_data/EC_DML.ply",
+      "source": "test_data/EC_DML.ers",
       "features": null,
       "position": {
         "type": "Point",
@@ -267,7 +289,7 @@
           1.0
         ]
       },
-      "proj4": null
+      "proj4":"epsg:27700"
     },
     {
       "properties": {
