@@ -1,0 +1,479 @@
+{
+  "name": "test_project",
+  "origin": {
+    "type": "Point",
+    "coordinates": [
+      18.65826,
+      45.7686
+    ]
+  },
+  "scale": 1.0,
+  "grid-scale": 0.0,
+  "cameras": [
+    {
+      "type": "Point",
+      "coordinates": [
+        18.658422323120956,
+        45.768463317821443,
+        18.197013854980469
+      ]
+    }
+  ],
+  "recordsets": [
+    {
+      "properties": {
+        "units": {
+          "point": {
+            "color": [
+              0.0,
+              255.0,
+              255.0,
+              1.0
+            ],
+            "shape": "Spheroid",
+            "transform": {
+              "translate": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotate": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "label": null
+          },
+          "handle": {
+            "color": [
+              0.0,
+              255.0,
+              255.0,
+              1.0
+            ],
+            "shape": "Spheroid",
+            "transform": {
+              "translate": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotate": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "label": "name"
+          }
+        },
+        "dem": null,
+        "colorinterp": null,
+        "filter": null
+      },
+      "id": "001",
+      "display-name": null,
+      "type": "GeographyCollection",
+      "datatype": "PointCloud",
+      "source": "test_data/TP.ply",
+      "features": null,
+      "position": null,
+      "transform": {
+        "translate": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotate": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "proj4": null
+    },
+    {
+      "properties": {
+        "units": {
+          "point": {
+            "color": [
+              0.0,
+              255.0,
+              255.0,
+              1.0
+            ],
+            "shape": "Spheroid",
+            "transform": {
+              "translate": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotate": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "label": null
+          },
+          "handle": {
+            "color": [
+              0.0,
+              255.0,
+              255.0,
+              1.0
+            ],
+            "shape": "Spheroid",
+            "transform": {
+              "translate": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotate": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "label": "name"
+          }
+        },
+        "dem": null,
+        "colorinterp": null,
+        "filter": null
+      },
+      "id": "002",
+      "display-name": null,
+      "type": "GeographyCollection",
+      "datatype": "PointCloud",
+      "source": "test_data/TP1.ply",
+      "features": null,
+      "position": null,
+      "transform": {
+        "translate": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "rotate": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "proj4": null
+    },
+    {
+      "properties": {
+        "units": {
+          "point": {
+            "color": [
+              0.0,
+              255.0,
+              255.0,
+              1.0
+            ],
+            "shape": "Spheroid",
+            "transform": {
+              "translate": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotate": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "label": null
+          },
+          "handle": {
+            "color": [
+              0.0,
+              255.0,
+              255.0,
+              1.0
+            ],
+            "shape": "Spheroid",
+            "transform": {
+              "translate": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotate": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "label": "name"
+          }
+        },
+        "dem": null,
+        "colorinterp": null,
+        "filter": null
+      },
+      "id": "003",
+      "display-name": null,
+      "type": "GeographyCollection",
+      "datatype": "PointCloud",
+      "source": "test_data/TP2.ply",
+      "features": null,
+      "position": null,
+      "transform": {
+        "translate": [
+          0.0,
+          0.0,
+          -2.0
+        ],
+        "rotate": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "proj4": null
+    },
+    {
+      "properties": {
+        "units": {
+          "point": {
+            "color": [
+              0.0,
+              255.0,
+              255.0,
+              1.0
+            ],
+            "shape": "Spheroid",
+            "transform": {
+              "translate": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotate": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "label": null
+          },
+          "handle": {
+            "color": [
+              0.0,
+              255.0,
+              255.0,
+              1.0
+            ],
+            "shape": "Spheroid",
+            "transform": {
+              "translate": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotate": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "label": "name"
+          }
+        },
+        "dem": null,
+        "colorinterp": null,
+        "filter": null
+      },
+      "id": "004",
+      "display-name": null,
+      "type": "GeographyCollection",
+      "datatype": "PointCloud",
+      "source": "test_data/TP3.ply",
+      "features": null,
+      "position": null,
+      "transform": {
+        "translate": [
+          0.0,
+          0.0,
+          -3.0
+        ],
+        "rotate": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "proj4": null
+    },
+    {
+      "properties": {
+        "units": {
+          "point": {
+            "color": [
+              0.0,
+              255.0,
+              255.0,
+              1.0
+            ],
+            "shape": "Spheroid",
+            "transform": {
+              "translate": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotate": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "label": null
+          },
+          "handle": {
+            "color": [
+              0.0,
+              255.0,
+              255.0,
+              1.0
+            ],
+            "shape": "Spheroid",
+            "transform": {
+              "translate": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotate": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "label": "name"
+          }
+        },
+        "dem": null,
+        "colorinterp": null,
+        "filter": null
+      },
+      "id": "005",
+      "display-name": null,
+      "type": "GeographyCollection",
+      "datatype": "PointCloud",
+      "source": "test_data/TP4.ply",
+      "features": null,
+      "position": null,
+      "transform": {
+        "translate": [
+          0.0,
+          0.0,
+          -4.0
+        ],
+        "rotate": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "proj4": null
+    }
+  ]
+}
