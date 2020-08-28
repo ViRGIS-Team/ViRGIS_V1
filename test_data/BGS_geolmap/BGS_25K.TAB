@@ -1,0 +1,17 @@
+!table
+!version 300
+!charset Neutral
+
+Definition Table
+  File "dsc09509.jpg"
+  Type "RASTER"
+  (414000,382000) (630,430) Label "Pt 1",
+  (414000,380000) (647,1816) Label "Pt 2",
+  (416000,380000) (2030,1806) Label "Pt 3"
+  CoordSys Earth Projection 8, 79, "m", -2, 49, 0.9996012717, 400000, -100000
+  Units "m"
+begin_metadata
+"\IsReadOnly" = "FALSE"
+"\MapInfo" = ""
+"\MapInfo\TableID" = "ac768936-11ea-4bb8-a912-a70a9af116e7"
+end_metadata

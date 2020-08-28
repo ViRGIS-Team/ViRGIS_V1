@@ -1,0 +1,17 @@
+!table
+!version 300
+!charset Neutral
+
+Definition Table
+  File "all.png"
+  Type "RASTER"
+  (414255.280000000028,382513.599999999977) (1484,316) Label "Pt 1",
+  (416017.719999999972,382387.159999999974) (3194,460) Label "Pt 2",
+  (413349.349999999977,380787.049999999988) (572,2010) Label "Pt 3"
+  CoordSys Earth Projection 8, 79, "m", -2, 49, 0.9996012717, 400000, -100000
+  Units "m"
+begin_metadata
+"\IsReadOnly" = "FALSE"
+"\MapInfo" = ""
+"\MapInfo\TableID" = "68675255-9b4e-40a5-8899-d4ed642fc367"
+end_metadata
