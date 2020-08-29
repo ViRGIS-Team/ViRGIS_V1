@@ -7,31 +7,34 @@
       45.7686
     ]
   },
-  "scale": 5.737232,
+  "scale": 86.93715,
   "grid-scale": 0.0,
   "cameras": [
     {
       "type": "Point",
       "coordinates": [
-        18.662130721325912,
-        45.788379625381552,
-        278.868896484375
+        18.664303353283817,
+        45.786773443557948,
+        351.58383178710938
       ]
     }
   ],
   "recordsets": [
     {
+      "properties": {
+        "mapscale": 15,
+        "map_size": 5,
+        "elevation_layer_type": "TerrainWithElevation",
+        "imagery_source_type": "MapboxSatellite"
+      },
       "id": "_map_",
       "display-name": "MapBox Map",
-      "type": "RecordSet",
+      "type": "MapBox",
       "datatype": "MapBox",
       "source": null,
       "features": null,
       "position": null,
       "transform": null,
-      "properties": {
-        "mapscale": 15
-      },
       "proj4": null
     },
     {
@@ -65,12 +68,15 @@
             },
             "label": "name"
           }
-        }
+        },
+        "dem": null,
+        "colorinterp": null,
+        "filter": null
       },
       "id": "006",
       "display-name": null,
       "type": "GeographyCollection",
-      "datatype": "Mdal",
+      "datatype": "DEM",
       "source": "test_data/esri_tin/dem/tnxy.adf",
       "features": null,
       "position": null,

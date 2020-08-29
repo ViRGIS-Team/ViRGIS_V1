@@ -13,25 +13,27 @@
     {
       "type": "Point",
       "coordinates": [
-        1.3773542813577468,
-        51.296997234875754,
-        200.37263488769531
+        1.3783100553997127,
+        51.297517014974993,
+        52.586723327636719
       ]
     }
   ],
   "recordsets": [
     {
+      "properties": {
+        "mapscale": 15,
+        "map_options": null,
+        "map_size": 10
+      },
       "id": "_map_",
       "display-name": "MapBox Map",
-      "type": "RecordSet",
+      "type": "MapBox",
       "datatype": "MapBox",
       "source": null,
       "features": null,
       "position": null,
       "transform": null,
-      "properties": {
-        "mapscale": 15
-      },
       "proj4": null
     },
     {
@@ -65,7 +67,11 @@
             },
             "label": "name"
           }
-        }
+        },
+        "dem": null,
+        "colorinterp": null,
+        "filter": null,
+        "map_options": null
       },
       "id": "001",
       "display-name": null,
@@ -136,7 +142,11 @@
             },
             "label": "name"
           }
-        }
+        },
+        "dem": null,
+        "colorinterp": null,
+        "filter": null,
+        "map_options": null
       },
       "id": "002",
       "display-name": null,
@@ -235,7 +245,11 @@
             },
             "label": "name"
           }
-        }
+        },
+        "dem": null,
+        "colorinterp": null,
+        "filter": null,
+        "map_options": null
       },
       "id": "003",
       "display-name": null,
@@ -306,7 +320,11 @@
             },
             "label": "name"
           }
-        }
+        },
+        "dem": null,
+        "colorinterp": null,
+        "filter": null,
+        "map_options": null
       },
       "id": "004",
       "display-name": null,
@@ -373,7 +391,11 @@
             },
             "label": null
           }
-        }
+        },
+        "dem": null,
+        "colorinterp": null,
+        "filter": null,
+        "map_options": null
       },
       "id": "005",
       "display-name": null,
@@ -440,7 +462,11 @@
             },
             "label": null
           }
-        }
+        },
+        "dem": null,
+        "colorinterp": null,
+        "filter": null,
+        "map_options": null
       },
       "id": "006",
       "display-name": null,

@@ -13,9 +13,9 @@
     {
       "type": "Point",
       "coordinates": [
-        -1.755810062099731,
-        53.326337559609534,
-        227.77880859375
+        -1.755810069426172,
+        53.3263375618054,
+        227.77789306640625
       ]
     }
   ],
@@ -23,14 +23,15 @@
     {
       "id": "_map_",
       "display-name": "MapBox Map",
-      "type": "RecordSet",
+      "type": "MapBox",
       "datatype": "MapBox",
       "source": null,
       "features": null,
       "position": null,
       "transform": null,
       "properties": {
-        "mapscale": 15
+        "mapscale": 15,
+        "map_size": 10
       },
       "proj4": null
     },
@@ -67,7 +68,10 @@
           }
         },
         "lines": null,
-        "x_sect_type": null
+        "x_sect_type": null,
+        "dem": null,
+        "colorinterp": null,
+        "filter": null
       },
       "id": "001",
       "display-name": "Narea ERTY Lines",
@@ -139,17 +143,19 @@
             "label": null
           }
         },
-        "dem":"test_data/hope_dem_new.tif",
-        "colorinterp":{
-          "ramp":"heat_map", 
+        "dem": "test_data/hope_dem_new.tif",
+        "colorinterp": {
+          "ramp": "heat_map",
           "k": 2,
           "mad": true,
           "dimension": "m"
         },
-        "filter":[{
-          "type":"filters.range",
-          "limits":"m[0:50000]"
-        }]
+        "filter": [
+          {
+            "type": "filters.range",
+            "limits": "m[0:50000]"
+          }
+        ]
       },
       "id": "002",
       "display-name": "Magnetic",
@@ -183,7 +189,7 @@
           1.0
         ]
       },
-      "proj4":"epsg:27700"
+      "proj4": "epsg:27700"
     },
     {
       "properties": {
@@ -245,17 +251,19 @@
             "label": null
           }
         },
-        "dem":"test_data/hope_dem_new.tif",
-        "colorinterp":{
-          "ramp":"pestel_shades", 
+        "dem": "test_data/hope_dem_new.tif",
+        "colorinterp": {
+          "ramp": "pestel_shades",
           "k": 2,
           "mad": true,
           "dimension": "m"
         },
-        "filter":[{
-          "type":"filters.range",
-          "limits":"m[0:50000]"
-        }]
+        "filter": [
+          {
+            "type": "filters.range",
+            "limits": "m[0:50000]"
+          }
+        ]
       },
       "id": "003",
       "display-name": "Electrical Conductivity",
@@ -289,57 +297,16 @@
           1.0
         ]
       },
-      "proj4":"epsg:27700"
-    },
-    {
-      "properties": {
-        "units": {
-          "point": {
-            "color": [
-              255.0,
-              0.0,
-              0.0,
-              1.0
-            ],
-            "shape": "Cuboid",
-            "transform": {
-              "translate": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "rotate": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-              ],
-              "scale": [
-                15.0,
-                15.0,
-                15.0
-              ]
-            },
-            "label": null
-          }
-        }
-      },
-      "id": "004",
-      "display-name": "OS Map - Mines",
-      "type": "GeographyCollection",
-      "datatype": "Vector",
-      "source": "test_data/os_mines/os map mines.shp",
-      "features": null,
-      "position": null,
-      "transform": null,
-      "proj4": null
+      "proj4": "epsg:27700"
     },
     {
       "properties": {
         "units": {
           "line": {
             "color": [
-              3,15,252,
+              3.0,
+              15.0,
+              252.0,
               1.0
             ],
             "shape": "Spheroid",
@@ -356,16 +323,18 @@
                 1.0
               ],
               "scale": [
-                10,
-                10,
-                10
+                10.0,
+                10.0,
+                10.0
               ]
             },
             "label": null
           },
           "point": {
             "color": [
-              3,15,252,
+              3.0,
+              15.0,
+              252.0,
               1.0
             ],
             "shape": "Spheroid",
@@ -391,7 +360,9 @@
           },
           "body": {
             "color": [
-              3,15,252,
+              3.0,
+              15.0,
+              252.0,
               1.0
             ],
             "shape": "Spheroid",
@@ -415,7 +386,10 @@
             },
             "label": "name"
           }
-        }
+        },
+        "dem": null,
+        "colorinterp": null,
+        "filter": null
       },
       "id": "004",
       "display-name": "BGS Rakes",
@@ -432,7 +406,9 @@
         "units": {
           "line": {
             "color": [
-              252,186,3,
+              3.0,
+              15.0,
+              252.0,
               1.0
             ],
             "shape": "Spheroid",
@@ -449,16 +425,120 @@
                 1.0
               ],
               "scale": [
-                5,
-                5,
-                5
+                10.0,
+                10.0,
+                10.0
               ]
             },
             "label": null
           },
           "point": {
             "color": [
-              252,186,3,
+              3.0,
+              15.0,
+              252.0,
+              1.0
+            ],
+            "shape": "Spheroid",
+            "transform": {
+              "translate": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotate": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "scale": [
+                10.0,
+                10.0,
+                10.0
+              ]
+            },
+            "label": null
+          },
+          "body": {
+            "color": [
+              3.0,
+              15.0,
+              252.0,
+              1.0
+            ],
+            "shape": "Spheroid",
+            "transform": {
+              "translate": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotate": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "scale": [
+                0.5,
+                0.5,
+                0.5
+              ]
+            },
+            "label": "name"
+          }
+        },
+        "dem": null,
+        "colorinterp": null,
+        "filter": null
+      },
+      "id": "004",
+      "display-name": "BGS Rakes",
+      "type": "GeographyCollection",
+      "datatype": "Vector",
+      "source": "test_data/BGS_geolmap/BGS_rakes.TAB",
+      "features": null,
+      "position": null,
+      "transform": null,
+      "proj4": null
+    },
+    {
+      "properties": {
+        "units": {
+          "line": {
+            "color": [
+              252.0,
+              186.0,
+              3.0,
+              1.0
+            ],
+            "shape": "Spheroid",
+            "transform": {
+              "translate": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotate": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "scale": [
+                5.0,
+                5.0,
+                5.0
+              ]
+            },
+            "label": null
+          },
+          "point": {
+            "color": [
+              252.0,
+              186.0,
+              3.0,
               1.0
             ],
             "shape": "Cuboid",
@@ -484,7 +564,9 @@
           },
           "body": {
             "color": [
-              252,186,3,
+              252.0,
+              186.0,
+              3.0,
               1.0
             ],
             "shape": "Spheroid",
@@ -508,7 +590,10 @@
             },
             "label": "name"
           }
-        }
+        },
+        "dem": null,
+        "colorinterp": null,
+        "filter": null
       },
       "id": "006",
       "display-name": "BGS - BLL",
@@ -542,7 +627,9 @@
         "units": {
           "line": {
             "color": [
-              15,252,3,
+              15.0,
+              252.0,
+              3.0,
               1.0
             ],
             "shape": "Spheroid",
@@ -559,16 +646,18 @@
                 1.0
               ],
               "scale": [
-                5,
-                5,
-                5
+                5.0,
+                5.0,
+                5.0
               ]
             },
             "label": null
           },
           "point": {
             "color": [
-              15,252,3,
+              15.0,
+              252.0,
+              3.0,
               1.0
             ],
             "shape": "Cuboid",
@@ -594,7 +683,9 @@
           },
           "body": {
             "color": [
-              15,252,3,
+              15.0,
+              252.0,
+              3.0,
               1.0
             ],
             "shape": "Spheroid",
@@ -618,7 +709,10 @@
             },
             "label": "name"
           }
-        }
+        },
+        "dem": null,
+        "colorinterp": null,
+        "filter": null
       },
       "id": "007",
       "display-name": "BGS - BLL",
@@ -650,18 +744,20 @@
     {
       "properties": {
         "units": {},
-        "colorinterp":{
-          "ramp":"blue_orange"
+        "dem": null,
+        "colorinterp": {
+          "ramp": "blue_orange"
         },
-        "filter" :[{ 
-          "type": "filters.decimation",
-          "step": 100
-      },
-      { 
-        "type": "filters.range",
-        "limits": "Z[0.1:]"
-    }
-    ]
+        "filter": [
+          {
+            "type": "filters.decimation",
+            "step": 100
+          },
+          {
+            "type": "filters.range",
+            "limits": "Z[0.1:]"
+          }
+        ]
       },
       "id": "005",
       "display-name": "Hope_DEM TIF",
@@ -693,9 +789,11 @@
     {
       "properties": {
         "units": {},
-        "colorinterp":{
-          "ramp":"heat_map"
-        }
+        "dem": null,
+        "colorinterp": {
+          "ramp": "heat_map"
+        },
+        "filter": null
       },
       "id": "008",
       "display-name": "Hope_DEM TIF",

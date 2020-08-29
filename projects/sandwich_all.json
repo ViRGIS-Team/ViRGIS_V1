@@ -23,14 +23,15 @@
     {
       "id": "_map_",
       "display-name": "MapBox Map",
-      "type": "RecordSet",
+      "type": "MapBox",
       "datatype": "MapBox",
       "source": null,
       "features": null,
       "position": null,
       "transform": null,
       "properties": {
-        "mapscale": 15
+        "mapscale": 15,
+        "map_size": 10
       },
       "proj4": null
     },
