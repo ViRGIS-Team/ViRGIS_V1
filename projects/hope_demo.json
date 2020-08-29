@@ -13,9 +13,9 @@
     {
       "type": "Point",
       "coordinates": [
-        -1.7557887573813415,
-        53.325109689821879,
-        254.41860961914063
+        -1.755810062099731,
+        53.326337559609534,
+        227.77880859375
       ]
     }
   ],
@@ -67,10 +67,7 @@
           }
         },
         "lines": null,
-        "x_sect_type": null,
-        "dem": null,
-        "colorinterp": null,
-        "filter": null
+        "x_sect_type": null
       },
       "id": "001",
       "display-name": "Narea ERTY Lines",
@@ -142,19 +139,17 @@
             "label": null
           }
         },
-        "dem": "test_data/hope_dem_new.tif",
-        "colorinterp": {
-          "ramp": "heat_map",
+        "dem":"test_data/hope_dem_new.tif",
+        "colorinterp":{
+          "ramp":"heat_map", 
           "k": 2,
           "mad": true,
           "dimension": "m"
         },
-        "filter": [
-          {
-            "type": "filters.range",
-            "limits": "m[0:50000]"
-          }
-        ]
+        "filter":[{
+          "type":"filters.range",
+          "limits":"m[0:50000]"
+        }]
       },
       "id": "002",
       "display-name": "Magnetic",
@@ -188,7 +183,7 @@
           1.0
         ]
       },
-      "proj4": "epsg:27700"
+      "proj4":"epsg:27700"
     },
     {
       "properties": {
@@ -250,19 +245,17 @@
             "label": null
           }
         },
-        "dem": "test_data/hope_dem_new.tif",
-        "colorinterp": {
-          "ramp": "pestel_shades",
+        "dem":"test_data/hope_dem_new.tif",
+        "colorinterp":{
+          "ramp":"pestel_shades", 
           "k": 2,
           "mad": true,
           "dimension": "m"
         },
-        "filter": [
-          {
-            "type": "filters.range",
-            "limits": "m[0:50000]"
-          }
-        ]
+        "filter":[{
+          "type":"filters.range",
+          "limits":"m[0:50000]"
+        }]
       },
       "id": "003",
       "display-name": "Electrical Conductivity",
@@ -296,7 +289,7 @@
           1.0
         ]
       },
-      "proj4": "epsg:27700"
+      "proj4":"epsg:27700"
     },
     {
       "properties": {
@@ -329,10 +322,7 @@
             },
             "label": null
           }
-        },
-        "dem": null,
-        "colorinterp": null,
-        "filter": null
+        }
       },
       "id": "004",
       "display-name": "OS Map - Mines",
@@ -349,9 +339,7 @@
         "units": {
           "line": {
             "color": [
-              3.0,
-              15.0,
-              252.0,
+              3,15,252,
               1.0
             ],
             "shape": "Spheroid",
@@ -368,18 +356,16 @@
                 1.0
               ],
               "scale": [
-                10.0,
-                10.0,
-                10.0
+                10,
+                10,
+                10
               ]
             },
             "label": null
           },
           "point": {
             "color": [
-              3.0,
-              15.0,
-              252.0,
+              3,15,252,
               1.0
             ],
             "shape": "Spheroid",
@@ -405,9 +391,7 @@
           },
           "body": {
             "color": [
-              3.0,
-              15.0,
-              252.0,
+              3,15,252,
               1.0
             ],
             "shape": "Spheroid",
@@ -431,10 +415,7 @@
             },
             "label": "name"
           }
-        },
-        "dem": null,
-        "colorinterp": null,
-        "filter": null
+        }
       },
       "id": "004",
       "display-name": "BGS Rakes",
@@ -451,9 +432,7 @@
         "units": {
           "line": {
             "color": [
-              252.0,
-              186.0,
-              3.0,
+              252,186,3,
               1.0
             ],
             "shape": "Spheroid",
@@ -470,18 +449,16 @@
                 1.0
               ],
               "scale": [
-                5.0,
-                5.0,
-                5.0
+                5,
+                5,
+                5
               ]
             },
             "label": null
           },
           "point": {
             "color": [
-              252.0,
-              186.0,
-              3.0,
+              252,186,3,
               1.0
             ],
             "shape": "Cuboid",
@@ -507,9 +484,7 @@
           },
           "body": {
             "color": [
-              252.0,
-              186.0,
-              3.0,
+              252,186,3,
               1.0
             ],
             "shape": "Spheroid",
@@ -533,10 +508,7 @@
             },
             "label": "name"
           }
-        },
-        "dem": null,
-        "colorinterp": null,
-        "filter": null
+        }
       },
       "id": "006",
       "display-name": "BGS - BLL",
@@ -570,9 +542,7 @@
         "units": {
           "line": {
             "color": [
-              15.0,
-              252.0,
-              3.0,
+              15,252,3,
               1.0
             ],
             "shape": "Spheroid",
@@ -589,18 +559,16 @@
                 1.0
               ],
               "scale": [
-                5.0,
-                5.0,
-                5.0
+                5,
+                5,
+                5
               ]
             },
             "label": null
           },
           "point": {
             "color": [
-              15.0,
-              252.0,
-              3.0,
+              15,252,3,
               1.0
             ],
             "shape": "Cuboid",
@@ -626,9 +594,7 @@
           },
           "body": {
             "color": [
-              15.0,
-              252.0,
-              3.0,
+              15,252,3,
               1.0
             ],
             "shape": "Spheroid",
@@ -652,10 +618,7 @@
             },
             "label": "name"
           }
-        },
-        "dem": null,
-        "colorinterp": null,
-        "filter": null
+        }
       },
       "id": "007",
       "display-name": "BGS - BLL",
@@ -687,20 +650,18 @@
     {
       "properties": {
         "units": {},
-        "dem": null,
-        "colorinterp": {
-          "ramp": "blue_orange"
+        "colorinterp":{
+          "ramp":"blue_orange"
         },
-        "filter": [
-          {
-            "type": "filters.decimation",
-            "step": 100
-          },
-          {
-            "type": "filters.range",
-            "limits": "Z[0.1:]"
-          }
-        ]
+        "filter" :[{ 
+          "type": "filters.decimation",
+          "step": 100
+      },
+      { 
+        "type": "filters.range",
+        "limits": "Z[0.1:]"
+    }
+    ]
       },
       "id": "005",
       "display-name": "Hope_DEM TIF",
@@ -732,11 +693,9 @@
     {
       "properties": {
         "units": {},
-        "dem": null,
-        "colorinterp": {
-          "ramp": "heat_map"
-        },
-        "filter": null
+        "colorinterp":{
+          "ramp":"heat_map"
+        }
       },
       "id": "008",
       "display-name": "Hope_DEM TIF",
