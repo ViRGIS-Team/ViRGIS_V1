@@ -434,12 +434,12 @@
           },
           "point": {
             "color": [
-              3.0,
-              15.0,
-              252.0,
+              255.0,
+              0,
+              0,
               1.0
             ],
-            "shape": "Spheroid",
+            "shape": "Cuboid",
             "transform": {
               "translate": [
                 0.0,
@@ -453,9 +453,9 @@
                 1.0
               ],
               "scale": [
-                10.0,
-                10.0,
-                10.0
+                15.0,
+                15.0,
+                15.0
               ]
             },
             "label": null
@@ -467,7 +467,7 @@
               252.0,
               1.0
             ],
-            "shape": "Spheroid",
+            "shape": "Cuboid",
             "transform": {
               "translate": [
                 0.0,
@@ -493,11 +493,11 @@
         "colorinterp": null,
         "filter": null
       },
-      "id": "004",
-      "display-name": "BGS Rakes",
+      "id": "005",
+      "display-name": "OS Mines",
       "type": "GeographyCollection",
       "datatype": "Vector",
-      "source": "test_data/BGS_geolmap/BGS_rakes.TAB",
+      "source": "test_data/os_mines/OS map mines.shp",
       "features": null,
       "position": null,
       "transform": null,
@@ -715,7 +715,7 @@
         "filter": null
       },
       "id": "007",
-      "display-name": "BGS - BLL",
+      "display-name": "BGS - CH",
       "type": "GeographyCollection",
       "datatype": "Vector",
       "source": "test_data/BGS_geolmap/BGS_ch.TAB",
@@ -748,18 +748,14 @@
         "colorinterp": {
           "ramp": "blue_orange"
         },
-        "filter": [
-          {
-            "type": "filters.decimation",
-            "step": 100
-          },
-          {
-            "type": "filters.range",
-            "limits": "Z[0.1:]"
+        "filter": [{
+          "type": "filters.mongo",
+          "expression": {
+            "Z": { "$ne": 0}
           }
-        ]
+        }]
       },
-      "id": "005",
+      "id": "008",
       "display-name": "Hope_DEM TIF",
       "type": "GeographyCollection",
       "datatype": "DEM",
@@ -795,8 +791,8 @@
         },
         "filter": null
       },
-      "id": "008",
-      "display-name": "Hope_DEM TIF",
+      "id": "009",
+      "display-name": "UKTD_HL001 DEM",
       "type": "GeographyCollection",
       "datatype": "DEM",
       "source": "test_data/UKTD_HL001_filtered.xyz",
