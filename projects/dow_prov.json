@@ -1,0 +1,244 @@
+{
+  "name": "test_project",
+  "origin": {
+    "type": "Point",
+    "coordinates": [
+      -2.01678,
+      54.15831
+    ]
+  },
+  "scale": 34.3921127,
+  "grid-scale": 0.0,
+  "cameras": [
+    {
+      "type": "Point",
+      "coordinates": [
+        -2.0172718936945606,
+        54.153512782885535,
+        367.94308471679688
+      ]
+    }
+  ],
+  "recordsets": [
+    {
+      "id": "_map_",
+      "display-name": "MapBox Map",
+      "type": "MapBox",
+      "datatype": "MapBox",
+      "source": null,
+      "features": null,
+      "position": null,
+      "transform": null,
+      "properties": {
+        "mapscale": 15,
+        "map_size": 2,
+        "elevation_layer_type": "TerrainWithElevation"
+      },
+      "proj4": null
+    },
+    {
+      "properties": {
+        "units": {
+          "point": {
+            "color": [
+              230.0,
+              90.0,
+              100.0,
+              1.0
+            ],
+            "shape": "Spheroid",
+            "transform": {
+              "translate": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotate": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "label": null
+          },
+          "line": {
+            "color": [
+              230.0,
+              90.0,
+              100.0,
+              1.0
+            ],
+            "shape": "Cylinder",
+            "transform": {
+              "translate": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotate": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "label": null
+          },
+          "body": {
+            "color": [
+              230.0,
+              240.0,
+              0.0,
+              1.0
+            ],
+            "shape": "Cylinder",
+            "transform": {
+              "translate": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotate": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "label": null
+          }
+        },
+        "dem": null,
+        "colorinterp": null,
+        "filter": null
+      },
+      "id": "001",
+      "display-name": "Dow Prov Main",
+      "type": "GeographyCollection",
+      "datatype": "Vector",
+      "source": "test_data/DowProv.geojson",
+      "features": null,
+      "position": null,
+      "transform": null,
+      "proj4": null
+    },
+    {
+      "properties": {
+        "units": {
+          "point": {
+            "color": [
+              230.0,
+              240.0,
+              0.0,
+              0.0
+            ],
+            "shape": "Spheroid",
+            "transform": {
+              "translate": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotate": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "label": null
+          },
+          "line": {
+            "color": [
+              230.0,
+              240.0,
+              0.0,
+              0.0
+            ],
+            "shape": "Cylinder",
+            "transform": {
+              "translate": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotate": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "scale": [
+                0.1,
+                0.1,
+                0.1
+              ]
+            },
+            "label": null
+          },
+          "body": {
+            "color": [
+              230.0,
+              240.0,
+              0.0,
+              1.0
+            ],
+            "shape": "Cylinder",
+            "transform": {
+              "translate": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotate": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "label": null
+          }
+        },
+        "dem": null,
+        "colorinterp": null,
+        "filter": null
+      },
+      "id": "002",
+      "display-name": "Dow Prov Poly",
+      "type": "GeographyCollection",
+      "datatype": "Vector",
+      "source": "test_data/DowProvPoly.geojson",
+      "features": null,
+      "position": null,
+      "transform": null,
+      "proj4": null
+    }
+  ]
+}

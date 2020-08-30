@@ -1,0 +1,104 @@
+{
+  "name": "test_project",
+  "origin": {
+    "type": "Point",
+    "coordinates": [
+      18.65826,
+      45.7686
+    ]
+  },
+  "scale": 86.93715,
+  "grid-scale": 0.0,
+  "cameras": [
+    {
+      "type": "Point",
+      "coordinates": [
+        18.664303353283817,
+        45.786773443557948,
+        351.58383178710938
+      ]
+    }
+  ],
+  "recordsets": [
+    {
+      "properties": {
+        "mapscale": 15,
+        "map_size": 5,
+        "elevation_layer_type": "TerrainWithElevation",
+        "imagery_source_type": "MapboxSatellite"
+      },
+      "id": "_map_",
+      "display-name": "MapBox Map",
+      "type": "MapBox",
+      "datatype": "MapBox",
+      "source": null,
+      "features": null,
+      "position": null,
+      "transform": null,
+      "proj4": null
+    },
+    {
+      "properties": {
+        "units": {
+          "point": {
+            "color": [
+              0.0,
+              0.0,
+              255.0,
+              1.0
+            ],
+            "shape": "Cylinder",
+            "transform": {
+              "translate": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotate": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "scale": [
+                5.0,
+                5.0,
+                3.0
+              ]
+            },
+            "label": "name"
+          }
+        },
+        "dem": null,
+        "colorinterp": null,
+        "filter": null
+      },
+      "id": "006",
+      "display-name": null,
+      "type": "GeographyCollection",
+      "datatype": "DEM",
+      "source": "test_data/esri_tin/dem/tnxy.adf",
+      "features": null,
+      "position": null,
+      "transform": {
+        "translate": [
+          -451.5545,
+          -20.0575562,
+          0.0
+        ],
+        "rotate": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "proj4": "+proj=longlat +datum=WGS84 +axis=enu +no_defs +type=crs"
+    }
+  ]
+}

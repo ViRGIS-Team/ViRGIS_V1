@@ -13,25 +13,26 @@
     {
       "type": "Point",
       "coordinates": [
-        -1.7557887573813415,
-        53.325109689821879,
-        254.41860961914063
+        -1.7558098017068624,
+        53.326337849098884,
+        227.71699523925781
       ]
     }
   ],
   "recordsets": [
     {
+      "properties": {
+        "mapscale": 15,
+        "map_size": 10
+      },
       "id": "_map_",
       "display-name": "MapBox Map",
-      "type": "RecordSet",
+      "type": "MapBox",
       "datatype": "MapBox",
       "source": null,
       "features": null,
       "position": null,
       "transform": null,
-      "properties": {
-        "mapscale": 15
-      },
       "proj4": null
     },
     {
@@ -301,14 +302,14 @@
     {
       "properties": {
         "units": {
-          "point": {
+          "line": {
             "color": [
-              255.0,
-              0.0,
-              0.0,
+              3.0,
+              15.0,
+              252.0,
               1.0
             ],
-            "shape": "Cuboid",
+            "shape": "Spheroid",
             "transform": {
               "translate": [
                 0.0,
@@ -322,12 +323,68 @@
                 1.0
               ],
               "scale": [
-                15.0,
-                15.0,
-                15.0
+                10.0,
+                10.0,
+                10.0
               ]
             },
             "label": null
+          },
+          "point": {
+            "color": [
+              3.0,
+              15.0,
+              252.0,
+              1.0
+            ],
+            "shape": "Spheroid",
+            "transform": {
+              "translate": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotate": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "scale": [
+                10.0,
+                10.0,
+                10.0
+              ]
+            },
+            "label": null
+          },
+          "body": {
+            "color": [
+              3.0,
+              15.0,
+              252.0,
+              1.0
+            ],
+            "shape": "Spheroid",
+            "transform": {
+              "translate": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotate": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "scale": [
+                0.5,
+                0.5,
+                0.5
+              ]
+            },
+            "label": "name"
           }
         },
         "dem": null,
@@ -335,10 +392,10 @@
         "filter": null
       },
       "id": "004",
-      "display-name": "OS Map - Mines",
+      "display-name": "BGS Rakes",
       "type": "GeographyCollection",
       "datatype": "Vector",
-      "source": "test_data/os_mines/os map mines.shp",
+      "source": "test_data/BGS_geolmap/BGS_rakes.TAB",
       "features": null,
       "position": null,
       "transform": null,

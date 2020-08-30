@@ -3,23 +3,264 @@
   "origin": {
     "type": "Point",
     "coordinates": [
-      18.65826,
-      45.7686
+      1.377283,
+      51.299457
     ]
   },
-  "scale": 1.0,
+  "scale": 171.39563,
   "grid-scale": 0.0,
   "cameras": [
     {
       "type": "Point",
       "coordinates": [
-        18.658422323120956,
-        45.768463317821443,
-        18.197013854980469
+        1.3783100553997127,
+        51.297517014974993,
+        52.586723327636719
       ]
     }
   ],
   "recordsets": [
+    {
+      "properties": {
+        "mapscale": 15,
+        "map_options": null,
+        "map_size": 10
+      },
+      "id": "_map_",
+      "display-name": "MapBox Map",
+      "type": "MapBox",
+      "datatype": "MapBox",
+      "source": null,
+      "features": null,
+      "position": null,
+      "transform": null,
+      "proj4": null
+    },
+    {
+      "properties": {
+        "units": {
+          "point": {
+            "color": [
+              0.0,
+              0.0,
+              255.0,
+              1.0
+            ],
+            "shape": "Cylinder",
+            "transform": {
+              "translate": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotate": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "scale": [
+                5.0,
+                5.0,
+                3.0
+              ]
+            },
+            "label": "name"
+          }
+        },
+        "dem": null,
+        "colorinterp": null,
+        "filter": null,
+        "map_options": null
+      },
+      "id": "001",
+      "display-name": null,
+      "type": "GeographyCollection",
+      "datatype": "Vector",
+      "source": "test_data/waypoint27092019up.geojson",
+      "features": null,
+      "position": null,
+      "transform": null,
+      "proj4": null
+    },
+    {
+      "properties": {
+        "units": {
+          "line": {
+            "color": [
+              255.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "shape": "Spheroid",
+            "transform": {
+              "translate": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotate": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "scale": [
+                3.0,
+                3.0,
+                3.0
+              ]
+            },
+            "label": "name"
+          },
+          "point": {
+            "color": [
+              255.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "shape": "Cuboid",
+            "transform": {
+              "translate": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotate": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "scale": [
+                5.0,
+                5.0,
+                5.0
+              ]
+            },
+            "label": "name"
+          }
+        },
+        "dem": null,
+        "colorinterp": null,
+        "filter": null,
+        "map_options": null
+      },
+      "id": "002",
+      "display-name": null,
+      "type": "GeographyCollection",
+      "datatype": "Vector",
+      "source": "test_data/lines.geojson",
+      "features": null,
+      "position": null,
+      "transform": null,
+      "proj4": null
+    },
+    {
+      "properties": {
+        "units": {
+          "line": {
+            "color": [
+              0.0,
+              128.0,
+              128.0,
+              1.0
+            ],
+            "shape": "Spheroid",
+            "transform": {
+              "translate": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotate": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "scale": [
+                0.5,
+                0.5,
+                0.5
+              ]
+            },
+            "label": null
+          },
+          "point": {
+            "color": [
+              255.0,
+              255.0,
+              255.0,
+              1.0
+            ],
+            "shape": "Cuboid",
+            "transform": {
+              "translate": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotate": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "scale": [
+                2.0,
+                2.0,
+                2.0
+              ]
+            },
+            "label": null
+          },
+          "body": {
+            "color": [
+              0.0,
+              128.0,
+              128.0,
+              1.0
+            ],
+            "shape": "Spheroid",
+            "transform": {
+              "translate": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotate": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "scale": [
+                0.5,
+                0.5,
+                0.5
+              ]
+            },
+            "label": "name"
+          }
+        },
+        "dem": null,
+        "colorinterp": null,
+        "filter": null,
+        "map_options": null
+      },
+      "id": "003",
+      "display-name": null,
+      "type": "GeographyCollection",
+      "datatype": "Vector",
+      "source": "test_data/polys.geojson",
+      "features": null,
+      "position": null,
+      "transform": null,
+      "proj4": null
+    },
     {
       "properties": {
         "units": {
@@ -44,9 +285,9 @@
                 1.0
               ],
               "scale": [
-                1.0,
-                1.0,
-                1.0
+                10.0,
+                10.0,
+                10.0
               ]
             },
             "label": null
@@ -72,35 +313,33 @@
                 1.0
               ],
               "scale": [
-                1.0,
-                1.0,
-                1.0
+                3.0,
+                3.0,
+                3.0
               ]
             },
             "label": "name"
           }
         },
         "dem": null,
-        "colorinterp": {
-          "ramp":"pestel_shades",
-          "dimension":"M"
+        "colorinterp": null,
+        "filter": null,
+        "map_options": null
       },
-        "filter": [{
-          "type":"filters.range",
-          "limits":"M[10:]"
-      },
-      {
-          "type": "filters.ferry",
-          "dimensions": "=>Z"
-      }]
-      },
-      "id": "001",
+      "id": "004",
       "display-name": null,
       "type": "GeographyCollection",
       "datatype": "PointCloud",
-      "source": "test_data/ASCII_TS_250/TP000010.xyz",
+      "source": "test_data/test.ply",
       "features": null,
-      "position": null,
+      "position": {
+        "type": "Point",
+        "coordinates": [
+          1.3792295414138362,
+          51.301775863301813,
+          70.366569519042969
+        ]
+      },
       "transform": {
         "translate": [
           0.0,
@@ -108,15 +347,15 @@
           0.0
         ],
         "rotate": [
-          0.0,
-          0.0,
-          0.0,
-          1.0
+          0.393473059,
+          -0.3822132,
+          -0.320936441,
+          0.7720699
         ],
         "scale": [
-          1.0,
-          1.0,
-          1.0
+          46.4688835,
+          46.4688835,
+          46.4688835
         ]
       },
       "proj4": null
@@ -124,34 +363,6 @@
     {
       "properties": {
         "units": {
-          "point": {
-            "color": [
-              0.0,
-              255.0,
-              255.0,
-              1.0
-            ],
-            "shape": "Spheroid",
-            "transform": {
-              "translate": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "rotate": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-              ],
-              "scale": [
-                1.0,
-                1.0,
-                1.0
-              ]
-            },
-            "label": null
-          },
           "handle": {
             "color": [
               0.0,
@@ -178,349 +389,115 @@
                 1.0
               ]
             },
-            "label": "name"
-          }
-        },
-        "dem": null,
-        "colorinterp": {
-          "ramp":"pestel_shades",
-          "dimension":"M"
-      },
-        "filter": [{
-          "type":"filters.range",
-          "limits":"M[10:]"
-      },
-      {
-          "type": "filters.ferry",
-          "dimensions": "=>Z"
-      }]
-      },
-      "id": "002",
-      "display-name": null,
-      "type": "GeographyCollection",
-      "datatype": "PointCloud",
-      "source": "test_data/ASCII_TS_250/TP100010.xyz",
-      "features": null,
-      "position": null,
-      "transform": {
-        "translate": [
-          0.0,
-          0.0,
-          -1.0
-        ],
-        "rotate": [
-          0.0,
-          0.0,
-          0.0,
-          1.0
-        ],
-        "scale": [
-          1.0,
-          1.0,
-          1.0
-        ]
-      },
-      "proj4": null
-    },
-    {
-      "properties": {
-        "units": {
-          "point": {
-            "color": [
-              0.0,
-              255.0,
-              255.0,
-              1.0
-            ],
-            "shape": "Spheroid",
-            "transform": {
-              "translate": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "rotate": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-              ],
-              "scale": [
-                1.0,
-                1.0,
-                1.0
-              ]
-            },
             "label": null
-          },
-          "handle": {
-            "color": [
-              0.0,
-              255.0,
-              255.0,
-              1.0
-            ],
-            "shape": "Spheroid",
-            "transform": {
-              "translate": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "rotate": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-              ],
-              "scale": [
-                1.0,
-                1.0,
-                1.0
-              ]
-            },
-            "label": "name"
           }
         },
         "dem": null,
-        "colorinterp": {
-          "ramp":"pestel_shades",
-          "dimension":"M"
-      },
-        "filter": [{
-          "type":"filters.range",
-          "limits":"M[10:]"
-      },
-      {
-          "type": "filters.ferry",
-          "dimensions": "=>Z"
-      }]
-      },
-      "id": "003",
-      "display-name": null,
-      "type": "GeographyCollection",
-      "datatype": "PointCloud",
-      "source": "test_data/ASCII_TS_250/TP200010.xyz",
-      "features": null,
-      "position": null,
-      "transform": {
-        "translate": [
-          0.0,
-          0.0,
-          -2.0
-        ],
-        "rotate": [
-          0.0,
-          0.0,
-          0.0,
-          1.0
-        ],
-        "scale": [
-          1.0,
-          1.0,
-          1.0
-        ]
-      },
-      "proj4": null
-    },
-    {
-      "properties": {
-        "units": {
-          "point": {
-            "color": [
-              0.0,
-              255.0,
-              255.0,
-              1.0
-            ],
-            "shape": "Spheroid",
-            "transform": {
-              "translate": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "rotate": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-              ],
-              "scale": [
-                1.0,
-                1.0,
-                1.0
-              ]
-            },
-            "label": null
-          },
-          "handle": {
-            "color": [
-              0.0,
-              255.0,
-              255.0,
-              1.0
-            ],
-            "shape": "Spheroid",
-            "transform": {
-              "translate": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "rotate": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-              ],
-              "scale": [
-                1.0,
-                1.0,
-                1.0
-              ]
-            },
-            "label": "name"
-          }
-        },
-        "dem": null,
-        "colorinterp": {
-          "ramp":"pestel_shades",
-          "dimension":"M"
-      },
-        "filter": [{
-          "type":"filters.range",
-          "limits":"M[10:]"
-      },
-      {
-          "type": "filters.ferry",
-          "dimensions": "=>Z"
-      }]
-      },
-      "id": "004",
-      "display-name": null,
-      "type": "GeographyCollection",
-      "datatype": "PointCloud",
-      "source": "test_data/ASCII_TS_250/TP300010.xyz",
-      "features": null,
-      "position": null,
-      "transform": {
-        "translate": [
-          0.0,
-          0.0,
-          -3.0
-        ],
-        "rotate": [
-          0.0,
-          0.0,
-          0.0,
-          1.0
-        ],
-        "scale": [
-          1.0,
-          1.0,
-          1.0
-        ]
-      },
-      "proj4": null
-    },
-    {
-      "properties": {
-        "units": {
-          "point": {
-            "color": [
-              0.0,
-              255.0,
-              255.0,
-              1.0
-            ],
-            "shape": "Spheroid",
-            "transform": {
-              "translate": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "rotate": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-              ],
-              "scale": [
-                1.0,
-                1.0,
-                1.0
-              ]
-            },
-            "label": null
-          },
-          "handle": {
-            "color": [
-              0.0,
-              255.0,
-              255.0,
-              1.0
-            ],
-            "shape": "Spheroid",
-            "transform": {
-              "translate": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "rotate": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-              ],
-              "scale": [
-                1.0,
-                1.0,
-                1.0
-              ]
-            },
-            "label": "name"
-          }
-        },
-        "dem": null,
-        "colorinterp": {
-          "ramp":"pestel_shades",
-          "dimension":"M"
-      },
-        "filter": [{
-          "type":"filters.range",
-          "limits":"M[10:]"
-      },
-      {
-          "type": "filters.ferry",
-          "dimensions": "=>Z"
-      }]
+        "colorinterp": null,
+        "filter": null,
+        "map_options": null
       },
       "id": "005",
       "display-name": null,
       "type": "GeographyCollection",
-      "datatype": "PointCloud",
-      "source": "test_data/ASCII_TS_250/TP400010.xyz",
+      "datatype": "Mesh",
+      "source": "test_data/test2.obj",
       "features": null,
-      "position": null,
+      "position": {
+        "type": "Point",
+        "coordinates": [
+          1.3762128399421611,
+          51.299841130164957,
+          255.098388671875
+        ]
+      },
       "transform": {
         "translate": [
           0.0,
           0.0,
-          -4.0
+          0.0
         ],
         "rotate": [
-          0.0,
-          0.0,
-          0.0,
-          1.0
+          -0.170409843,
+          0.0638713539,
+          -0.643804,
+          0.743234456
         ],
         "scale": [
-          1.0,
-          1.0,
-          1.0
+          130.328751,
+          130.328751,
+          130.328751
+        ]
+      },
+      "proj4": null
+    },
+    {
+      "properties": {
+        "units": {
+          "handle": {
+            "color": [
+              0.0,
+              255.0,
+              255.0,
+              1.0
+            ],
+            "shape": "Spheroid",
+            "transform": {
+              "translate": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotate": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "label": null
+          }
+        },
+        "dem": null,
+        "colorinterp": null,
+        "filter": null,
+        "map_options": null
+      },
+      "id": "006",
+      "display-name": null,
+      "type": "GeographyCollection",
+      "datatype": "Mdal",
+      "source": "test_data/xms_tin/paraboloid.m.tin",
+      "features": null,
+      "position": {
+        "type": "Point",
+        "coordinates": [
+          1.376455632982766,
+          51.300373367181017,
+          171.61766052246094
+        ]
+      },
+      "transform": {
+        "translate": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotate": [
+          -0.129605889,
+          -0.0112904189,
+          -0.442745119,
+          0.8871593
+        ],
+        "scale": [
+          0.9578706,
+          0.9578706,
+          0.9578706
         ]
       },
       "proj4": null

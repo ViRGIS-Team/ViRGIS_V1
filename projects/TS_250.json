@@ -13,9 +13,9 @@
     {
       "type": "Point",
       "coordinates": [
-        18.658422323120956,
-        45.768463317821443,
-        18.197013854980469
+        18.658422324212118,
+        45.768463318773854,
+        18.196950912475586
       ]
     }
   ],
@@ -82,17 +82,19 @@
         },
         "dem": null,
         "colorinterp": {
-          "ramp":"pestel_shades",
-          "dimension":"M"
-      },
-        "filter": [{
-          "type":"filters.range",
-          "limits":"M[10:]"
-      },
-      {
-          "type": "filters.ferry",
-          "dimensions": "=>Z"
-      }]
+          "ramp": "pestel_shades",
+          "dimension": "M"
+        },
+        "filter": [
+          {
+            "type": "filters.range",
+            "limits": "M[10:]"
+          },
+          {
+            "type": "filters.ferry",
+            "dimensions": "=>Z"
+          }
+        ]
       },
       "id": "001",
       "display-name": null,
@@ -183,17 +185,19 @@
         },
         "dem": null,
         "colorinterp": {
-          "ramp":"pestel_shades",
-          "dimension":"M"
-      },
-        "filter": [{
-          "type":"filters.range",
-          "limits":"M[10:]"
-      },
-      {
-          "type": "filters.ferry",
-          "dimensions": "=>Z"
-      }]
+          "ramp": "pestel_shades",
+          "dimension": "M"
+        },
+        "filter": [
+          {
+            "type": "filters.range",
+            "limits": "M[10:]"
+          },
+          {
+            "type": "filters.ferry",
+            "dimensions": "=>Z"
+          }
+        ]
       },
       "id": "002",
       "display-name": null,
@@ -284,17 +288,19 @@
         },
         "dem": null,
         "colorinterp": {
-          "ramp":"pestel_shades",
-          "dimension":"M"
-      },
-        "filter": [{
-          "type":"filters.range",
-          "limits":"M[10:]"
-      },
-      {
-          "type": "filters.ferry",
-          "dimensions": "=>Z"
-      }]
+          "ramp": "pestel_shades",
+          "dimension": "M"
+        },
+        "filter": [
+          {
+            "type": "filters.range",
+            "limits": "M[10:]"
+          },
+          {
+            "type": "filters.ferry",
+            "dimensions": "=>Z"
+          }
+        ]
       },
       "id": "003",
       "display-name": null,
@@ -385,17 +391,19 @@
         },
         "dem": null,
         "colorinterp": {
-          "ramp":"pestel_shades",
-          "dimension":"M"
-      },
-        "filter": [{
-          "type":"filters.range",
-          "limits":"M[10:]"
-      },
-      {
-          "type": "filters.ferry",
-          "dimensions": "=>Z"
-      }]
+          "ramp": "pestel_shades",
+          "dimension": "M"
+        },
+        "filter": [
+          {
+            "type": "filters.range",
+            "limits": "M[10:]"
+          },
+          {
+            "type": "filters.ferry",
+            "dimensions": "=>Z"
+          }
+        ]
       },
       "id": "004",
       "display-name": null,
@@ -486,17 +494,19 @@
         },
         "dem": null,
         "colorinterp": {
-          "ramp":"pestel_shades",
-          "dimension":"M"
-      },
-        "filter": [{
-          "type":"filters.range",
-          "limits":"M[10:]"
-      },
-      {
-          "type": "filters.ferry",
-          "dimensions": "=>Z"
-      }]
+          "ramp": "pestel_shades",
+          "dimension": "M"
+        },
+        "filter": [
+          {
+            "type": "filters.range",
+            "limits": "M[10:]"
+          },
+          {
+            "type": "filters.ferry",
+            "dimensions": "=>Z"
+          }
+        ]
       },
       "id": "005",
       "display-name": null,
