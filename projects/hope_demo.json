@@ -13,14 +13,18 @@
     {
       "type": "Point",
       "coordinates": [
-        -1.755810069426172,
-        53.3263375618054,
-        227.77789306640625
+        -1.7558098017068624,
+        53.326337849098884,
+        227.71699523925781
       ]
     }
   ],
   "recordsets": [
     {
+      "properties": {
+        "mapscale": 15,
+        "map_size": 10
+      },
       "id": "_map_",
       "display-name": "MapBox Map",
       "type": "MapBox",
@@ -29,10 +33,6 @@
       "features": null,
       "position": null,
       "transform": null,
-      "properties": {
-        "mapscale": 15,
-        "map_size": 10
-      },
       "proj4": null
     },
     {
