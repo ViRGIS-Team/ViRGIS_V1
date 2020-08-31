@@ -22,7 +22,11 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.collab-proxy": {
+<<<<<<< HEAD
       "version": "1.3.9",
+=======
+      "version": "1.2.16",
+>>>>>>> Core
       "depth": 0,
       "source": "registry",
       "dependencies": {},
@@ -36,7 +40,11 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.ide.rider": {
+<<<<<<< HEAD
       "version": "1.2.1",
+=======
+      "version": "1.1.4",
+>>>>>>> Core
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -44,6 +52,7 @@
       },
       "url": "https://packages.unity.com"
     },
+<<<<<<< HEAD
     "com.unity.ide.visualstudio": {
       "version": "2.0.2",
       "depth": 0,
@@ -51,6 +60,8 @@
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
+=======
+>>>>>>> Core
     "com.unity.ide.vscode": {
       "version": "1.2.1",
       "depth": 0,
@@ -89,7 +100,11 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.render-pipelines.core": {
+<<<<<<< HEAD
       "version": "8.2.0",
+=======
+      "version": "7.3.1",
+>>>>>>> Core
       "depth": 1,
       "source": "registry",
       "dependencies": {
@@ -98,6 +113,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.render-pipelines.universal": {
+<<<<<<< HEAD
       "version": "8.2.0",
       "depth": 0,
       "source": "registry",
@@ -121,6 +137,23 @@
       "dependencies": {
         "com.unity.render-pipelines.core": "8.2.0",
         "com.unity.searcher": "4.0.9"
+=======
+      "version": "7.3.1",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.render-pipelines.core": "7.3.1",
+        "com.unity.shadergraph": "7.3.1"
+      },
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.shadergraph": {
+      "version": "7.3.1",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.render-pipelines.core": "7.3.1"
+>>>>>>> Core
       },
       "url": "https://packages.unity.com"
     },
@@ -143,7 +176,11 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.textmeshpro": {
+<<<<<<< HEAD
       "version": "3.0.1",
+=======
+      "version": "2.0.1",
+>>>>>>> Core
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -156,6 +193,7 @@
       "depth": 0,
       "source": "builtin",
       "dependencies": {
+<<<<<<< HEAD
         "com.unity.modules.ui": "1.0.0",
         "com.unity.modules.imgui": "1.0.0"
       }
@@ -166,6 +204,17 @@
       "source": "registry",
       "dependencies": {
         "com.unity.shadergraph": "8.2.0"
+=======
+        "com.unity.modules.ui": "1.0.0"
+      }
+    },
+    "com.unity.visualeffectgraph": {
+      "version": "7.3.1",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.shadergraph": "7.3.1"
+>>>>>>> Core
       },
       "url": "https://packages.unity.com"
     },
@@ -232,7 +281,11 @@
       "url": "https://registry.npmjs.org"
     },
     "jillejr.newtonsoft.json-for-unity": {
+<<<<<<< HEAD
       "version": "12.0.301",
+=======
+      "version": "12.0.201",
+>>>>>>> Core
       "depth": 0,
       "source": "registry",
       "dependencies": {},
@@ -378,6 +431,7 @@
       "depth": 0,
       "source": "builtin",
       "dependencies": {
+<<<<<<< HEAD
         "com.unity.modules.ui": "1.0.0",
         "com.unity.modules.imgui": "1.0.0",
         "com.unity.modules.jsonserialize": "1.0.0",
@@ -390,6 +444,8 @@
       "source": "builtin",
       "dependencies": {
         "com.unity.modules.ui": "1.0.0",
+=======
+>>>>>>> Core
         "com.unity.modules.imgui": "1.0.0",
         "com.unity.modules.jsonserialize": "1.0.0"
       }
