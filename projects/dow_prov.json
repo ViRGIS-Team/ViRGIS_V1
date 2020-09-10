@@ -13,14 +13,19 @@
     {
       "type": "Point",
       "coordinates": [
-        -2.0172718936945606,
-        54.153512782885535,
-        367.94308471679688
+        -2.01608738531053,
+        54.154631664454222,
+        367.51788330078125
       ]
     }
   ],
   "recordsets": [
     {
+      "properties": {
+        "mapscale": 15,
+        "map_size": 2,
+        "elevation_layer_type": "TerrainWithElevation"
+      },
       "id": "_map_",
       "display-name": "MapBox Map",
       "type": "MapBox",
@@ -29,11 +34,6 @@
       "features": null,
       "position": null,
       "transform": null,
-      "properties": {
-        "mapscale": 15,
-        "map_size": 2,
-        "elevation_layer_type": "TerrainWithElevation"
-      },
       "proj4": null
     },
     {
