@@ -7,15 +7,15 @@
       53.316200583246534
     ]
   },
-  "scale": 81.57676,
+  "scale": 81.26575,
   "grid-scale": 1.0,
   "cameras": [
     {
       "type": "Point",
       "coordinates": [
-        -1.7558098017068624,
-        53.326337849098884,
-        227.71699523925781
+        -1.7518622460111173,
+        53.316273250650077,
+        137.16191101074219
       ]
     }
   ],
@@ -435,8 +435,8 @@
           "point": {
             "color": [
               255.0,
-              0,
-              0,
+              0.0,
+              0.0,
               1.0
             ],
             "shape": "Cuboid",
@@ -748,12 +748,16 @@
         "colorinterp": {
           "ramp": "blue_orange"
         },
-        "filter": [{
-          "type": "filters.mongo",
-          "expression": {
-            "Z": { "$ne": 0}
+        "filter": [
+          {
+            "type": "filters.mongo",
+            "expression": {
+              "Z": {
+                "$ne": 0
+              }
+            }
           }
-        }]
+        ]
       },
       "id": "008",
       "display-name": "Hope_DEM TIF",
