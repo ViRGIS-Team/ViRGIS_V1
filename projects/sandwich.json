@@ -7,15 +7,15 @@
       51.299457
     ]
   },
-  "scale": 171.39563,
+  "scale": 376.000275,
   "grid-scale": 0.0,
   "cameras": [
     {
       "type": "Point",
       "coordinates": [
-        1.3783100553997127,
-        51.297517014974993,
-        52.586723327636719
+        1.3792962676056866,
+        51.295281918077343,
+        218.36468505859375
       ]
     }
   ],
@@ -23,7 +23,6 @@
     {
       "properties": {
         "mapscale": 15,
-        "map_options": null,
         "map_size": 10
       },
       "id": "_map_",
@@ -71,10 +70,10 @@
         "dem": null,
         "colorinterp": null,
         "filter": null,
-        "map_options": null
+        "bbox": null
       },
       "id": "001",
-      "display-name": null,
+      "display-name": "Example Points",
       "type": "GeographyCollection",
       "datatype": "Vector",
       "source": "test_data/waypoint27092019up.geojson",
@@ -146,10 +145,10 @@
         "dem": null,
         "colorinterp": null,
         "filter": null,
-        "map_options": null
+        "bbox": null
       },
       "id": "002",
-      "display-name": null,
+      "display-name": "Eample Lines",
       "type": "GeographyCollection",
       "datatype": "Vector",
       "source": "test_data/lines.geojson",
@@ -249,10 +248,10 @@
         "dem": null,
         "colorinterp": null,
         "filter": null,
-        "map_options": null
+        "bbox": null
       },
       "id": "003",
-      "display-name": null,
+      "display-name": "Polygons",
       "type": "GeographyCollection",
       "datatype": "Vector",
       "source": "test_data/polys.geojson",
@@ -324,10 +323,10 @@
         "dem": null,
         "colorinterp": null,
         "filter": null,
-        "map_options": null
+        "bbox": null
       },
       "id": "004",
-      "display-name": null,
+      "display-name": "Eample .PLY Point Cloud",
       "type": "GeographyCollection",
       "datatype": "PointCloud",
       "source": "test_data/test.ply",
@@ -395,10 +394,10 @@
         "dem": null,
         "colorinterp": null,
         "filter": null,
-        "map_options": null
+        "bbox": null
       },
       "id": "005",
-      "display-name": null,
+      "display-name": "Example .OBJ",
       "type": "GeographyCollection",
       "datatype": "Mesh",
       "source": "test_data/test2.obj",
@@ -466,10 +465,10 @@
         "dem": null,
         "colorinterp": null,
         "filter": null,
-        "map_options": null
+        "bbox": null
       },
       "id": "006",
-      "display-name": null,
+      "display-name": "TIN Paraboloid",
       "type": "GeographyCollection",
       "datatype": "Mdal",
       "source": "test_data/xms_tin/paraboloid.m.tin",
@@ -500,6 +499,54 @@
           0.9578706
         ]
       },
+      "proj4": null
+    },
+    {
+      "properties": {
+        "units": {
+          "point": {
+            "color": [
+              0.0,
+              0.0,
+              255.0,
+              1.0
+            ],
+            "shape": "Cylinder",
+            "transform": {
+              "translate": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotate": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "scale": [
+                5.0,
+                5.0,
+                3.0
+              ]
+            },
+            "label": "name"
+          }
+        },
+        "dem": null,
+        "colorinterp": null,
+        "filter": null,
+        "bbox": null,
+        "is-wfs": true
+      },
+      "id": "007",
+      "display-name": "WFS All data Points",
+      "type": "GeographyCollection",
+      "datatype": "Vector",
+      "source": "https://swbayproject.com/qgisserver?MAP=/var/qgis/swbay_server.qgs&typename=all_data_points",
+      "features": null,
+      "position": null,
+      "transform": null,
       "proj4": null
     }
   ]
