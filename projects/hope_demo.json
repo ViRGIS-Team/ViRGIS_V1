@@ -1,4 +1,5 @@
 {
+  "version": "2.0.0a3",
   "name": "test_project",
   "origin": {
     "type": "Point",
@@ -925,7 +926,8 @@
           416290,
           381928
         ],
-        "is-wfs": true
+        "source-type": "Wfs",
+        "read-only": true
       },
       "id": "010",
       "display-name": "BGS WFS",

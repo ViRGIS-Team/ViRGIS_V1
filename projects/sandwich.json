@@ -1,4 +1,5 @@
 {
+  "version": "2.0.0a3",
   "name": "test_project",
   "origin": {
     "type": "Point",
@@ -537,7 +538,8 @@
         "colorinterp": null,
         "filter": null,
         "bbox": null,
-        "is-wfs": true
+        "source-type": "WFS",
+        "read-only": true
       },
       "id": "007",
       "display-name": "WFS All data Points",
