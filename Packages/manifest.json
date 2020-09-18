@@ -37,6 +37,7 @@
     "com.unity.xr.oculus": "1.4.3",
     "io.extendreality.vrtk.prefabs": "1.1.11",
     "jillejr.newtonsoft.json-for-unity": "12.0.301",
+    "com.nol1fe.delaunator": "https://github.com/nol1fe/delaunator-sharp-unitypackage.git",
     "com.unity.modules.ai": "1.0.0",
     "com.unity.modules.androidjni": "1.0.0",
     "com.unity.modules.animation": "1.0.0",
