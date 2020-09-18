@@ -1,4 +1,5 @@
 {
+  "version": "2.0.0a3",
   "name": "test_project",
   "origin": {
     "type": "Point",
@@ -13,9 +14,9 @@
     {
       "type": "Point",
       "coordinates": [
-        -1.7518622460111173,
-        53.316273250650077,
-        137.16191101074219
+        -1.7737363171535816,
+        53.315346886182212,
+        242.67010498046875
       ]
     }
   ],
@@ -27,12 +28,12 @@
       },
       "id": "_map_",
       "display-name": "MapBox Map",
-      "type": "MapBox",
       "datatype": "MapBox",
       "source": null,
       "features": null,
       "position": null,
       "transform": null,
+      "visible": false,
       "proj4": null
     },
     {
@@ -42,7 +43,7 @@
             "color": [
               0.0,
               0.0,
-              255.0,
+              1.0,
               1.0
             ],
             "shape": "Cylinder",
@@ -71,11 +72,11 @@
         "x_sect_type": null,
         "dem": null,
         "colorinterp": null,
-        "filter": null
+        "filter": null,
+        "bbox": null
       },
       "id": "001",
       "display-name": "Narea ERTY Lines",
-      "type": "GeologyCollection",
       "datatype": "XSect",
       "source": "test_data/narea_ert_lines.egb",
       "features": null,
@@ -90,7 +91,7 @@
             "color": [
               0.0,
               0.0,
-              255.0,
+              1.0,
               1.0
             ],
             "shape": "Cylinder",
@@ -118,7 +119,7 @@
             "color": [
               0.0,
               0.0,
-              255.0,
+              1.0,
               1.0
             ],
             "shape": "Cylinder",
@@ -155,11 +156,11 @@
             "type": "filters.range",
             "limits": "m[0:50000]"
           }
-        ]
+        ],
+        "bbox": null
       },
       "id": "002",
       "display-name": "Magnetic",
-      "type": "GeographyCollection",
       "datatype": "Raster",
       "source": "test_data/MAG_DML.ers",
       "features": null,
@@ -198,7 +199,7 @@
             "color": [
               0.0,
               0.0,
-              255.0,
+              1.0,
               1.0
             ],
             "shape": "Cylinder",
@@ -226,7 +227,7 @@
             "color": [
               0.0,
               0.0,
-              255.0,
+              1.0,
               1.0
             ],
             "shape": "Cylinder",
@@ -263,11 +264,11 @@
             "type": "filters.range",
             "limits": "m[0:50000]"
           }
-        ]
+        ],
+        "bbox": null
       },
       "id": "003",
       "display-name": "Electrical Conductivity",
-      "type": "GeographyCollection",
       "datatype": "Raster",
       "source": "test_data/EC_DML.ers",
       "features": null,
@@ -304,9 +305,9 @@
         "units": {
           "line": {
             "color": [
-              3.0,
-              15.0,
-              252.0,
+              0.0117647061,
+              0.05882353,
+              0.9882353,
               1.0
             ],
             "shape": "Spheroid",
@@ -332,9 +333,9 @@
           },
           "point": {
             "color": [
-              3.0,
-              15.0,
-              252.0,
+              0.0117647061,
+              0.05882353,
+              0.9882353,
               1.0
             ],
             "shape": "Spheroid",
@@ -360,9 +361,9 @@
           },
           "body": {
             "color": [
-              3.0,
-              15.0,
-              252.0,
+              0.0117647061,
+              0.05882353,
+              0.9882353,
               1.0
             ],
             "shape": "Spheroid",
@@ -391,15 +392,14 @@
         "colorinterp": null,
         "filter": null,
         "bbox": [
-          414025,
-          380729,
-          416290,
-          381928
+          414025.0,
+          380729.0,
+          416290.0,
+          381928.0
         ]
       },
       "id": "004",
       "display-name": "BGS Rakes",
-      "type": "GeographyCollection",
       "datatype": "Vector",
       "source": "test_data/BGS_geolmap/BGS_rakes.TAB",
       "features": null,
@@ -412,9 +412,9 @@
         "units": {
           "line": {
             "color": [
-              3.0,
-              15.0,
-              252.0,
+              0.0117647061,
+              0.05882353,
+              0.9882353,
               1.0
             ],
             "shape": "Spheroid",
@@ -440,7 +440,7 @@
           },
           "point": {
             "color": [
-              255.0,
+              1.0,
               0.0,
               0.0,
               1.0
@@ -468,9 +468,9 @@
           },
           "body": {
             "color": [
-              3.0,
-              15.0,
-              252.0,
+              0.0117647061,
+              0.05882353,
+              0.9882353,
               1.0
             ],
             "shape": "Cuboid",
@@ -497,11 +497,11 @@
         },
         "dem": null,
         "colorinterp": null,
-        "filter": null
+        "filter": null,
+        "bbox": null
       },
       "id": "005",
       "display-name": "OS Mines",
-      "type": "GeographyCollection",
       "datatype": "Vector",
       "source": "test_data/os_mines/OS map mines.shp",
       "features": null,
@@ -514,9 +514,9 @@
         "units": {
           "line": {
             "color": [
-              252.0,
-              186.0,
-              3.0,
+              0.9882353,
+              0.7294118,
+              0.0117647061,
               1.0
             ],
             "shape": "Spheroid",
@@ -542,9 +542,9 @@
           },
           "point": {
             "color": [
-              252.0,
-              186.0,
-              3.0,
+              0.9882353,
+              0.7294118,
+              0.0117647061,
               1.0
             ],
             "shape": "Cuboid",
@@ -570,9 +570,9 @@
           },
           "body": {
             "color": [
-              252.0,
-              186.0,
-              3.0,
+              0.9882353,
+              0.7294118,
+              0.0117647061,
               1.0
             ],
             "shape": "Spheroid",
@@ -599,11 +599,11 @@
         },
         "dem": null,
         "colorinterp": null,
-        "filter": null
+        "filter": null,
+        "bbox": null
       },
       "id": "006",
       "display-name": "BGS - BLL",
-      "type": "GeographyCollection",
       "datatype": "Vector",
       "source": "test_data/BGS_geolmap/BGS_bll.TAB",
       "features": null,
@@ -633,9 +633,9 @@
         "units": {
           "line": {
             "color": [
-              15.0,
-              252.0,
-              3.0,
+              0.05882353,
+              0.9882353,
+              0.0117647061,
               1.0
             ],
             "shape": "Spheroid",
@@ -661,9 +661,9 @@
           },
           "point": {
             "color": [
-              15.0,
-              252.0,
-              3.0,
+              0.05882353,
+              0.9882353,
+              0.0117647061,
               1.0
             ],
             "shape": "Cuboid",
@@ -689,9 +689,9 @@
           },
           "body": {
             "color": [
-              15.0,
-              252.0,
-              3.0,
+              0.05882353,
+              0.9882353,
+              0.0117647061,
               1.0
             ],
             "shape": "Spheroid",
@@ -718,11 +718,11 @@
         },
         "dem": null,
         "colorinterp": null,
-        "filter": null
+        "filter": null,
+        "bbox": null
       },
       "id": "007",
       "display-name": "BGS - CH",
-      "type": "GeographyCollection",
       "datatype": "Vector",
       "source": "test_data/BGS_geolmap/BGS_ch.TAB",
       "features": null,
@@ -763,11 +763,11 @@
               }
             }
           }
-        ]
+        ],
+        "bbox": null
       },
       "id": "008",
       "display-name": "Hope_DEM TIF",
-      "type": "GeographyCollection",
       "datatype": "DEM",
       "source": "test_data/hope_dem_new.tif",
       "features": null,
@@ -799,11 +799,11 @@
         "colorinterp": {
           "ramp": "heat_map"
         },
-        "filter": null
+        "filter": null,
+        "bbox": null
       },
       "id": "009",
       "display-name": "UKTD_HL001 DEM",
-      "type": "GeographyCollection",
       "datatype": "DEM",
       "source": "test_data/UKTD_HL001_filtered.xyz",
       "features": null,
@@ -833,9 +833,9 @@
         "units": {
           "line": {
             "color": [
-              255.0,
-              15.0,
-              252.0,
+              1.0,
+              0.05882353,
+              0.9882353,
               1.0
             ],
             "shape": "Spheroid",
@@ -861,9 +861,9 @@
           },
           "point": {
             "color": [
-              255.0,
-              15.0,
-              252.0,
+              1.0,
+              0.05882353,
+              0.9882353,
               1.0
             ],
             "shape": "Spheroid",
@@ -889,9 +889,9 @@
           },
           "body": {
             "color": [
-              3.0,
-              15.0,
-              252.0,
+              0.0117647061,
+              0.05882353,
+              0.9882353,
               1.0
             ],
             "shape": "Spheroid",
@@ -920,21 +920,22 @@
         "colorinterp": null,
         "filter": null,
         "bbox": [
-          414025,
-          380729,
-          416290,
-          381928
+          414025.0,
+          380729.0,
+          416290.0,
+          381928.0
         ],
-        "is-wfs": true
+        "source-type": 1,
+        "read-only": true
       },
       "id": "010",
       "display-name": "BGS WFS",
-      "type": "GeographyCollection",
       "datatype": "Vector",
       "source": "http://ogc.bgs.ac.uk/digmap625k_gsml_insp_gs/wfs",
       "features": null,
       "position": null,
       "transform": null,
+      "visible": false,
       "proj4": null
     }
   ]

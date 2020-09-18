@@ -1,4 +1,5 @@
 {
+  "version": "2.0.0a3",
   "name": "test_project",
   "origin": {
     "type": "Point",
@@ -13,9 +14,9 @@
     {
       "type": "Point",
       "coordinates": [
-        18.664303353283817,
-        45.786773443557948,
-        351.58383178710938
+        18.659881895687771,
+        45.770226949188363,
+        480.0396728515625
       ]
     }
   ],
@@ -29,7 +30,6 @@
       },
       "id": "_map_",
       "display-name": "MapBox Map",
-      "type": "MapBox",
       "datatype": "MapBox",
       "source": null,
       "features": null,
@@ -44,7 +44,7 @@
             "color": [
               0.0,
               0.0,
-              255.0,
+              1.0,
               1.0
             ],
             "shape": "Cylinder",
@@ -71,11 +71,11 @@
         },
         "dem": null,
         "colorinterp": null,
-        "filter": null
+        "filter": null,
+        "bbox": null
       },
       "id": "006",
       "display-name": null,
-      "type": "GeographyCollection",
       "datatype": "DEM",
       "source": "test_data/esri_tin/dem/tnxy.adf",
       "features": null,

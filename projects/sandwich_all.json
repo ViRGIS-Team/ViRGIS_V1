@@ -1,4 +1,5 @@
 {
+  "version": "2.0.0a3",
   "name": "test_project",
   "origin": {
     "type": "Point",
@@ -7,15 +8,15 @@
       51.299457
     ]
   },
-  "scale": 1.33293986,
+  "scale": 1.33294,
   "grid-scale": 0.0,
   "cameras": [
     {
       "type": "Point",
       "coordinates": [
-        1.3948321638718975,
-        51.284097150918385,
-        105.8619384765625
+        1.3773203457624039,
+        51.299599162101032,
+        14.361709594726563
       ]
     }
   ],
@@ -27,7 +28,6 @@
       },
       "id": "_map_",
       "display-name": "MapBox Map",
-      "type": "MapBox",
       "datatype": "MapBox",
       "source": null,
       "features": null,
@@ -43,7 +43,7 @@
             "color": [
               0.0,
               0.0,
-              255.0,
+              1.0,
               1.0
             ],
             "shape": "Cylinder",
@@ -70,11 +70,11 @@
         },
         "dem": null,
         "colorinterp": null,
-        "filter": null
+        "filter": null,
+        "bbox": null
       },
       "id": "001",
       "display-name": null,
-      "type": "GeographyCollection",
       "datatype": "Vector",
       "source": "test_data/sbs_points.geojson",
       "features": null,
@@ -87,9 +87,9 @@
         "units": {
           "point": {
             "color": [
-              255.0,
-              255.0,
-              255.0,
+              1.0,
+              1.0,
+              1.0,
               1.0
             ],
             "shape": "Spheroid",
@@ -116,11 +116,11 @@
         },
         "dem": null,
         "colorinterp": null,
-        "filter": null
+        "filter": null,
+        "bbox": null
       },
       "id": "002",
       "display-name": null,
-      "type": "GeographyCollection",
       "datatype": "Vector",
       "source": "test_data/all_points.geojson",
       "features": null,
@@ -133,7 +133,7 @@
         "units": {
           "line": {
             "color": [
-              255.0,
+              1.0,
               0.0,
               0.0,
               1.0
@@ -161,7 +161,7 @@
           },
           "point": {
             "color": [
-              255.0,
+              1.0,
               0.0,
               0.0,
               1.0
@@ -190,11 +190,11 @@
         },
         "dem": null,
         "colorinterp": null,
-        "filter": null
+        "filter": null,
+        "bbox": null
       },
       "id": "003",
       "display-name": null,
-      "type": "GeographyCollection",
       "datatype": "Vector",
       "source": "test_data/lines.geojson",
       "features": null,
@@ -209,7 +209,7 @@
             "color": [
               0.0,
               0.0,
-              255.0,
+              1.0,
               1.0
             ],
             "shape": "Cylinder",
@@ -238,11 +238,11 @@
         "colorinterp": {
           "ramp": "heat_map"
         },
-        "filter": null
+        "filter": null,
+        "bbox": null
       },
       "id": "004",
       "display-name": null,
-      "type": "GeographyCollection",
       "datatype": "DEM",
       "source": "test_data/bathy2.tif",
       "features": null,
