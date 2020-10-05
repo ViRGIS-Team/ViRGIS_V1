@@ -8,15 +8,15 @@
       51.299457
     ]
   },
-  "scale": 32.25505,
+  "scale": 22.6962967,
   "grid-scale": 0.0,
   "cameras": [
     {
       "type": "Point",
       "coordinates": [
-        1.3785287269642483,
-        51.297175544706562,
-        101.17995452880859
+        1.3845992104003533,
+        51.306886373319031,
+        183.39274597167969
       ]
     }
   ],
@@ -30,7 +30,6 @@
       "display-name": "MapBox Map",
       "datatype": "MapBox",
       "source": null,
-      "features": null,
       "position": null,
       "transform": null,
       "proj4": null
@@ -76,7 +75,6 @@
       "display-name": "Example Points",
       "datatype": "Vector",
       "source": "test_data/waypoint27092019up.geojson",
-      "features": null,
       "position": null,
       "transform": null,
       "proj4": null
@@ -150,7 +148,6 @@
       "display-name": "Eample Lines",
       "datatype": "Vector",
       "source": "test_data/lines.geojson",
-      "features": null,
       "position": null,
       "transform": null,
       "proj4": null
@@ -252,7 +249,6 @@
       "display-name": "Polygons",
       "datatype": "Vector",
       "source": "test_data/polys.geojson",
-      "features": null,
       "position": null,
       "transform": null,
       "proj4": null
@@ -326,7 +322,6 @@
       "display-name": "Eample .PLY Point Cloud",
       "datatype": "PointCloud",
       "source": "test_data/test.ply",
-      "features": null,
       "position": {
         "type": "Point",
         "coordinates": [
@@ -396,7 +391,6 @@
       "display-name": "Example .OBJ",
       "datatype": "Mesh",
       "source": "test_data/test2.obj",
-      "features": null,
       "position": {
         "type": "Point",
         "coordinates": [
@@ -466,7 +460,6 @@
       "display-name": "TIN Paraboloid",
       "datatype": "Mdal",
       "source": "test_data/xms_tin/paraboloid.m.tin",
-      "features": null,
       "position": {
         "type": "Point",
         "coordinates": [
@@ -538,7 +531,6 @@
       "display-name": "WFS All data Points",
       "datatype": "Vector",
       "source": "https://swbayproject.com/qgisserver?MAP=/var/qgis/swbay_server.qgs&typename=all_data_points",
-      "features": null,
       "position": null,
       "transform": null,
       "proj4": null
