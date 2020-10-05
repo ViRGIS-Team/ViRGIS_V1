@@ -1,1 +1,101 @@
-{"name": "Second test file", "origin": {"type": "Point", "coordinates": [-1.7770818785291513, 53.32452523954618]}, "grid-scale": 1.0, "scale": 1, "cameras": [{"type": "Point", "coordinates": [-1.7770818785291513, 53.32452523954618]}], "recordsets": [{"display-name": "MapBox Map", "id": "_map_", "datatype": "MapBox", "source": "", "properties": {"mapscale": 15, "map_size": 10, "elevation_source_type": "MapboxTerrain", "elevation_layer_type": "TerrainWithElevation", "imagery_source_type": "MapboxStreets", "units": {}}, "transform": {"translate": [0.0, 0.0, 0.0], "rotate": [0.0, 0.0, 0.0, 1.0], "scale": [0.0, 0.0, 0.0]}, "position": null, "proj4": ""}, {"display-name": "DEM", "id": "001", "datatype": "DEM", "source": "test_data\\hope_dem_new.tif", "properties": {"units": {}, "colorinterp": {"ramp": "blue_orange"}, "filter": [{"type": "filters.mongo", "expression": {"Z": {"$ne": 0}}}]}, "transform": {"translate": [0.0, 0.0, 0.0], "rotate": [0.0, 0.0, 0.0, 1.0], "scale": [1.0, 1.0, 1.0]}, "position": null, "proj4": "epsg:27700"}], "version": "2.0.0a3"}
+{
+  "version": "2.0.0a3",
+  "name": "Second test file",
+  "origin": {
+    "type": "Point",
+    "coordinates": [
+      -1.7770818785291513,
+      53.324525239546183
+    ]
+  },
+  "scale": 55.6988831,
+  "grid-scale": 1.0,
+  "cameras": [
+    {
+      "type": "Point",
+      "coordinates": [
+        -1.7746978630026908,
+        53.331935523598126,
+        515.280029296875
+      ]
+    }
+  ],
+  "recordsets": [
+    {
+      "properties": {
+        "mapscale": 15,
+        "map_size": 10,
+        "elevation_layer_type": "TerrainWithElevation",
+        "imagery_source_type": "MapboxStreets"
+      },
+      "id": "_map_",
+      "display-name": "MapBox Map",
+      "datatype": "MapBox",
+      "source": "",
+      "position": null,
+      "transform": {
+        "translate": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotate": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "proj4": ""
+    },
+    {
+      "properties": {
+        "units": {},
+        "dem": null,
+        "colorinterp": {
+          "ramp": "blue_orange"
+        },
+        "filter": [
+          {
+            "type": "filters.mongo",
+            "expression": {
+              "Z": {
+                "$ne": 0
+              }
+            }
+          }
+        ],
+        "bbox": null
+      },
+      "id": "001",
+      "display-name": "DEM",
+      "datatype": "DEM",
+      "source": "test_data\\hope_dem_new.tif",
+      "position": null,
+      "transform": {
+        "translate": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotate": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "proj4": "epsg:27700"
+    }
+  ]
+}
