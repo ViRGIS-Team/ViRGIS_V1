@@ -14,9 +14,9 @@
     {
       "type": "Point",
       "coordinates": [
-        18.668729561937528,
-        45.773821813313823,
-        634.0166015625
+        18.660661047421037,
+        45.77369767293164,
+        488.169921875
       ]
     }
   ],
@@ -32,7 +32,6 @@
       "display-name": "MapBox Map",
       "datatype": "MapBox",
       "source": null,
-      "features": null,
       "position": null,
       "transform": null,
       "proj4": null
@@ -78,7 +77,6 @@
       "display-name": null,
       "datatype": "DEM",
       "source": "test_data/esri_tin/dem/tnxy.adf",
-      "features": null,
       "position": null,
       "transform": {
         "translate": [

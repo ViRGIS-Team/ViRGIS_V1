@@ -1,937 +1,841 @@
 {
-  "version": "2.0.0a3",
-  "name": "test_project",
-  "origin": {
-    "type": "Point",
-    "coordinates": [
-      -1.791218230167096,
-      53.316200583246534
+    "version": "2.0.0a3",
+    "name": "test_project",
+    "origin": {
+        "type": "Point",
+        "coordinates": [
+            -1.791218230167096,
+            53.316200583246534
+        ]
+    },
+    "scale": 81.26575,
+    "grid-scale": 1.0,
+    "cameras": [
+        {
+            "type": "Point",
+            "coordinates": [
+                -1.7518622460111173,
+                53.31627325065008,
+                137.1619110107422
+            ]
+        }
+    ],
+    "recordsets": [
+        {
+            "properties": {
+                "mapscale": 15,
+                "map_size": 10
+            },
+            "id": "_map_",
+            "display-name": "MapBox Map",
+            "type": "MapBox",
+            "datatype": "MapBox",
+            "source": null,
+            "features": null,
+            "position": null,
+            "transform": null,
+            "proj4": null
+        },
+        {
+            "properties": {
+                "units": {
+                    "point": {
+                        "color": [
+                            0.0,
+                            0.0,
+                            255.0,
+                            1.0
+                        ],
+                        "shape": "Cylinder",
+                        "transform": {
+                            "translate": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "rotate": [
+                                0.0,
+                                0.0,
+                                0.0,
+                                1.0
+                            ],
+                            "scale": [
+                                1.0,
+                                1.0,
+                                1.0
+                            ]
+                        },
+                        "label": "name"
+                    }
+                },
+                "lines": "",
+                "x_sect_type": "",
+                "dem": null,
+                "colorinterp": null,
+                "filter": null
+            },
+            "id": "001",
+            "display-name": "Narea ERTY Lines",
+            "type": "GeologyCollection",
+            "datatype": "XSect",
+            "source": "test_data/narea_ert_lines.egb",
+            "features": null,
+            "position": null,
+            "transform": null,
+            "proj4": ""
+        },
+        {
+            "properties": {
+                "units": {
+                    "point": {
+                        "color": [
+                            0.0,
+                            0.0,
+                            255.0,
+                            1.0
+                        ],
+                        "shape": "Cylinder",
+                        "transform": {
+                            "translate": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "rotate": [
+                                0.0,
+                                0.0,
+                                0.0,
+                                1.0
+                            ],
+                            "scale": [
+                                30.0,
+                                30.0,
+                                30.0
+                            ]
+                        },
+                        "label": null
+                    },
+                    "handle": {
+                        "color": [
+                            0.0,
+                            0.0,
+                            255.0,
+                            1.0
+                        ],
+                        "shape": "Cylinder",
+                        "transform": {
+                            "translate": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "rotate": [
+                                0.0,
+                                0.0,
+                                0.0,
+                                1.0
+                            ],
+                            "scale": [
+                                1.0,
+                                1.0,
+                                1.0
+                            ]
+                        },
+                        "label": null
+                    }
+                },
+                "dem": "test_data/hope_dem_new.tif",
+                "colorinterp": {
+                    "ramp": "heat_map",
+                    "k": 2,
+                    "mad": true,
+                    "dimension": "m"
+                },
+                "filter": [
+                    {
+                        "type": "filters.range",
+                        "limits": "m[0:50000]"
+                    }
+                ]
+            },
+            "id": "002",
+            "display-name": "Magnetic",
+            "type": "GeographyCollection",
+            "datatype": "Raster",
+            "source": "test_data/MAG_DML.ers",
+            "features": null,
+            "position": {
+                "type": "Point",
+                "coordinates": [
+                    -1.7911776422883132,
+                    53.316205011584856,
+                    0.6342892050743103
+                ]
+            },
+            "transform": {
+                "translate": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            },
+            "proj4": "epsg:27700",
+            "source-type": ""
+        },
+        {
+            "properties": {
+                "units": {
+                    "point": {
+                        "color": [
+                            0.0,
+                            0.0,
+                            255.0,
+                            1.0
+                        ],
+                        "shape": "Cylinder",
+                        "transform": {
+                            "translate": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "rotate": [
+                                0.0,
+                                0.0,
+                                0.0,
+                                1.0
+                            ],
+                            "scale": [
+                                20.0,
+                                20.0,
+                                20.0
+                            ]
+                        },
+                        "label": null
+                    },
+                    "handle": {
+                        "color": [
+                            0.0,
+                            0.0,
+                            255.0,
+                            1.0
+                        ],
+                        "shape": "Cylinder",
+                        "transform": {
+                            "translate": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "rotate": [
+                                0.0,
+                                0.0,
+                                0.0,
+                                1.0
+                            ],
+                            "scale": [
+                                1.0,
+                                1.0,
+                                1.0
+                            ]
+                        },
+                        "label": null
+                    }
+                },
+                "dem": "test_data/hope_dem_new.tif",
+                "colorinterp": {
+                    "ramp": "pestel_shades",
+                    "k": 2,
+                    "mad": true,
+                    "dimension": "m"
+                },
+                "filter": [
+                    {
+                        "type": "filters.range",
+                        "limits": "m[0:50000]"
+                    }
+                ]
+            },
+            "id": "003",
+            "display-name": "Electrical Conductivity",
+            "type": "GeographyCollection",
+            "datatype": "Raster",
+            "source": "test_data/EC_DML.ers",
+            "features": null,
+            "position": {
+                "type": "Point",
+                "coordinates": [
+                    -1.7912145911597532,
+                    53.31620967033977,
+                    -2.5283901691436768
+                ]
+            },
+            "transform": {
+                "translate": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            },
+            "proj4": "epsg:27700",
+            "source-type": ""
+        },
+        {
+            "properties": {
+                "units": {
+                    "line": {
+                        "color": [
+                            3.0,
+                            15.0,
+                            252.0,
+                            1.0
+                        ],
+                        "shape": "Spheroid",
+                        "transform": {
+                            "translate": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "rotate": [
+                                0.0,
+                                0.0,
+                                0.0,
+                                1.0
+                            ],
+                            "scale": [
+                                10.0,
+                                10.0,
+                                10.0
+                            ]
+                        },
+                        "label": null
+                    },
+                    "point": {
+                        "color": [
+                            3.0,
+                            15.0,
+                            252.0,
+                            1.0
+                        ],
+                        "shape": "Spheroid",
+                        "transform": {
+                            "translate": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "rotate": [
+                                0.0,
+                                0.0,
+                                0.0,
+                                1.0
+                            ],
+                            "scale": [
+                                10.0,
+                                10.0,
+                                10.0
+                            ]
+                        },
+                        "label": null
+                    },
+                    "body": {
+                        "color": [
+                            3.0,
+                            15.0,
+                            252.0,
+                            1.0
+                        ],
+                        "shape": "Spheroid",
+                        "transform": {
+                            "translate": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "rotate": [
+                                0.0,
+                                0.0,
+                                0.0,
+                                1.0
+                            ],
+                            "scale": [
+                                0.5,
+                                0.5,
+                                0.5
+                            ]
+                        },
+                        "label": "name"
+                    }
+                },
+                "dem": null,
+                "colorinterp": null,
+                "filter": null,
+                "bbox": null,
+                "read-only": false
+            },
+            "id": "004",
+            "display-name": "BGS Rakes",
+            "type": "GeographyCollection",
+            "datatype": "Vector",
+            "source": "test_data/BGS_geolmap/BGS_rakes.TAB",
+            "features": null,
+            "position": null,
+            "transform": null,
+            "proj4": "",
+            "source-type": ""
+        },
+        {
+            "properties": {
+                "units": {
+                    "line": {
+                        "color": [
+                            0.011764705882352941,
+                            0.058823529411764705,
+                            0.9882352941176471,
+                            1.0
+                        ],
+                        "shape": "Spheroid",
+                        "transform": {
+                            "translate": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "rotate": [
+                                0.0,
+                                0.0,
+                                0.0,
+                                1.0
+                            ],
+                            "scale": [
+                                10.0,
+                                10.0,
+                                10.0
+                            ]
+                        },
+                        "label": null
+                    },
+                    "point": {
+                        "color": [
+                            1.0,
+                            0.0,
+                            0.0,
+                            1.0
+                        ],
+                        "shape": "Cuboid",
+                        "transform": {
+                            "translate": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "rotate": [
+                                0.0,
+                                0.0,
+                                0.0,
+                                1.0
+                            ],
+                            "scale": [
+                                15.0,
+                                15.0,
+                                15.0
+                            ]
+                        },
+                        "label": null
+                    },
+                    "body": {
+                        "color": [
+                            0.011764705882352941,
+                            0.058823529411764705,
+                            0.9882352941176471,
+                            1.0
+                        ],
+                        "shape": "Cuboid",
+                        "transform": {
+                            "translate": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "rotate": [
+                                0.0,
+                                0.0,
+                                0.0,
+                                1.0
+                            ],
+                            "scale": [
+                                0.5,
+                                0.5,
+                                0.5
+                            ]
+                        },
+                        "label": "name"
+                    }
+                },
+                "dem": null,
+                "colorinterp": null,
+                "filter": null,
+                "bbox": null,
+                "read-only": false
+            },
+            "id": "005",
+            "display-name": "OS Mines",
+            "type": "GeographyCollection",
+            "datatype": "Vector",
+            "source": "test_data/os_mines/OS map mines.shp",
+            "features": null,
+            "position": null,
+            "transform": null,
+            "proj4": "",
+            "source-type": ""
+        },
+        {
+            "properties": {
+                "units": {
+                    "line": {
+                        "color": [
+                            252.0,
+                            186.0,
+                            3.0,
+                            1.0
+                        ],
+                        "shape": "Spheroid",
+                        "transform": {
+                            "translate": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "rotate": [
+                                0.0,
+                                0.0,
+                                0.0,
+                                1.0
+                            ],
+                            "scale": [
+                                5.0,
+                                5.0,
+                                5.0
+                            ]
+                        },
+                        "label": null
+                    },
+                    "point": {
+                        "color": [
+                            252.0,
+                            186.0,
+                            3.0,
+                            1.0
+                        ],
+                        "shape": "Cuboid",
+                        "transform": {
+                            "translate": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "rotate": [
+                                0.0,
+                                0.0,
+                                0.0,
+                                1.0
+                            ],
+                            "scale": [
+                                5.0,
+                                5.0,
+                                5.0
+                            ]
+                        },
+                        "label": null
+                    },
+                    "body": {
+                        "color": [
+                            252.0,
+                            186.0,
+                            3.0,
+                            1.0
+                        ],
+                        "shape": "Spheroid",
+                        "transform": {
+                            "translate": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "rotate": [
+                                0.0,
+                                0.0,
+                                0.0,
+                                1.0
+                            ],
+                            "scale": [
+                                0.5,
+                                0.5,
+                                0.5
+                            ]
+                        },
+                        "label": "name"
+                    }
+                },
+                "dem": null,
+                "colorinterp": null,
+                "filter": null,
+                "bbox": null,
+                "read-only": false
+            },
+            "id": "006",
+            "display-name": "BGS - BLL",
+            "type": "GeographyCollection",
+            "datatype": "Vector",
+            "source": "test_data/BGS_geolmap/BGS_bll.TAB",
+            "features": null,
+            "position": null,
+            "transform": {
+                "translate": [
+                    0.0,
+                    0.0,
+                    0.05
+                ],
+                "rotate": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            },
+            "proj4": "",
+            "source-type": ""
+        },
+        {
+            "properties": {
+                "units": {
+                    "line": {
+                        "color": [
+                            15.0,
+                            252.0,
+                            3.0,
+                            1.0
+                        ],
+                        "shape": "Spheroid",
+                        "transform": {
+                            "translate": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "rotate": [
+                                0.0,
+                                0.0,
+                                0.0,
+                                1.0
+                            ],
+                            "scale": [
+                                5.0,
+                                5.0,
+                                5.0
+                            ]
+                        },
+                        "label": null
+                    },
+                    "point": {
+                        "color": [
+                            15.0,
+                            252.0,
+                            3.0,
+                            1.0
+                        ],
+                        "shape": "Cuboid",
+                        "transform": {
+                            "translate": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "rotate": [
+                                0.0,
+                                0.0,
+                                0.0,
+                                1.0
+                            ],
+                            "scale": [
+                                5.0,
+                                5.0,
+                                5.0
+                            ]
+                        },
+                        "label": null
+                    },
+                    "body": {
+                        "color": [
+                            15.0,
+                            252.0,
+                            3.0,
+                            1.0
+                        ],
+                        "shape": "Spheroid",
+                        "transform": {
+                            "translate": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "rotate": [
+                                0.0,
+                                0.0,
+                                0.0,
+                                1.0
+                            ],
+                            "scale": [
+                                0.5,
+                                0.5,
+                                0.5
+                            ]
+                        },
+                        "label": "name"
+                    }
+                },
+                "dem": null,
+                "colorinterp": null,
+                "filter": null,
+                "bbox": null,
+                "read-only": false
+            },
+            "id": "007",
+            "display-name": "BGS - CH",
+            "type": "GeographyCollection",
+            "datatype": "Vector",
+            "source": "test_data/BGS_geolmap/BGS_ch.TAB",
+            "features": null,
+            "position": null,
+            "transform": {
+                "translate": [
+                    0.0,
+                    0.0,
+                    0.05
+                ],
+                "rotate": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            },
+            "proj4": "",
+            "source-type": ""
+        },
+        {
+            "properties": {
+                "units": {},
+                "dem": null,
+                "colorinterp": {
+                    "ramp": "blue_orange"
+                },
+                "filter": [
+                    {
+                        "type": "filters.mongo",
+                        "expression": {
+                            "Z": {
+                                "$ne": 0
+                            }
+                        }
+                    }
+                ]
+            },
+            "id": "008",
+            "display-name": "Hope_DEM TIF",
+            "type": "GeographyCollection",
+            "datatype": "DEM",
+            "source": "test_data/hope_dem_new.tif",
+            "features": null,
+            "position": null,
+            "transform": {
+                "translate": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            },
+            "proj4": "+proj=tmerc +lat_0=49 +lon_0=-2 +k=0.9996012717 +x_0=400000 +y_0=-100000 +ellps=airy +units=m +no_defs +type=crs"
+        },
+        {
+            "properties": {
+                "units": {},
+                "dem": null,
+                "colorinterp": {
+                    "ramp": "heat_map"
+                },
+                "filter": null
+            },
+            "id": "009",
+            "display-name": "UKTD_HL001 DEM",
+            "type": "GeographyCollection",
+            "datatype": "DEM",
+            "source": "test_data/UKTD_HL001_filtered.xyz",
+            "features": null,
+            "position": null,
+            "transform": {
+                "translate": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            },
+            "proj4": "+proj=tmerc +lat_0=49 +lon_0=-2 +k=0.9996012717 +x_0=400000 +y_0=-100000 +ellps=airy +units=m +no_defs +type=crs"
+        }
     ]
-  },
-  "scale": 81.26575,
-  "grid-scale": 1.0,
-  "cameras": [
-    {
-      "type": "Point",
-      "coordinates": [
-        -1.781990925217144,
-        53.32707799176157,
-        207.2274169921875
-      ]
-    }
-  ],
-  "recordsets": [
-    {
-      "properties": {
-        "mapscale": 15,
-        "map_size": 10
-      },
-      "id": "_map_",
-      "display-name": "MapBox Map",
-      "datatype": "MapBox",
-      "source": null,
-      "features": null,
-      "position": null,
-      "transform": null,
-      "visible": false,
-      "proj4": null
-    },
-    {
-      "properties": {
-        "units": {
-          "point": {
-            "color": [
-              0.0,
-              0.0,
-              1.0,
-              1.0
-            ],
-            "shape": "Cylinder",
-            "transform": {
-              "translate": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "rotate": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-              ],
-              "scale": [
-                1.0,
-                1.0,
-                1.0
-              ]
-            },
-            "label": "name"
-          }
-        },
-        "lines": null,
-        "x_sect_type": "",
-        "dem": null,
-        "colorinterp": null,
-        "filter": null,
-        "bbox": null
-      },
-      "id": "001",
-      "display-name": "Narea ERTY Lines",
-      "datatype": "XSect",
-      "source": "test_data/narea_ert_lines.egb",
-      "features": null,
-      "position": null,
-      "transform": null,
-      "proj4": ""
-    },
-    {
-      "properties": {
-        "units": {
-          "point": {
-            "color": [
-              0.0,
-              0.0,
-              1.0,
-              1.0
-            ],
-            "shape": "Cylinder",
-            "transform": {
-              "translate": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "rotate": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-              ],
-              "scale": [
-                30.0,
-                30.0,
-                30.0
-              ]
-            },
-            "label": null
-          },
-          "handle": {
-            "color": [
-              0.0,
-              0.0,
-              1.0,
-              1.0
-            ],
-            "shape": "Cylinder",
-            "transform": {
-              "translate": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "rotate": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-              ],
-              "scale": [
-                1.0,
-                1.0,
-                1.0
-              ]
-            },
-            "label": null
-          }
-        },
-        "dem": "test_data/hope_dem_new.tif",
-        "colorinterp": {
-          "ramp": "heat_map",
-          "k": 2,
-          "mad": true,
-          "dimension": "m"
-        },
-        "filter": [
-          {
-            "type": "filters.range",
-            "limits": "m[0:50000]"
-          }
-        ],
-        "bbox": null
-      },
-      "id": "002",
-      "display-name": "Magnetic",
-      "datatype": "Raster",
-      "source": "test_data/MAG_DML.ers",
-      "features": null,
-      "position": {
-        "type": "Point",
-        "coordinates": [
-          -1.7911776422883132,
-          53.316205011584856,
-          0.6342892050743103
-        ]
-      },
-      "transform": {
-        "translate": [
-          0.0,
-          0.0,
-          0.0
-        ],
-        "rotate": [
-          0.0,
-          0.0,
-          0.0,
-          1.0
-        ],
-        "scale": [
-          1.0,
-          1.0,
-          1.0
-        ]
-      },
-      "proj4": "epsg:27700"
-    },
-    {
-      "properties": {
-        "units": {
-          "point": {
-            "color": [
-              0.0,
-              0.0,
-              1.0,
-              1.0
-            ],
-            "shape": "Cylinder",
-            "transform": {
-              "translate": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "rotate": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-              ],
-              "scale": [
-                20.0,
-                20.0,
-                20.0
-              ]
-            },
-            "label": null
-          },
-          "handle": {
-            "color": [
-              0.0,
-              0.0,
-              1.0,
-              1.0
-            ],
-            "shape": "Cylinder",
-            "transform": {
-              "translate": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "rotate": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-              ],
-              "scale": [
-                1.0,
-                1.0,
-                1.0
-              ]
-            },
-            "label": null
-          }
-        },
-        "dem": "test_data/hope_dem_new.tif",
-        "colorinterp": {
-          "ramp": "pestel_shades",
-          "k": 2,
-          "mad": true,
-          "dimension": "m"
-        },
-        "filter": [
-          {
-            "type": "filters.range",
-            "limits": "m[0:50000]"
-          }
-        ],
-        "bbox": null
-      },
-      "id": "003",
-      "display-name": "Electrical Conductivity",
-      "datatype": "Raster",
-      "source": "test_data/EC_DML.ers",
-      "features": null,
-      "position": {
-        "type": "Point",
-        "coordinates": [
-          -1.7912145911597532,
-          53.316209670339767,
-          -2.5283901691436768
-        ]
-      },
-      "transform": {
-        "translate": [
-          0.0,
-          0.0,
-          0.0
-        ],
-        "rotate": [
-          0.0,
-          0.0,
-          0.0,
-          1.0
-        ],
-        "scale": [
-          1.0,
-          1.0,
-          1.0
-        ]
-      },
-      "proj4": "epsg:27700"
-    },
-    {
-      "properties": {
-        "units": {
-          "line": {
-            "color": [
-              0.0117647061,
-              0.05882353,
-              0.9882353,
-              1.0
-            ],
-            "shape": "Spheroid",
-            "transform": {
-              "translate": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "rotate": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-              ],
-              "scale": [
-                10.0,
-                10.0,
-                10.0
-              ]
-            },
-            "label": null
-          },
-          "point": {
-            "color": [
-              0.0117647061,
-              0.05882353,
-              0.9882353,
-              1.0
-            ],
-            "shape": "Spheroid",
-            "transform": {
-              "translate": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "rotate": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-              ],
-              "scale": [
-                10.0,
-                10.0,
-                10.0
-              ]
-            },
-            "label": null
-          },
-          "body": {
-            "color": [
-              0.0117647061,
-              0.05882353,
-              0.9882353,
-              1.0
-            ],
-            "shape": "Spheroid",
-            "transform": {
-              "translate": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "rotate": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-              ],
-              "scale": [
-                0.5,
-                0.5,
-                0.5
-              ]
-            },
-            "label": "name"
-          }
-        },
-        "dem": null,
-        "colorinterp": null,
-        "filter": null,
-        "bbox": null
-      },
-      "id": "004",
-      "display-name": "BGS Rakes",
-      "datatype": "Vector",
-      "source": "test_data/BGS_geolmap/BGS_rakes.TAB",
-      "features": null,
-      "position": null,
-      "transform": null,
-      "proj4": ""
-    },
-    {
-      "properties": {
-        "units": {
-          "line": {
-            "color": [
-              0.0117647061,
-              0.05882353,
-              0.9882353,
-              1.0
-            ],
-            "shape": "Spheroid",
-            "transform": {
-              "translate": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "rotate": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-              ],
-              "scale": [
-                10.0,
-                10.0,
-                10.0
-              ]
-            },
-            "label": null
-          },
-          "point": {
-            "color": [
-              1.0,
-              0.0,
-              0.0,
-              1.0
-            ],
-            "shape": "Cuboid",
-            "transform": {
-              "translate": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "rotate": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-              ],
-              "scale": [
-                15.0,
-                15.0,
-                15.0
-              ]
-            },
-            "label": null
-          },
-          "body": {
-            "color": [
-              0.0117647061,
-              0.05882353,
-              0.9882353,
-              1.0
-            ],
-            "shape": "Cuboid",
-            "transform": {
-              "translate": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "rotate": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-              ],
-              "scale": [
-                0.5,
-                0.5,
-                0.5
-              ]
-            },
-            "label": "name"
-          }
-        },
-        "dem": null,
-        "colorinterp": null,
-        "filter": null,
-        "bbox": null
-      },
-      "id": "005",
-      "display-name": "OS Mines",
-      "datatype": "Vector",
-      "source": "test_data/os_mines/OS map mines.shp",
-      "features": null,
-      "position": null,
-      "transform": null,
-      "proj4": ""
-    },
-    {
-      "properties": {
-        "units": {
-          "line": {
-            "color": [
-              0.9882353,
-              0.7294118,
-              0.0117647061,
-              1.0
-            ],
-            "shape": "Spheroid",
-            "transform": {
-              "translate": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "rotate": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-              ],
-              "scale": [
-                5.0,
-                5.0,
-                5.0
-              ]
-            },
-            "label": null
-          },
-          "point": {
-            "color": [
-              0.9882353,
-              0.7294118,
-              0.0117647061,
-              1.0
-            ],
-            "shape": "Cuboid",
-            "transform": {
-              "translate": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "rotate": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-              ],
-              "scale": [
-                5.0,
-                5.0,
-                5.0
-              ]
-            },
-            "label": null
-          },
-          "body": {
-            "color": [
-              0.9882353,
-              0.7294118,
-              0.0117647061,
-              1.0
-            ],
-            "shape": "Spheroid",
-            "transform": {
-              "translate": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "rotate": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-              ],
-              "scale": [
-                0.5,
-                0.5,
-                0.5
-              ]
-            },
-            "label": "name"
-          }
-        },
-        "dem": null,
-        "colorinterp": null,
-        "filter": null,
-        "bbox": null
-      },
-      "id": "006",
-      "display-name": "BGS - BLL",
-      "datatype": "Vector",
-      "source": "test_data/BGS_geolmap/BGS_bll.TAB",
-      "features": null,
-      "position": null,
-      "transform": {
-        "translate": [
-          0.0,
-          0.0,
-          0.05
-        ],
-        "rotate": [
-          0.0,
-          0.0,
-          0.0,
-          1.0
-        ],
-        "scale": [
-          1.0,
-          1.0,
-          1.0
-        ]
-      },
-      "proj4": ""
-    },
-    {
-      "properties": {
-        "units": {
-          "line": {
-            "color": [
-              0.05882353,
-              0.9882353,
-              0.0117647061,
-              1.0
-            ],
-            "shape": "Spheroid",
-            "transform": {
-              "translate": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "rotate": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-              ],
-              "scale": [
-                5.0,
-                5.0,
-                5.0
-              ]
-            },
-            "label": null
-          },
-          "point": {
-            "color": [
-              0.05882353,
-              0.9882353,
-              0.0117647061,
-              1.0
-            ],
-            "shape": "Cuboid",
-            "transform": {
-              "translate": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "rotate": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-              ],
-              "scale": [
-                5.0,
-                5.0,
-                5.0
-              ]
-            },
-            "label": null
-          },
-          "body": {
-            "color": [
-              0.05882353,
-              0.9882353,
-              0.0117647061,
-              1.0
-            ],
-            "shape": "Spheroid",
-            "transform": {
-              "translate": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "rotate": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-              ],
-              "scale": [
-                0.5,
-                0.5,
-                0.5
-              ]
-            },
-            "label": "name"
-          }
-        },
-        "dem": null,
-        "colorinterp": null,
-        "filter": null,
-        "bbox": null
-      },
-      "id": "007",
-      "display-name": "BGS - CH",
-      "datatype": "Vector",
-      "source": "test_data/BGS_geolmap/BGS_ch.TAB",
-      "features": null,
-      "position": null,
-      "transform": {
-        "translate": [
-          0.0,
-          0.0,
-          0.05
-        ],
-        "rotate": [
-          0.0,
-          0.0,
-          0.0,
-          1.0
-        ],
-        "scale": [
-          1.0,
-          1.0,
-          1.0
-        ]
-      },
-      "proj4": ""
-    },
-    {
-      "properties": {
-        "units": {},
-        "dem": null,
-        "colorinterp": {
-          "ramp": "blue_orange"
-        },
-        "filter": [
-          {
-            "type": "filters.mongo",
-            "expression": {
-              "Z": {
-                "$ne": 0
-              }
-            }
-          }
-        ],
-        "bbox": null
-      },
-      "id": "008",
-      "display-name": "Hope_DEM TIF",
-      "datatype": "DEM",
-      "source": "test_data/hope_dem_new.tif",
-      "features": null,
-      "position": null,
-      "transform": {
-        "translate": [
-          0.0,
-          0.0,
-          0.0
-        ],
-        "rotate": [
-          0.0,
-          0.0,
-          0.0,
-          1.0
-        ],
-        "scale": [
-          1.0,
-          1.0,
-          1.0
-        ]
-      },
-      "proj4": "+proj=tmerc +lat_0=49 +lon_0=-2 +k=0.9996012717 +x_0=400000 +y_0=-100000 +ellps=airy +units=m +no_defs +type=crs"
-    },
-    {
-      "properties": {
-        "units": {},
-        "dem": null,
-        "colorinterp": {
-          "ramp": "heat_map"
-        },
-        "filter": null,
-        "bbox": null
-      },
-      "id": "009",
-      "display-name": "UKTD_HL001 DEM",
-      "datatype": "DEM",
-      "source": "test_data/UKTD_HL001_filtered.xyz",
-      "features": null,
-      "position": null,
-      "transform": {
-        "translate": [
-          0.0,
-          0.0,
-          0.0
-        ],
-        "rotate": [
-          0.0,
-          0.0,
-          0.0,
-          1.0
-        ],
-        "scale": [
-          1.0,
-          1.0,
-          1.0
-        ]
-      },
-      "proj4": "+proj=tmerc +lat_0=49 +lon_0=-2 +k=0.9996012717 +x_0=400000 +y_0=-100000 +ellps=airy +units=m +no_defs +type=crs"
-    },
-    {
-      "properties": {
-        "units": {
-          "line": {
-            "color": [
-              0.847058833,
-              0.7372549,
-              0.4117647,
-              1.0
-            ],
-            "shape": "Spheroid",
-            "transform": {
-              "translate": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "rotate": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-              ],
-              "scale": [
-                10.0,
-                10.0,
-                10.0
-              ]
-            },
-            "label": ""
-          },
-          "point": {
-            "color": [
-              0.847058833,
-              0.7372549,
-              0.407843143,
-              1.0
-            ],
-            "shape": "Spheroid",
-            "transform": {
-              "translate": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "rotate": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-              ],
-              "scale": [
-                10.0,
-                10.0,
-                10.0
-              ]
-            },
-            "label": ""
-          },
-          "body": {
-            "color": [
-              0.847058833,
-              0.7372549,
-              0.4117647,
-              1.0
-            ],
-            "shape": "Spheroid",
-            "transform": {
-              "translate": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "rotate": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-              ],
-              "scale": [
-                0.5,
-                0.5,
-                0.5
-              ]
-            },
-            "label": "name"
-          }
-        },
-        "dem": null,
-        "colorinterp": null,
-        "filter": null,
-        "bbox": [
-          414025.0,
-          380729.0,
-          416290.0,
-          381928.0
-        ],
-        "source-type": 1,
-        "read-only": true
-      },
-      "id": "010",
-      "display-name": "BGS WFS",
-      "datatype": "Vector",
-      "source": "http://ogc.bgs.ac.uk/digmap625k_gsml_insp_gs/wfs",
-      "features": null,
-      "position": null,
-      "transform": null,
-      "visible": false,
-      "proj4": ""
-    }
-  ]
 }
