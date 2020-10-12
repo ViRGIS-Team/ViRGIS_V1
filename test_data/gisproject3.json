@@ -488,7 +488,7 @@
       "display-name": null,
       "type": "GeographyCollection",
       "datatype": "Mesh",
-      "source": "test_data/test2.obj",
+      "source": "test_data/test2.3ds",
       "features": null,
       "position": {
         "type": "Point",
