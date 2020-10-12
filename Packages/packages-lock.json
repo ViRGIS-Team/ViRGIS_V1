@@ -45,7 +45,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.ide.vscode": {
-      "version": "1.2.1",
+      "version": "1.2.2",
       "depth": 0,
       "source": "registry",
       "dependencies": {},
@@ -174,7 +174,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.xr.management": {
-      "version": "3.2.13",
+      "version": "3.2.16",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -192,6 +192,13 @@
         "com.unity.ugui": "1.0.0"
       },
       "url": "https://packages.unity.com"
+    },
+    "com.virgis.geometry3sharp": {
+      "version": "https://github.com/ViRGIS-Team/geometry3Sharp.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "2e80615ef626dede1d4127869ba0ba8479151812"
     },
     "io.extendreality.malimbe": {
       "version": "9.6.5",
@@ -219,7 +226,7 @@
       "url": "https://registry.npmjs.org"
     },
     "jillejr.newtonsoft.json-for-unity": {
-      "version": "12.0.201",
+      "version": "12.0.301",
       "depth": 0,
       "source": "registry",
       "dependencies": {},

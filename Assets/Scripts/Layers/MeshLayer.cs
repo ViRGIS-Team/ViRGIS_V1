@@ -5,7 +5,6 @@ using System.IO;
 using Project;
 using g3;
 using System;
-using GeoJSON.Net.Geometry;
 
 namespace Virgis
 {
@@ -24,26 +23,22 @@ namespace Virgis
 
         private async Task<SimpleMeshBuilder> loadObj(string filename)
         {
-            using (StreamReader reader = File.OpenText(filename))
+            StandardMeshReader reader = new StandardMeshReader();
+            reader.MeshBuilder = new SimpleMeshBuilder();
+            try
             {
-                OBJReader objReader = new OBJReader();
-                SimpleMeshBuilder meshBuilder = new SimpleMeshBuilder();
-                try
-                {
-                    IOReadResult result = objReader.Read(reader, new ReadOptions(), meshBuilder);
-                }
-                catch (Exception e) when (
-                 e is UnauthorizedAccessException ||
-                 e is DirectoryNotFoundException ||
-                 e is FileNotFoundException ||
-                 e is NotSupportedException
-                 )
-                {
-                    Debug.LogError("Failed to Load" + filename + " : " + e.ToString());
-                    meshBuilder = new SimpleMeshBuilder();
-                }
-                return meshBuilder;
+                IOReadResult result = reader.Read(filename, new ReadOptions());
             }
+            catch (Exception e) when (
+                e is UnauthorizedAccessException ||
+                e is DirectoryNotFoundException ||
+                e is FileNotFoundException ||
+                e is NotSupportedException
+                )
+            {
+                Debug.LogError("Failed to Load" + filename + " : " + e.ToString());
+            }
+            return reader.MeshBuilder as SimpleMeshBuilder;
         }
 
         protected override async Task _init(GeographyCollection layer)
