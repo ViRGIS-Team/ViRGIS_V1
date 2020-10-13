@@ -13,9 +13,9 @@
     {
       "type": "Point",
       "coordinates": [
-        -2.01608738531053,
-        54.154631664454222,
-        367.51788330078125
+        -2.0172309880291568,
+        54.155428717002323,
+        822.7877197265625
       ]
     }
   ],
@@ -126,7 +126,8 @@
         },
         "dem": null,
         "colorinterp": null,
-        "filter": null
+        "filter": null,
+        "bbox": null
       },
       "id": "001",
       "display-name": "Dow Prov Main",
@@ -228,7 +229,8 @@
         },
         "dem": null,
         "colorinterp": null,
-        "filter": null
+        "filter": null,
+        "bbox": null
       },
       "id": "002",
       "display-name": "Dow Prov Poly",
