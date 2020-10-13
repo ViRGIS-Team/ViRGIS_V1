@@ -1,4 +1,5 @@
 {
+  "version": "2.0.0a3",
   "name": "test_project",
   "origin": {
     "type": "Point",
@@ -13,9 +14,9 @@
     {
       "type": "Point",
       "coordinates": [
-        -2.0172309880291568,
-        54.155428717002323,
-        822.7877197265625
+        -2.0121252620649792,
+        54.150571737936652,
+        494.732177734375
       ]
     }
   ],
@@ -28,7 +29,6 @@
       },
       "id": "_map_",
       "display-name": "MapBox Map",
-      "type": "MapBox",
       "datatype": "MapBox",
       "source": null,
       "features": null,
@@ -41,9 +41,9 @@
         "units": {
           "point": {
             "color": [
-              230.0,
-              90.0,
-              100.0,
+              0.9019608,
+              0.3529412,
+              0.392156869,
               1.0
             ],
             "shape": "Spheroid",
@@ -69,9 +69,9 @@
           },
           "line": {
             "color": [
-              230.0,
-              90.0,
-              100.0,
+              0.9019608,
+              0.3529412,
+              0.392156869,
               1.0
             ],
             "shape": "Cylinder",
@@ -97,8 +97,8 @@
           },
           "body": {
             "color": [
-              230.0,
-              240.0,
+              0.9019608,
+              0.9411765,
               0.0,
               1.0
             ],
@@ -131,7 +131,6 @@
       },
       "id": "001",
       "display-name": "Dow Prov Main",
-      "type": "GeographyCollection",
       "datatype": "Vector",
       "source": "test_data/DowProv.geojson",
       "features": null,
@@ -144,8 +143,8 @@
         "units": {
           "point": {
             "color": [
-              230.0,
-              240.0,
+              0.9019608,
+              0.9411765,
               0.0,
               0.0
             ],
@@ -172,8 +171,8 @@
           },
           "line": {
             "color": [
-              230.0,
-              240.0,
+              0.9019608,
+              0.9411765,
               0.0,
               0.0
             ],
@@ -200,8 +199,8 @@
           },
           "body": {
             "color": [
-              230.0,
-              240.0,
+              0.9019608,
+              0.9411765,
               0.0,
               1.0
             ],
@@ -234,7 +233,6 @@
       },
       "id": "002",
       "display-name": "Dow Prov Poly",
-      "type": "GeographyCollection",
       "datatype": "Vector",
       "source": "test_data/DowProvPoly.geojson",
       "features": null,

@@ -256,7 +256,10 @@ public static class OVRHaptics
 					int numBytes = desiredPadding * OVRHaptics.Config.SampleSizeInBytes;
 					int dstOffset = acquiredSamplesCount * OVRHaptics.Config.SampleSizeInBytes;
 					int srcOffset = 0;
-					Marshal.Copy(m_paddingClip.Samples, srcOffset, m_nativeBuffer.GetPointer(dstOffset), numBytes);
+                    try {
+                        Marshal.Copy(m_paddingClip.Samples, srcOffset, m_nativeBuffer.GetPointer(dstOffset), numBytes);
+                    } catch { }
+
 
 					acquiredSamplesCount += desiredPadding;
 				}

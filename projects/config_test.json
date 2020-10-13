@@ -1,0 +1,92 @@
+{
+  "version": "2.0.0a3",
+  "name": "test file for configurator",
+  "origin": {
+    "type": "Point",
+    "coordinates": [
+      1.377283,
+      51.299457
+    ]
+  },
+  "scale": 10.8321686,
+  "grid-scale": 1.0,
+  "cameras": [
+    {
+      "type": "Point",
+      "coordinates": [
+        1.3759778879217226,
+        51.298204288912189,
+        67.886268615722656
+      ]
+    }
+  ],
+  "recordsets": [
+    {
+      "properties": {
+        "mapscale": 15,
+        "map_size": 10,
+        "elevation_layer_type": "TerrainWithElevation",
+        "imagery_source_type": "MapboxStreets"
+      },
+      "id": "_map_",
+      "display-name": "MapBox Map",
+      "datatype": "MapBox",
+      "source": null,
+      "features": null,
+      "position": null,
+      "transform": {
+        "translate": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotate": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "proj4": null
+    },
+    {
+      "properties": {
+        "units": {},
+        "dem": null,
+        "colorinterp": null,
+        "filter": null,
+        "bbox": null
+      },
+      "id": "001",
+      "display-name": "test data",
+      "datatype": "Vector",
+      "source": "test_data/all_points.geojson",
+      "features": null,
+      "position": null,
+      "transform": {
+        "translate": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotate": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "proj4": ""
+    }
+  ]
+}
