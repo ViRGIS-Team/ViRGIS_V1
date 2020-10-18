@@ -206,7 +206,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.xr.oculus": {
-      "version": "1.4.3",
+      "version": "1.5.0",
       "depth": 0,
       "source": "registry",
       "dependencies": {

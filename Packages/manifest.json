@@ -16,6 +16,7 @@
     }
   ],
   "dependencies": {
+    "com.nol1fe.delaunator": "https://github.com/nol1fe/delaunator-sharp-unitypackage.git",
     "com.unity.2d.sprite": "1.0.0",
     "com.unity.2d.tilemap": "1.0.0",
     "com.unity.analytics": "3.3.5",
@@ -34,12 +35,11 @@
     "com.unity.visualeffectgraph": "8.2.0",
     "com.unity.xr.interaction.toolkit": "0.9.4-preview",
     "com.unity.xr.management": "3.2.15",
-    "com.unity.xr.oculus": "1.4.3",
-    "io.extendreality.vrtk.prefabs": "1.1.11",
+    "com.unity.xr.oculus": "1.5.0",
     "com.virgis.geojson.net": "https://github.com/ViRGIS-Team/GeoJSON.Net.git",
     "com.virgis.geometry3sharp": "https://github.com/ViRGIS-Team/geometry3Sharp.git",
+    "io.extendreality.vrtk.prefabs": "1.1.11",
     "jillejr.newtonsoft.json-for-unity": "12.0.301",
-    "com.nol1fe.delaunator": "https://github.com/nol1fe/delaunator-sharp-unitypackage.git",
     "com.unity.modules.ai": "1.0.0",
     "com.unity.modules.androidjni": "1.0.0",
     "com.unity.modules.animation": "1.0.0",
