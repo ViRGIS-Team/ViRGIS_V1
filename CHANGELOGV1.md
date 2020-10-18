@@ -1,5 +1,12 @@
 # Changelog for ViRGIS Version 1
 
+
+## Version 1.1
+
+- Adds .3DS support as a Mesh Format
+- Seperates the Geometry3Sharp and GeoJSON.Net code into dedicated Unity Packages
+- Some cleamup to the UI and Directory Structure
+
 ## Version 1.0.1
 
 - Implements [#218](https://github.com/ViRGIS-Team/ViRGIS/issues/218) - fix for broken UI in Desktop mode.
