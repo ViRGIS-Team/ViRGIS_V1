@@ -45,23 +45,21 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.ide.vscode": {
-      "version": "1.2.0",
+      "version": "1.2.2",
       "depth": 0,
       "source": "registry",
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
     "com.unity.inputsystem": {
-      "version": "1.0.0-preview.6",
+      "version": "1.0.0",
       "depth": 0,
       "source": "registry",
-      "dependencies": {
-        "com.unity.ugui": "1.0.0"
-      },
+      "dependencies": {},
       "url": "https://packages.unity.com"
     },
     "com.unity.mobile.android-logcat": {
-      "version": "1.1.1",
+      "version": "1.2.0",
       "depth": 0,
       "source": "registry",
       "dependencies": {},
@@ -77,10 +75,12 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.purchasing": {
-      "version": "2.0.6",
+      "version": "2.1.0",
       "depth": 0,
       "source": "registry",
-      "dependencies": {},
+      "dependencies": {
+        "com.unity.ugui": "1.0.0"
+      },
       "url": "https://packages.unity.com"
     },
     "com.unity.render-pipelines.core": {
@@ -119,7 +119,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.test-framework": {
-      "version": "1.1.14",
+      "version": "1.1.16",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -174,7 +174,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.xr.management": {
-      "version": "3.2.10",
+      "version": "3.2.16",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -184,7 +184,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.xr.oculus": {
-      "version": "1.3.4",
+      "version": "1.4.3",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -192,6 +192,22 @@
         "com.unity.ugui": "1.0.0"
       },
       "url": "https://packages.unity.com"
+    },
+    "com.virgis.geojson.net": {
+      "version": "https://github.com/ViRGIS-Team/GeoJSON.Net.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "jillejr.newtonsoft.json-for-unity": "12.0.301"
+      },
+      "hash": "5035fa49c46e959a6f5f05ec30d6175ab9cbabe7"
+    },
+    "com.virgis.geometry3sharp": {
+      "version": "https://github.com/ViRGIS-Team/geometry3Sharp.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "2e80615ef626dede1d4127869ba0ba8479151812"
     },
     "io.extendreality.malimbe": {
       "version": "9.6.5",
@@ -219,8 +235,8 @@
       "url": "https://registry.npmjs.org"
     },
     "jillejr.newtonsoft.json-for-unity": {
-      "version": "12.0.201",
-      "depth": 0,
+      "version": "12.0.301",
+      "depth": 1,
       "source": "registry",
       "dependencies": {},
       "url": "https://npm.cloudsmith.io/jillejr/newtonsoft-json-for-unity"
