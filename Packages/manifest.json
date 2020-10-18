@@ -36,6 +36,8 @@
     "com.unity.xr.management": "3.2.15",
     "com.unity.xr.oculus": "1.4.3",
     "io.extendreality.vrtk.prefabs": "1.1.11",
+    "com.virgis.geojson.net": "https://github.com/ViRGIS-Team/GeoJSON.Net.git",
+    "com.virgis.geometry3sharp": "https://github.com/ViRGIS-Team/geometry3Sharp.git",
     "jillejr.newtonsoft.json-for-unity": "12.0.301",
     "com.nol1fe.delaunator": "https://github.com/nol1fe/delaunator-sharp-unitypackage.git",
     "com.unity.modules.ai": "1.0.0",

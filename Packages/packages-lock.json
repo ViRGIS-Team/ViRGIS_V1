@@ -215,6 +215,22 @@
       },
       "url": "https://packages.unity.com"
     },
+    "com.virgis.geojson.net": {
+      "version": "https://github.com/ViRGIS-Team/GeoJSON.Net.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "jillejr.newtonsoft.json-for-unity": "12.0.301"
+      },
+      "hash": "5035fa49c46e959a6f5f05ec30d6175ab9cbabe7"
+    },
+    "com.virgis.geometry3sharp": {
+      "version": "https://github.com/ViRGIS-Team/geometry3Sharp.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "2e80615ef626dede1d4127869ba0ba8479151812"
+    },
     "io.extendreality.malimbe": {
       "version": "9.6.5",
       "depth": 2,
