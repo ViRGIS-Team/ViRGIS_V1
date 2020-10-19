@@ -215,6 +215,12 @@
       },
       "url": "https://packages.unity.com"
     },
+    "com.virgis.gdal": {
+      "version": "file:C:/Users/runes/Documents/GitHub/GDAL",
+      "depth": 0,
+      "source": "local",
+      "dependencies": {}
+    },
     "com.virgis.geojson.net": {
       "version": "https://github.com/ViRGIS-Team/GeoJSON.Net.git",
       "depth": 0,
@@ -230,6 +236,24 @@
       "source": "git",
       "dependencies": {},
       "hash": "2e80615ef626dede1d4127869ba0ba8479151812"
+    },
+    "com.virgis.mdal": {
+      "version": "file:C:/Users/runes/Documents/GitHub/mdal-upm",
+      "depth": 0,
+      "source": "local",
+      "dependencies": {
+        "com.virgis.geometry3sharp": "1.0.4",
+        "com.virgis.gdal": "3.1.2"
+      }
+    },
+    "com.virgis.pdal": {
+      "version": "file:C:/Users/runes/Documents/GitHub/pdal-upm",
+      "depth": 0,
+      "source": "local",
+      "dependencies": {
+        "com.virgis.geometry3sharp": "1.0.4",
+        "com.virgis.gdal": "3.1.2"
+      }
     },
     "io.extendreality.malimbe": {
       "version": "9.6.5",
