@@ -6,6 +6,15 @@
 - Adds .3DS support as a Mesh Format
 - Seperates the Geometry3Sharp and GeoJSON.Net code into dedicated Unity Packages
 - Some cleamup to the UI and Directory Structure
+- Add Support for and Player for Linux - currently only tested on Ubuntu 
+
+### Platforms
+
+- MacOS - Desktop only
+- Windows - x64 Desktop version
+- Windows - Rift VR
+- Quest - Standalone VR
+- Linux - Desktop only
 
 ## Version 1.0.1
 
