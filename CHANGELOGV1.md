@@ -33,4 +33,4 @@ This is the first working and released version and is effectively a "beta" relea
 
 ### Contents
 
-See [Documentation](www.virgis.org/docs/manial/v1.html) for detail on the functionality of ViRGIS V1. This release implements all of the documented functionality.
+See [Documentation](https://www.virgis.org/docs/manual/installation.html) for detail on the functionality of ViRGIS V1. This release implements all of the documented functionality.
