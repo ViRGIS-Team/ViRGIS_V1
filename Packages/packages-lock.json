@@ -246,7 +246,7 @@
         "com.virgis.geometry3sharp": "1.0.4",
         "com.virgis.gdal": "3.1.2"
       },
-      "hash": "ad71d8d9da0c22e8e987fa99c40a744ff33530bd"
+      "hash": "40528f04a6b5f1b28dc7b8ed2cb661ae689626a3"
     },
     "com.virgis.pdal": {
       "version": "https://github.com/ViRGIS-Team/pdal-upm.git",
