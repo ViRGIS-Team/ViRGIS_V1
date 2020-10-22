@@ -1,0 +1,176 @@
+{
+  "version": "2.0.0a3",
+  "name": "",
+  "origin": {
+    "type": "Point",
+    "coordinates": [
+      -2.5760784896827333,
+      52.69903265259223
+    ]
+  },
+  "scale": 269.353149,
+  "grid-scale": 1.0,
+  "cameras": [
+    {
+      "type": "Point",
+      "coordinates": [
+        -2.5716135619518341,
+        52.69844921636647,
+        523.95025634765625
+      ]
+    }
+  ],
+  "recordsets": [
+    {
+      "properties": {
+        "mapscale": 15,
+        "map_size": 10,
+        "elevation_layer_type": "TerrainWithElevation",
+        "imagery_source_type": "MapboxStreets"
+      },
+      "id": "_map_",
+      "display-name": "MapBox Map",
+      "datatype": "MapBox",
+      "source": "",
+      "position": null,
+      "transform": {
+        "translate": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotate": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "proj4": ""
+    },
+    {
+      "properties": {
+        "units": {
+          "body": {
+            "color": [
+              0.384313732,
+              1.0,
+              0.298039228,
+              1.0
+            ],
+            "shape": "Spheroid",
+            "transform": {
+              "translate": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotate": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "label": ""
+          },
+          "line": {
+            "color": [
+              0.4,
+              1.0,
+              0.549019635,
+              1.0
+            ],
+            "shape": "Spheroid",
+            "transform": {
+              "translate": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotate": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "label": ""
+          },
+          "point": {
+            "color": [
+              0.298039228,
+              1.0,
+              0.4745098,
+              1.0
+            ],
+            "shape": "Cuboid",
+            "transform": {
+              "translate": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotate": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "label": ""
+          }
+        },
+        "dem": null,
+        "colorinterp": null,
+        "filter": null,
+        "bbox": null
+      },
+      "id": "001",
+      "display-name": "Permian Block",
+      "datatype": "Vector",
+      "source": "test_data/Permian_block.dxf",
+      "position": null,
+      "transform": {
+        "translate": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotate": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "visible": false,
+      "proj4": "epsg:27700"
+    }
+  ]
+}

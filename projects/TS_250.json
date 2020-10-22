@@ -8,15 +8,14 @@
       45.7686
     ]
   },
-  "scale": 1.0,
   "grid-scale": 0.0,
   "cameras": [
     {
       "type": "Point",
       "coordinates": [
-        18.658422324212118,
-        45.768463318773854,
-        18.196950912475586
+        18.65836739513303,
+        45.768570017903137,
+        -0.32326424121856689
       ]
     }
   ],
@@ -27,8 +26,8 @@
           "point": {
             "color": [
               0.0,
-              255.0,
-              255.0,
+              1.0,
+              1.0,
               1.0
             ],
             "shape": "Spheroid",
@@ -55,8 +54,8 @@
           "handle": {
             "color": [
               0.0,
-              255.0,
-              255.0,
+              1.0,
+              1.0,
               1.0
             ],
             "shape": "Spheroid",
@@ -95,14 +94,13 @@
             "type": "filters.ferry",
             "dimensions": "=>Z"
           }
-        ]
+        ],
+        "bbox": null
       },
       "id": "001",
       "display-name": null,
-      "type": "GeographyCollection",
       "datatype": "PointCloud",
       "source": "test_data/ASCII_TS_250/TP000010.xyz",
-      "features": null,
       "position": null,
       "transform": {
         "translate": [
@@ -130,8 +128,8 @@
           "point": {
             "color": [
               0.0,
-              255.0,
-              255.0,
+              1.0,
+              1.0,
               1.0
             ],
             "shape": "Spheroid",
@@ -158,8 +156,8 @@
           "handle": {
             "color": [
               0.0,
-              255.0,
-              255.0,
+              1.0,
+              1.0,
               1.0
             ],
             "shape": "Spheroid",
@@ -198,14 +196,13 @@
             "type": "filters.ferry",
             "dimensions": "=>Z"
           }
-        ]
+        ],
+        "bbox": null
       },
       "id": "002",
       "display-name": null,
-      "type": "GeographyCollection",
       "datatype": "PointCloud",
       "source": "test_data/ASCII_TS_250/TP100010.xyz",
-      "features": null,
       "position": null,
       "transform": {
         "translate": [
@@ -233,8 +230,8 @@
           "point": {
             "color": [
               0.0,
-              255.0,
-              255.0,
+              1.0,
+              1.0,
               1.0
             ],
             "shape": "Spheroid",
@@ -261,8 +258,8 @@
           "handle": {
             "color": [
               0.0,
-              255.0,
-              255.0,
+              1.0,
+              1.0,
               1.0
             ],
             "shape": "Spheroid",
@@ -301,14 +298,13 @@
             "type": "filters.ferry",
             "dimensions": "=>Z"
           }
-        ]
+        ],
+        "bbox": null
       },
       "id": "003",
       "display-name": null,
-      "type": "GeographyCollection",
       "datatype": "PointCloud",
       "source": "test_data/ASCII_TS_250/TP200010.xyz",
-      "features": null,
       "position": null,
       "transform": {
         "translate": [
@@ -336,8 +332,8 @@
           "point": {
             "color": [
               0.0,
-              255.0,
-              255.0,
+              1.0,
+              1.0,
               1.0
             ],
             "shape": "Spheroid",
@@ -364,8 +360,8 @@
           "handle": {
             "color": [
               0.0,
-              255.0,
-              255.0,
+              1.0,
+              1.0,
               1.0
             ],
             "shape": "Spheroid",
@@ -404,14 +400,13 @@
             "type": "filters.ferry",
             "dimensions": "=>Z"
           }
-        ]
+        ],
+        "bbox": null
       },
       "id": "004",
       "display-name": null,
-      "type": "GeographyCollection",
       "datatype": "PointCloud",
       "source": "test_data/ASCII_TS_250/TP300010.xyz",
-      "features": null,
       "position": null,
       "transform": {
         "translate": [
@@ -439,8 +434,8 @@
           "point": {
             "color": [
               0.0,
-              255.0,
-              255.0,
+              1.0,
+              1.0,
               1.0
             ],
             "shape": "Spheroid",
@@ -467,8 +462,8 @@
           "handle": {
             "color": [
               0.0,
-              255.0,
-              255.0,
+              1.0,
+              1.0,
               1.0
             ],
             "shape": "Spheroid",
@@ -507,14 +502,13 @@
             "type": "filters.ferry",
             "dimensions": "=>Z"
           }
-        ]
+        ],
+        "bbox": null
       },
       "id": "005",
       "display-name": null,
-      "type": "GeographyCollection",
       "datatype": "PointCloud",
       "source": "test_data/ASCII_TS_250/TP400010.xyz",
-      "features": null,
       "position": null,
       "transform": {
         "translate": [

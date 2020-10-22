@@ -1,0 +1,90 @@
+{
+  "version": "2.0.0a3",
+  "name": "",
+  "origin": {
+    "type": "Point",
+    "coordinates": [
+      40.0,
+      -15.0
+    ]
+  },
+  "scale": 71.83159,
+  "grid-scale": 1.0,
+  "cameras": [
+    {
+      "type": "Point",
+      "coordinates": [
+        40.0009884073856,
+        -15.000466722402457,
+        56.100772857666016
+      ]
+    }
+  ],
+  "recordsets": [
+    {
+      "properties": {
+        "mapscale": 15,
+        "map_size": 10,
+        "elevation_layer_type": "TerrainWithElevation",
+        "imagery_source_type": "MapboxStreets"
+      },
+      "id": "_map_",
+      "display-name": "MapBox Map",
+      "datatype": "MapBox",
+      "source": "",
+      "position": null,
+      "transform": {
+        "translate": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotate": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "proj4": ""
+    },
+    {
+      "properties": {
+        "units": {},
+        "dem": null,
+        "colorinterp": null,
+        "filter": null,
+        "bbox": null
+      },
+      "id": "001",
+      "display-name": "",
+      "datatype": "Mdal",
+      "source": "test_data\\grib\\Madagascar.wave.7days.grb",
+      "position": null,
+      "transform": {
+        "translate": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotate": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "proj4": ""
+    }
+  ]
+}
