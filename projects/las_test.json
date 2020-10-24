@@ -1,1 +1,314 @@
-{"name": "", "origin": {"type": "Point", "coordinates": [0, 0]}, "grid-scale": 1, "scale": 1, "default_proj": "epsg:4326", "cameras": [{"type": "Point", "coordinates": [0, 0]}], "recordsets": [{"display-name": "MapBox Map", "id": "_map_", "datatype": "MapBox", "source": "", "properties": {"mapscale": 15, "map_size": 10, "elevation_source_type": "MapboxTerrain", "elevation_layer_type": "TerrainWithElevation", "imagery_source_type": "MapboxStreets", "units": {"point": {"color": [0, 0, 0, 1], "shape": "Spheroid", "transform": {"translate": [0.0, 0.0, 0.0], "rotate": [0.0, 0.0, 0.0, 1.0], "scale": [1.0, 1.0, 1.0]}, "label": ""}, "line": {"color": [0, 0, 0, 1], "shape": "Spheroid", "transform": {"translate": [0.0, 0.0, 0.0], "rotate": [0.0, 0.0, 0.0, 1.0], "scale": [1.0, 1.0, 1.0]}, "label": ""}, "body": {"color": [0, 0, 0, 1], "shape": "Spheroid", "transform": {"translate": [0.0, 0.0, 0.0], "rotate": [0.0, 0.0, 0.0, 1.0], "scale": [1.0, 1.0, 1.0]}, "label": ""}, "handle": {"color": [0, 0, 0, 1], "shape": "Spheroid", "transform": {"translate": [0.0, 0.0, 0.0], "rotate": [0.0, 0.0, 0.0, 1.0], "scale": [1.0, 1.0, 1.0]}, "label": ""}}}, "transform": {"translate": [0.0, 0.0, 0.0], "rotate": [0.0, 0.0, 0.0, 1.0], "scale": [0.0, 0.0, 0.0]}, "position": null, "proj4": ""}, {"display-name": "", "id": "001", "datatype": "PointCloud", "source": "Assets\\StreamingAssets\\Pdal\\Data\\1.2-with-color.las", "properties": {"units": {"point": {"color": [0, 0, 0, 1], "shape": "Spheroid", "transform": {"translate": [0.0, 0.0, 0.0], "rotate": [0.0, 0.0, 0.0, 1.0], "scale": [1.0, 1.0, 1.0]}, "label": ""}, "line": {"color": [0, 0, 0, 1], "shape": "Spheroid", "transform": {"translate": [0.0, 0.0, 0.0], "rotate": [0.0, 0.0, 0.0, 1.0], "scale": [1.0, 1.0, 1.0]}, "label": ""}, "body": {"color": [0, 0, 0, 1], "shape": "Spheroid", "transform": {"translate": [0.0, 0.0, 0.0], "rotate": [0.0, 0.0, 0.0, 1.0], "scale": [1.0, 1.0, 1.0]}, "label": ""}, "handle": {"color": [0, 0, 0, 1], "shape": "Spheroid", "transform": {"translate": [0.0, 0.0, 0.0], "rotate": [0.0, 0.0, 0.0, 1.0], "scale": [1.0, 1.0, 1.0]}, "label": ""}}}, "transform": {"translate": [0.0, 0.0, 0.0], "rotate": [0.0, 0.0, 0.0, 1.0], "scale": [1.0, 1.0, 1.0]}, "position": null, "proj4": ""}], "version": "2.0.0a3"}
+{
+    "name": "",
+    "origin": {
+        "type": "Point",
+        "coordinates": [
+            0,
+            0
+        ]
+    },
+    "grid-scale": 1,
+    "scale": 1,
+    "default_proj": "epsg:4326",
+    "cameras": [
+        {
+            "type": "Point",
+            "coordinates": [
+                0,
+                0
+            ]
+        }
+    ],
+    "recordsets": [
+        {
+            "display-name": "MapBox Map",
+            "id": "_map_",
+            "datatype": "MapBox",
+            "source": "",
+            "properties": {
+                "mapscale": 15,
+                "map_size": 10,
+                "elevation_source_type": "MapboxTerrain",
+                "elevation_layer_type": "TerrainWithElevation",
+                "imagery_source_type": "MapboxStreets",
+                "units": {
+                    "point": {
+                        "color": [
+                            0,
+                            0,
+                            0,
+                            1
+                        ],
+                        "shape": "Spheroid",
+                        "transform": {
+                            "translate": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "rotate": [
+                                0.0,
+                                0.0,
+                                0.0,
+                                1.0
+                            ],
+                            "scale": [
+                                1.0,
+                                1.0,
+                                1.0
+                            ]
+                        },
+                        "label": ""
+                    },
+                    "line": {
+                        "color": [
+                            0,
+                            0,
+                            0,
+                            1
+                        ],
+                        "shape": "Spheroid",
+                        "transform": {
+                            "translate": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "rotate": [
+                                0.0,
+                                0.0,
+                                0.0,
+                                1.0
+                            ],
+                            "scale": [
+                                1.0,
+                                1.0,
+                                1.0
+                            ]
+                        },
+                        "label": ""
+                    },
+                    "body": {
+                        "color": [
+                            0,
+                            0,
+                            0,
+                            1
+                        ],
+                        "shape": "Spheroid",
+                        "transform": {
+                            "translate": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "rotate": [
+                                0.0,
+                                0.0,
+                                0.0,
+                                1.0
+                            ],
+                            "scale": [
+                                1.0,
+                                1.0,
+                                1.0
+                            ]
+                        },
+                        "label": ""
+                    },
+                    "handle": {
+                        "color": [
+                            0,
+                            0,
+                            0,
+                            1
+                        ],
+                        "shape": "Spheroid",
+                        "transform": {
+                            "translate": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "rotate": [
+                                0.0,
+                                0.0,
+                                0.0,
+                                1.0
+                            ],
+                            "scale": [
+                                1.0,
+                                1.0,
+                                1.0
+                            ]
+                        },
+                        "label": ""
+                    }
+                }
+            },
+            "transform": {
+                "translate": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "scale": [
+                    0.0,
+                    0.0,
+                    0.0
+                ]
+            },
+            "position": null,
+            "proj4": ""
+        },
+        {
+            "display-name": "",
+            "id": "001",
+            "datatype": "PointCloud",
+            "source": "Assets\\StreamingAssets\\Pdal\\Data\\1.2-with-color.las",
+            "properties": {
+                "units": {
+                    "point": {
+                        "color": [
+                            0,
+                            0,
+                            0,
+                            1
+                        ],
+                        "shape": "Spheroid",
+                        "transform": {
+                            "translate": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "rotate": [
+                                0.0,
+                                0.0,
+                                0.0,
+                                1.0
+                            ],
+                            "scale": [
+                                1.0,
+                                1.0,
+                                1.0
+                            ]
+                        },
+                        "label": ""
+                    },
+                    "line": {
+                        "color": [
+                            0,
+                            0,
+                            0,
+                            1
+                        ],
+                        "shape": "Spheroid",
+                        "transform": {
+                            "translate": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "rotate": [
+                                0.0,
+                                0.0,
+                                0.0,
+                                1.0
+                            ],
+                            "scale": [
+                                1.0,
+                                1.0,
+                                1.0
+                            ]
+                        },
+                        "label": ""
+                    },
+                    "body": {
+                        "color": [
+                            0,
+                            0,
+                            0,
+                            1
+                        ],
+                        "shape": "Spheroid",
+                        "transform": {
+                            "translate": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "rotate": [
+                                0.0,
+                                0.0,
+                                0.0,
+                                1.0
+                            ],
+                            "scale": [
+                                1.0,
+                                1.0,
+                                1.0
+                            ]
+                        },
+                        "label": ""
+                    },
+                    "handle": {
+                        "color": [
+                            0,
+                            0,
+                            0,
+                            1
+                        ],
+                        "shape": "Spheroid",
+                        "transform": {
+                            "translate": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "rotate": [
+                                0.0,
+                                0.0,
+                                0.0,
+                                1.0
+                            ],
+                            "scale": [
+                                1.0,
+                                1.0,
+                                1.0
+                            ]
+                        },
+                        "label": ""
+                    }
+                }
+            },
+            "transform": {
+                "translate": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            },
+            "position": null,
+            "proj4": ""
+        }
+    ],
+    "version": "2.0.0a3"
+}
