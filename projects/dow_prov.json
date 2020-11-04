@@ -9,14 +9,15 @@
     ]
   },
   "scale": 34.3921127,
+  "default_proj": null,
   "grid-scale": 0.0,
   "cameras": [
     {
       "type": "Point",
       "coordinates": [
-        -2.0121252620649792,
-        54.150571737936652,
-        494.732177734375
+        -2.015355683493385,
+        54.154387911394281,
+        362.20877075195313
       ]
     }
   ],
@@ -31,7 +32,6 @@
       "display-name": "MapBox Map",
       "datatype": "MapBox",
       "source": null,
-      "features": null,
       "position": null,
       "transform": null,
       "proj4": null
@@ -133,7 +133,6 @@
       "display-name": "Dow Prov Main",
       "datatype": "Vector",
       "source": "test_data/DowProv.geojson",
-      "features": null,
       "position": null,
       "transform": null,
       "proj4": null
@@ -235,7 +234,6 @@
       "display-name": "Dow Prov Poly",
       "datatype": "Vector",
       "source": "test_data/DowProvPoly.geojson",
-      "features": null,
       "position": null,
       "transform": null,
       "proj4": null
