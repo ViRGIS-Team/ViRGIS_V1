@@ -8,15 +8,15 @@
     ]
   },
   "mapscale": 15,
-  "scale": 177.976761,
+  "scale": 12.0924282,
   "grid-scale": 0.0,
   "cameras": [
     {
       "type": "Point",
       "coordinates": [
-        1.3854598579840236,
-        51.299913790314051,
-        589.06622314453125
+        1.3766443992752233,
+        51.297561356653119,
+        240.85017395019531
       ]
     }
   ],
@@ -61,7 +61,8 @@
       "source": "test_data/waypoint27092019up.geojson",
       "features": null,
       "position": null,
-      "transform": null
+      "transform": null,
+      "visible": false
     },
     {
       "properties": {
@@ -145,7 +146,8 @@
       "source": "test_data/waypoint27092019up.geojson",
       "features": null,
       "position": null,
-      "transform": null
+      "transform": null,
+      "visible": false
     },
     {
       "properties": {
@@ -187,7 +189,8 @@
       "source": "test_data/waypoint27092019up.geojson",
       "features": null,
       "position": null,
-      "transform": null
+      "transform": null,
+      "visible": false
     },
     {
       "properties": {
@@ -257,7 +260,8 @@
       "source": "test_data/lines.geojson",
       "features": null,
       "position": null,
-      "transform": null
+      "transform": null,
+      "visible": false
     },
     {
       "properties": {
@@ -515,15 +519,16 @@
           9.983333,
           9.983333
         ]
-      }
+      },
+      "visible": false
     }
   ],
   "Camera": {
     "type": "Point",
     "coordinates": [
-      1.3854598579840236,
-      51.299913790314051,
-      589.06622314453125
+      1.3766443992752233,
+      51.297561356653119,
+      240.85017395019531
     ]
   }
 }
