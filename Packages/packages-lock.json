@@ -216,10 +216,11 @@
       "url": "https://packages.unity.com"
     },
     "com.virgis.gdal": {
-      "version": "file:C:/Users/runes/Documents/GitHub/GDAL",
+      "version": "https://github.com/ViRGIS-Team/gdal-upm.git#conda_integration",
       "depth": 0,
-      "source": "local",
-      "dependencies": {}
+      "source": "git",
+      "dependencies": {},
+      "hash": "4b742b316b97ef9206e4692b3cd1a9435eb0db42"
     },
     "com.virgis.geojson.net": {
       "version": "https://github.com/ViRGIS-Team/GeoJSON.Net.git",
@@ -245,7 +246,7 @@
         "com.virgis.geometry3sharp": "1.0.4",
         "com.virgis.gdal": "3.1.2"
       },
-      "hash": "5a603174a720f7928696832e9cc0cb172f587127"
+      "hash": "679b1269a091e0b4410dd63eca371161cec5bdcc"
     },
     "com.virgis.pdal": {
       "version": "https://github.com/ViRGIS-Team/pdal-upm.git#conda_integration",
@@ -255,7 +256,7 @@
         "com.virgis.geometry3sharp": "1.0.4",
         "com.virgis.gdal": "3.1.2"
       },
-      "hash": "7326e73bb65c621811b3583cf1c672e982ff0cdd"
+      "hash": "3e8a6ad2320c861012407cccd639d23669afc997"
     },
     "io.extendreality.malimbe": {
       "version": "9.6.5",

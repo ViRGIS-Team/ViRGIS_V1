@@ -36,7 +36,7 @@
     "com.unity.xr.interaction.toolkit": "0.9.4-preview",
     "com.unity.xr.management": "3.2.15",
     "com.unity.xr.oculus": "1.5.0",
-    "com.virgis.gdal": "file:C:/Users/runes/Documents/GitHub/GDAL",
+    "com.virgis.gdal": "https://github.com/ViRGIS-Team/gdal-upm.git#conda_integration",
     "com.virgis.geojson.net": "https://github.com/ViRGIS-Team/GeoJSON.Net.git",
     "com.virgis.geometry3sharp": "https://github.com/ViRGIS-Team/geometry3Sharp.git",
     "com.virgis.mdal": "https://github.com/ViRGIS-Team/mdal-upm.git#conda_integration",
