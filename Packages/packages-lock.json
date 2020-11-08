@@ -216,11 +216,11 @@
       "url": "https://packages.unity.com"
     },
     "com.virgis.gdal": {
-      "version": "https://github.com/ViRGIS-Team/gdal-upm.git",
+      "version": "https://github.com/ViRGIS-Team/gdal-upm.git#conda_integration",
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "bfd3095e89a0710f51e2dc91dcd91c5cf71a13fc"
+      "hash": "4b742b316b97ef9206e4692b3cd1a9435eb0db42"
     },
     "com.virgis.geojson.net": {
       "version": "https://github.com/ViRGIS-Team/GeoJSON.Net.git",
@@ -239,24 +239,24 @@
       "hash": "2e80615ef626dede1d4127869ba0ba8479151812"
     },
     "com.virgis.mdal": {
-      "version": "https://github.com/ViRGIS-Team/mdal-upm.git",
+      "version": "https://github.com/ViRGIS-Team/mdal-upm.git#conda_integration",
       "depth": 0,
       "source": "git",
       "dependencies": {
         "com.virgis.geometry3sharp": "1.0.4",
         "com.virgis.gdal": "3.1.2"
       },
-      "hash": "8efddbae4197062f0674630900f1ba9112668e62"
+      "hash": "679b1269a091e0b4410dd63eca371161cec5bdcc"
     },
     "com.virgis.pdal": {
-      "version": "https://github.com/ViRGIS-Team/pdal-upm.git",
+      "version": "https://github.com/ViRGIS-Team/pdal-upm.git#conda_integration",
       "depth": 0,
       "source": "git",
       "dependencies": {
         "com.virgis.geometry3sharp": "1.0.4",
         "com.virgis.gdal": "3.1.2"
       },
-      "hash": "70fdda6b0d6d826cc38b678e3c327d881833f45c"
+      "hash": "3e8a6ad2320c861012407cccd639d23669afc997"
     },
     "io.extendreality.malimbe": {
       "version": "9.6.5",
