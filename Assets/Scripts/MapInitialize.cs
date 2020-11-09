@@ -3,6 +3,7 @@ using GeoJSON.Net.Geometry;
 using Mapbox.Unity.Map;
 using Mapbox.Utils;
 using Project;
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using UnityEngine;
@@ -165,23 +166,26 @@ namespace Virgis
 
         public async Task<RecordSet> Save(bool all = true)
         {
-            // TODO: wrap this in try/catch block
             Debug.Log("MapInitialize.Save starts");
-
-            if (all) {
-                foreach (IVirgisLayer com in appState.layers) {
-                    RecordSet alayer = await com.Save();
-                    int index = appState.project.RecordSets.FindIndex(x => x.Id == alayer.Id);
-                    appState.project.RecordSets[index] = alayer;
+            try {
+                if (all) {
+                    foreach (IVirgisLayer com in appState.layers) {
+                        RecordSet alayer = await com.Save();
+                        int index = appState.project.RecordSets.FindIndex(x => x.Id == alayer.Id);
+                        appState.project.RecordSets[index] = alayer;
+                    }
                 }
+                appState.project.Scale = appState.GetScale();
+                appState.project.Cameras = new List<Point>() { MainCamera.transform.position.ToPoint() };
+                geoJsonReader.SetProject(appState.project);
+                await geoJsonReader.Save();
+                Debug.Log("MapInitialize.Save ends");
+                // TODO: should return the root layer in v2
+                return null;
+            } catch (Exception e) {
+                Debug.Log($"MapInitialize.Save exception: {e.Message}");
+                return null;
             }
-            appState.project.Scale = appState.GetScale();
-            appState.project.Cameras = new List<Point>() { MainCamera.transform.position.ToPoint() };
-            geoJsonReader.SetProject(appState.project);
-            await geoJsonReader.Save();
-            Debug.Log("MapInitialize.Save ends");
-            // TODO: should return the root layer in v2
-            return null;
         }
 
         protected override Task _save()
