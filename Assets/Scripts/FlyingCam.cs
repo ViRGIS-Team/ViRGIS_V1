@@ -184,9 +184,12 @@ namespace Virgis
                     appState.StopDiscardEditSession();
                     break;
                 case "Exit":
+                    // why is this called 3 times?
                     Debug.Log("FlyingCam.Exit save before quit");
-                    MapInitialize mi = appState.map.GetComponentInChildren<MapInitialize>();
-                    await mi.Save();
+                    if (appState.map != null) {
+                        MapInitialize mi = appState.map.GetComponentInChildren<MapInitialize>();
+                        await mi.Save(false);
+                    }
                     Debug.Log("FlyingCam.Exit now quit");
                     Application.Quit();
                     break;

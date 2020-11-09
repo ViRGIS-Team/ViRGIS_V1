@@ -67,9 +67,10 @@ namespace Virgis
 
         public async Task Save()
         {
-            using (StreamWriter writer = new StreamWriter(fileName, false))
-            {
-                await writer.WriteAsync(payload);
+            if (this.payload != null) {
+                using (StreamWriter writer = new StreamWriter(fileName, false)) {
+                    await writer.WriteAsync(payload);
+                }
             }
         }
 
@@ -80,7 +81,9 @@ namespace Virgis
 
         public void SetProject(GisProject project)
         {
-            payload = JsonConvert.SerializeObject(project, Formatting.Indented);
+            if (this.payload != null) {
+                payload = JsonConvert.SerializeObject(project, Formatting.Indented);
+            }
         }
     }
 }
