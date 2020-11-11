@@ -1,7 +1,5 @@
 # Virtual Reality GIS in Unity
 
-
-- [ViRGIS Project](#virgis-project)
 - [Overview](#overview)
 - [Documentation](#documentation)
 - [Getting ViRGIS](#getting-virgis)
