@@ -1,7 +1,4 @@
-# ViRGIS Project
-
-
-## Virtual Reality GIS in Unity
+# Virtual Reality GIS in Unity
 
 
 - [ViRGIS Project](#virgis-project)
