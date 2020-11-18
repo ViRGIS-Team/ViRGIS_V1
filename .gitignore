@@ -59,6 +59,8 @@ dist/
 # Crashlytics generated file
 crashlytics-build.properties
 
+# docs
+Documentation/obj/.cache/*
 
 
 
@@ -70,3 +72,4 @@ Assets/Textures/Cubemaps/vr_screenshot_01.cubemap.meta
 Assets/XR/Settings/Oculus Settings.asset
 .DS_Store
 test_data/example.ply
+/Documentation/obj/

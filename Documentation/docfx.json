@@ -26,16 +26,6 @@
                 "src": "api",
                 "files": [ "*.yml" ],
                 "dest": "api"
-            },
-            {
-                "src": "manual",
-                "files": [ "toc.yml", "*.md" ],
-                "dest": "manual"
-            },
-            {
-                "src": "images",
-                "files": [  "*.png" ],
-                "dest": "images"
             }
         ],
         "overwrite": [
@@ -51,8 +41,8 @@
         ],
         "sitemap":
         {
-            "baseUrl": "https://www.virgis.org/docs",
-            "changefreq": "weekly",
+            "baseUrl": "https://www.virgis.org",
+            "changefreq": "daily",
             "fileOptions": {
                 "api/*": {
                     "changefreq": "daily"
