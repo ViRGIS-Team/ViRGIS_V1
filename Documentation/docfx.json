@@ -3,12 +3,10 @@
         {
             "src": [
                 {
-                    "src": "..",
-                    "files": [ "**.csproj" ]
-                }
-            ],
-            "globalNamespaceId": "Global",
-            "filter": "filterConfig.yml",
+                    "files": ["**.cs"],
+                    "src": "../Assets/scripts"
+                    }
+                ],
             "dest": "api"
         }
     ],
