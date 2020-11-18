@@ -16,6 +16,7 @@
             "_appFooter": "ViRGIS VR GIS",
             "_enableSearch": true
         },
+        "postProcessors": ["ExtractSearchIndex"],
         "content": [
             {
                 "files": [ "toc.yml", "index.md" ]
@@ -26,16 +27,9 @@
                 "dest": "api"
             }
         ],
-        "overwrite": [
-            {
-                "src": "..",
-                "files": [ "Assets/Scripts/**/*.md" ]
-            }
-        ],
-        "resource": [
-            {
-                "files": [ "resources/**/*" ]
-            }
+        "template": [
+            "default",
+            "templates/material"
         ],
         "sitemap":
         {
@@ -47,7 +41,7 @@
                 }
             }
         },
-        "xref": [ "https://normanderwan.github.io/DocFxForUnity/Unity/xrefmap.yml" ],
+        "xref": [ "https://nicoco007.github.io/UnityXRefMap/2019.4/xrefmap.yml" ],
         "xrefService": [ "https://xref.docs.microsoft.com/query?uid={uid}" ],
         "dest": "../docs"
     }
