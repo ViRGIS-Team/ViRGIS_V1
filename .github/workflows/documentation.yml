@@ -9,6 +9,11 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
 
+    - name: dir
+      run: |
+        pwd
+        ls -alR
+    
     - uses: nikeee/docfx-action@v1
       name: Build Documentation
       with:
