@@ -13,8 +13,8 @@ jobs:
       run: |
         pwd
         ls -alR
-    
-    - uses: nikeee/docfx-action@v1
+
+    - uses: nikeee/docfx-action@v1.0.0
       name: Build Documentation
       with:
         args: Documentation/docfx.json
