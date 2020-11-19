@@ -9,12 +9,12 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
 
-    - name: dir
+    - name: cd
       run: |
-        pwd
-        ls -alR
+        cd Documentation
+        ls
 
     - uses: nikeee/docfx-action@v1.0.0
       name: Build Documentation
       with:
-        args: Documentation/docfx.json
+        args: docfx.json
