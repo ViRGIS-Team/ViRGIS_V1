@@ -2,7 +2,7 @@ name: Create Documentation
 on: workflow_dispatch
 
 jobs:
-  documentation:
+  build:
     runs-on: windows-latest
     name: generate docs
     steps:
@@ -16,14 +16,33 @@ jobs:
       run: |
         docfx Documentation/docfx.json
 
-    - name: Commit files
-      run: |
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
-        git commit -m "Update Documentation" -a
-
-    - name: Push changes
-      uses: ad-m/github-push-action@master
+    # Upload the generated documentation
+    - name: Upload site artifact
+      uses: actions/upload-artifact@v1
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        branch: ${{ github.ref }}
+        name: docs
+        path: docs # Must equals the 'build.dest' value on your docfx.json
+
+  # Deploy the generated documentation to the gh-pages branch
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest # Required by 'JamesIves/github-pages-deploy-action'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        # with:
+        #   submodules: true
+
+      # Download the generated documentation
+      - name: Download site artifact
+        uses: actions/download-artifact@v1
+        with:
+          name: docs
+
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@releases/v3
+        with:
+          ACCESS_TOKEN: ${{ secrets.AccessToken }} # You need some setup, see https://github.com/JamesIves/github-pages-deploy-action
+          BRANCH: main
+          FOLDER: docs
+
