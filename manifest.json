@@ -1,0 +1,945 @@
+{
+  "sitemap": {
+    "fileOptions": {
+      "api/*": {
+        "baseUrl": "https://www.virgis.org/",
+        "changefreq": "daily"
+      }
+    },
+    "baseUrl": "https://www.virgis.org/",
+    "changefreq": "daily"
+  },
+  "homepages": [],
+  "source_base_path": "D:/a/ViRGIS_V1/ViRGIS_V1/Documentation",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      },
+      "is_incremental": false
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.GeoTypes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.GeoTypes.html",
+          "hash": "LYlyC9AsnXMRA2n4wOiAPA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.GeographyCollection.GeogData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.GeographyCollection.GeogData.html",
+          "hash": "44BX7kouAmD2PnCvGIcgYg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.GeographyCollection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.GeographyCollection.html",
+          "hash": "qM57RvR0vJ0SULfuxCUgRA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.GeologyCollection.GeoData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.GeologyCollection.GeoData.html",
+          "hash": "0OLij54CmUC0JdbigyfQ8A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.GeologyCollection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.GeologyCollection.html",
+          "hash": "WpFQ3mp7/A+svfDS4Tz1fQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.GisProject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.GisProject.html",
+          "hash": "gGKPZ5jZJFYJ7NzAdAujFw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.JsonTransform.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.JsonTransform.html",
+          "hash": "igefvpBiKelrnOYOQXZaCA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.RecordSet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.RecordSet.html",
+          "hash": "CF+szZCr68SNBld5CI8+CA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.RecordSetDataType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.RecordSetDataType.html",
+          "hash": "nIDpbNDpI/yYxV1zquAk0Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.RecordSetType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.RecordSetType.html",
+          "hash": "b4n9UwpL4f5NQz0k3RGeKw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.RecordsetConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.RecordsetConverter.html",
+          "hash": "O+SrexZmT4jSApS2jPI2CQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Serializable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Serializable.html",
+          "hash": "HJ6WKOE9i6TNUgtxT61jmg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.SerializableColor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.SerializableColor.html",
+          "hash": "zIG7mt/j81ohtk5fUbBZSQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.SerializableQuaternion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.SerializableQuaternion.html",
+          "hash": "GJox92NTE6s1C0w/dKPd/A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.SerializableVector3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.SerializableVector3.html",
+          "hash": "0fbFpzgx6PVzAgsW1HnuHw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Shapes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Shapes.html",
+          "hash": "kGKKWkZhIwjinJTCjwuCuA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.TestableObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.TestableObject.html",
+          "hash": "MCZbeCBpdzpE/wHk65utmg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Unit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Unit.html",
+          "hash": "QiyK2yE+V7ddy+rE4t/eVg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.VectorConverter-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.VectorConverter-1.html",
+          "hash": "XeKLGSZm/u+LRWGAI0xrWw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.html",
+          "hash": "uXxYf/xxUlMrBlExt25jHg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virgis.AppState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virgis.AppState.html",
+          "hash": "ihTaQT1DZr8Y9wK21aNRDw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virgis.CSVData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virgis.CSVData.html",
+          "hash": "GesQUldX/jWYnXpxyoPECQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virgis.CSVReader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virgis.CSVReader.html",
+          "hash": "PHy8x5db+agSxmJksWMogw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virgis.CSVRow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virgis.CSVRow.html",
+          "hash": "JzwqN0qBzPd8ww2a/S0ZDg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virgis.DataPlotter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virgis.DataPlotter.html",
+          "hash": "9KBtB/GY4TjRVfbXSQAKxQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virgis.DataRotator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virgis.DataRotator.html",
+          "hash": "5aDCS/SdD0PAJFC7LphxmQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virgis.Dataline.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virgis.Dataline.html",
+          "hash": "JCTZQGgyTR1+Qj92D+Ke6g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virgis.Datapoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virgis.Datapoint.html",
+          "hash": "xRUJEYyWVkYgPfld0l51FQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virgis.Datapolygon.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virgis.Datapolygon.html",
+          "hash": "btVWi6AvQAMy+DNLNdLDzQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virgis.DcurveExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virgis.DcurveExtensions.html",
+          "hash": "ZQlKbUElu/fWdKZulDeD8g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virgis.EditModeUI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virgis.EditModeUI.html",
+          "hash": "HWZlcVHnqqu4n72hQeeJxQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virgis.EditSession.EditMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virgis.EditSession.EditMode.html",
+          "hash": "E9ouh88TrXTpxmP4p5eZaQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virgis.EditSession.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virgis.EditSession.html",
+          "hash": "LhBqZOq3LMmNwJ1ehCpFnw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virgis.EditableLayerChangedEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virgis.EditableLayerChangedEvent.html",
+          "hash": "3g74eAlg6N9QIan6RtKZLA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virgis.EndEditSessionEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virgis.EndEditSessionEvent.html",
+          "hash": "OsrajToPOYPERZH4chWM8w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virgis.FeatureAdder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virgis.FeatureAdder.html",
+          "hash": "MPjE4SAXA2Mgz6TlRTDXtQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virgis.FlyingCam.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virgis.FlyingCam.html",
+          "hash": "srkdXS/OAa2oXp+9lRraog=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virgis.GeoJsonReader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virgis.GeoJsonReader.html",
+          "hash": "1JoCOPQ1MMCngOwRAJv95g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virgis.IVirgisEntity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virgis.IVirgisEntity.html",
+          "hash": "OO1I+skWS2Vx9EVDH3kkaQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virgis.IVirgisFeature.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virgis.IVirgisFeature.html",
+          "hash": "hE3ifZPqfzXH+Shf8GciFQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virgis.IVirgisLayer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virgis.IVirgisLayer.html",
+          "hash": "XO3ZAUejF7Dl/8WVuIg0yg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virgis.KdTree-1.KdNode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virgis.KdTree-1.KdNode.html",
+          "hash": "NYJArR9AW0v2RW6Vj8bFjA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virgis.KdTree-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virgis.KdTree-1.html",
+          "hash": "1JTS3M+TK8LsOTsUsNCyHg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virgis.LayerPanelEditSelectedEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virgis.LayerPanelEditSelectedEvent.html",
+          "hash": "bA2K2d4cbQyFpNWpHSQv3w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virgis.LayerUIPanel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virgis.LayerUIPanel.html",
+          "hash": "cLFUK88sG0eWtOBXwuc7kA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virgis.LayersUI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virgis.LayersUI.html",
+          "hash": "yMSiE70I7Y0+ktQUyNnm6w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virgis.LineExtensionMethods.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virgis.LineExtensionMethods.html",
+          "hash": "VWwJy6Wuwl8QlTmZ5mmxCw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virgis.LineLayer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virgis.LineLayer.html",
+          "hash": "nnq8AKl/OHcU4Utxje8+Dg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virgis.LineSegment.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virgis.LineSegment.html",
+          "hash": "UbqVxP6xkECdjtB6/Bj89A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virgis.MapInitialize.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virgis.MapInitialize.html",
+          "hash": "iGMelOrLUM30qPS30Y3Sbg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virgis.MenuFacade.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virgis.MenuFacade.html",
+          "hash": "uB/mI3bqdfIwXqMN6B2sew=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virgis.MeshLayer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virgis.MeshLayer.html",
+          "hash": "tndgEOSFK4eAC5dnQ8TyAw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virgis.MoveArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virgis.MoveArgs.html",
+          "hash": "JXTCB1OP31jNJHaas7Bdww=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virgis.ParticleData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virgis.ParticleData.html",
+          "hash": "+pjZewOzT3UWbyGU/dKGTA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virgis.PlyImport.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virgis.PlyImport.html",
+          "hash": "RKY5II/XfvkjOZ3MdM94iQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virgis.PointCloudLayer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virgis.PointCloudLayer.html",
+          "hash": "juiBprPhpQin2QV7K3oTrg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virgis.PointLayer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virgis.PointLayer.html",
+          "hash": "F0Z3urZSX+4nxtZhdGaiGw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virgis.PolygonExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virgis.PolygonExtensions.html",
+          "hash": "ecA8E9D2dHrw+xHsNC6/6Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virgis.PolygonLayer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virgis.PolygonLayer.html",
+          "hash": "vH5OuAbLRCQV/q9k0tzTag=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virgis.PositionExtensionMethods.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virgis.PositionExtensionMethods.html",
+          "hash": "28cr7OOvMXxbs53FhmHavA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virgis.QuitButton.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virgis.QuitButton.html",
+          "hash": "2nrqn2o1cW99/cqs4Law3Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virgis.SelectionTypes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virgis.SelectionTypes.html",
+          "hash": "GJogIEYuQY9FDWNc+E1xiQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virgis.SimpleMeshExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virgis.SimpleMeshExtensions.html",
+          "hash": "pLitKDLvrA472ApPXw7BJQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virgis.UnityLayers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virgis.UnityLayers.html",
+          "hash": "iN76rP3mD6k/AUmIf6+qhA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virgis.Vector3ExtensionMethods.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virgis.Vector3ExtensionMethods.html",
+          "hash": "RUNoS+F32r4RQuzuN9WY2g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virgis.VertexLookup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virgis.VertexLookup.html",
+          "hash": "Ay+On1fWOmSAW2mvHBcI3g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virgis.VirgisFeature.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virgis.VirgisFeature.html",
+          "hash": "5Zk9/d/05l08xcX7cYmdsA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virgis.VirgisLayer-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virgis.VirgisLayer-2.html",
+          "hash": "QTlQpIPCCxrHLOyQ1ADY+w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virgis.VirgisVectorExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virgis.VirgisVectorExtensions.html",
+          "hash": "LzoAFkWeQrGzFAxiDLTqHw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virgis.ZoomEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virgis.ZoomEvent.html",
+          "hash": "fIYyMFo7kw0Xjr0R3ZMkig=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virgis.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virgis.html",
+          "hash": "zhw2eUf57Q1fic+JlfVuIQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "ltSRq/MZKt3FKdv6J5Udyg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "TmgsMFk3vP6y4tPKyMDBCQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "NoAvailableBuildCache"
+      },
+      "processors": {
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 71,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: should not trace intermediate info.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
