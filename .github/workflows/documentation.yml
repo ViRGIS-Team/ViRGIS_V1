@@ -9,12 +9,9 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
 
-    - name: cd
-      run: |
-        cd Documentation
-        ls
+    - name: Install DocFX
+      run: choco install -y docfx
 
-    - uses: nikeee/docfx-action@v1.0.0
-      name: Build Documentation
-      with:
-        args: docfx.json
+    - name: Build
+      run: |
+        docfx Documentation/docfx.json
